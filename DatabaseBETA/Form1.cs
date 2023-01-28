@@ -6,5 +6,10 @@ namespace DatabaseBETA
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("Label 1 clicked");
+        }
     }
 }
