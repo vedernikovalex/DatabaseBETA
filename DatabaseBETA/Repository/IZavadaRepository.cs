@@ -8,7 +8,9 @@ namespace DatabaseBETA.Repository
 {
     public interface IZavadaRepository : IDisposable
     {
+        void Data
         void GetAll();
         object GetById();
+
     }
 }
