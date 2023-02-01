@@ -11,7 +11,7 @@ namespace DatabaseBETA
         private string loginInput;
         private string passwordInput;
         private bool loggedIn = false;
-        private SqlConnection con = Database.Instance.GetDBConnection();
+        //private SqlConnection con = Database.Instance.GetDBConnection();
 
         public LoginForm()
         {

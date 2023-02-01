@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -20,6 +21,8 @@ namespace DatabaseBETA
 
         private SqlConnectionStringBuilder conStrBuilder = new SqlConnectionStringBuilder();
         private string connectionString;
+
+        private ArrayList entities = new ArrayList();
 
         public Database()
         {

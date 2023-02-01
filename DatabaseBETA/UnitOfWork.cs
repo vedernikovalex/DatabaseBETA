@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DatabaseBETA
 {
-    internal interface IDatabase
+    public class UnitOfWork : IDisposable
     {
-        void Connect();
-        SqlConnection GetDBConnection();
-        object SelectAll();
+        private Database database = new Database();
     }
 }
