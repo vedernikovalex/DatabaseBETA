@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DatabaseBETA.Repository
+namespace DatabaseBETA
 {
-    public interface IZavadaRepository : IDisposable
+    public interface IZavadaRepository
     {
-        void Data
-        void GetAll();
-        object GetById();
-
+        IEnumerable<Zavada> GetAll();
+        Zavada GetById();
+        void Insert(Zavada zavada);
+        void Update(Zavada zavada);
+        void Delete(Zavada zavada);
     }
 }

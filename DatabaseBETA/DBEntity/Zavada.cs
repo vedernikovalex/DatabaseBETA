@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DatabaseBETA.Entity
+namespace DatabaseBETA
 {
     public class Zavada
     {
@@ -23,15 +23,15 @@ namespace DatabaseBETA.Entity
         }
 
         public string Category
-        { 
-            get { return category; } 
-            set { category = value; } 
+        {
+            get { return category; }
+            set { category = value; }
         }
 
         public string Description
-        { 
-            get { return description; } 
-            set { description = value; } 
+        {
+            get { return description; }
+            set { description = value; }
         }
 
         //nalez
@@ -45,6 +45,15 @@ namespace DatabaseBETA.Entity
         {
             get { return kontrola_id; }
             set { kontrola_id = value; }
+        }
+
+        public Zavada(int id, string category, string description, int nalezl_id, int kontrola_id)
+        {
+            this.id = id;
+            this.category = category;
+            this.description = description;
+            this.nalezl_id = nalezl_id;
+            this.kontrola_id = kontrola_id;
         }
     }
 }

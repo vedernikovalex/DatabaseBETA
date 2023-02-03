@@ -22,7 +22,7 @@ namespace DatabaseBETA
         private SqlConnectionStringBuilder conStrBuilder = new SqlConnectionStringBuilder();
         private string connectionString;
 
-        private ArrayList entities = new ArrayList();
+        //private ArrayList entities = new ArrayList();
 
         public Database()
         {

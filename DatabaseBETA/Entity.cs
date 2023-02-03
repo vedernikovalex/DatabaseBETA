@@ -8,6 +8,6 @@ namespace DatabaseBETA
 {
     public class Entity
     {
-
+        
     }
 }
