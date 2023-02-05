@@ -10,7 +10,5 @@ namespace DatabaseBETA
     internal interface IDatabase
     {
         void Connect();
-        SqlConnection GetDBConnection();
-        object SelectAll();
     }
 }

@@ -11,11 +11,12 @@ namespace DatabaseBETA
         private string loginInput;
         private string passwordInput;
         private bool loggedIn = false;
-        //private SqlConnection con = Database.Instance.GetDBConnection();
+        private Database database;
 
         public LoginForm()
         {
             InitializeComponent();
+            database = new Database();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -41,15 +42,20 @@ namespace DatabaseBETA
             }
             if (!String.IsNullOrEmpty(loginInput) && !String.IsNullOrEmpty(passwordInput))
             {
-                loggedIn= true;
-                database = new Database();
+                loggedIn = true;
+                ZavadaRepository repo = new ZavadaRepository();
+                var result = repo.GetAll();
+                foreach (var i in result)
+                {
+                    Debug.WriteLine("ITEM: "+i);
+                }
             }
         }
 
         private void guestButton_Click(object sender, EventArgs e)
         {
-            database = new Database();
-            database.Connect();
+            //database = new Database();
+            //database.Connect();
         }
     }
 }

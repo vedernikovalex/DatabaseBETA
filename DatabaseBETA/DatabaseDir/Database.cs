@@ -17,6 +17,7 @@ namespace DatabaseBETA
 
         private SqlCommand command;
         private SqlDataReader reader;
+        private SqlConnection con;
         private string sqlCommand, output, loginCredentials, passwordCredentials;
 
         private SqlConnectionStringBuilder conStrBuilder = new SqlConnectionStringBuilder();
@@ -29,6 +30,11 @@ namespace DatabaseBETA
             ConnectionStringBuilder();
         }
 
+        public SqlConnection Connection
+        {
+            get { return con; }
+        }
+
         public static Database Instance
         {
             get
@@ -37,7 +43,7 @@ namespace DatabaseBETA
                 {
                     if(instance == null)
                     {
-                        instance= new Database();
+                        instance = new Database();
                     }
                     return instance;
                 }
@@ -49,12 +55,12 @@ namespace DatabaseBETA
             conStrBuilder.DataSource = @"(LocalDb)\beta";
             conStrBuilder.InitialCatalog = "technicka_kontrola";
             conStrBuilder.IntegratedSecurity = true;
-            connectionString= conStrBuilder.ConnectionString;
+            connectionString = conStrBuilder.ConnectionString;
+            con = new SqlConnection(connectionString);
         }
 
         public void Connect()
         {
-            SqlConnection con = new SqlConnection(connectionString);
             try
             {
                 con.Open();
@@ -76,12 +82,6 @@ namespace DatabaseBETA
                 Debug.WriteLine(ex);
             }
 
-        }
-
-        public SqlConnection GetDBConnection()
-        {
-            SqlConnection con = new SqlConnection();
-            return con;
         }
     }
 }

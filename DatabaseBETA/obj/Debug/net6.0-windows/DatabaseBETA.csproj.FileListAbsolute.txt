@@ -10,7 +10,6 @@ C:\Users\mac-alex\source\repos\DatabaseBETA\DatabaseBETA\bin\Debug\net6.0-window
 C:\Users\mac-alex\source\repos\DatabaseBETA\DatabaseBETA\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\mac-alex\source\repos\DatabaseBETA\DatabaseBETA\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\mac-alex\source\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.csproj.AssemblyReference.cache
-C:\Users\mac-alex\source\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.Form1.resources
 C:\Users\mac-alex\source\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.Properties.Resources.resources
 C:\Users\mac-alex\source\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.csproj.GenerateResource.cache
 C:\Users\mac-alex\source\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.GeneratedMSBuildEditorConfig.editorconfig
@@ -34,7 +33,6 @@ C:\Users\mac-alex\source\repos\DatabaseBETA\DatabaseBETA\bin\Debug\net6.0-window
 C:\Users\mac-alex\source\repos\DatabaseBETA\DatabaseBETA\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\mac-alex\source\repos\DatabaseBETA\DatabaseBETA\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\mac-alex\source\repos\DatabaseBETA\DatabaseBETA\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\mac-alex\source\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.Form2.resources
 D:\Git\C#\repos\DatabaseBETA\DatabaseBETA\bin\Debug\net6.0-windows\DatabaseBETA.exe
 D:\Git\C#\repos\DatabaseBETA\DatabaseBETA\bin\Debug\net6.0-windows\DatabaseBETA.dll.config
 D:\Git\C#\repos\DatabaseBETA\DatabaseBETA\bin\Debug\net6.0-windows\DatabaseBETA.deps.json
@@ -71,3 +69,4 @@ D:\Git\C#\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.
 D:\Git\C#\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.genruntimeconfig.cache
 D:\Git\C#\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\ref\DatabaseBETA.dll
 D:\Git\C#\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.LoginForm.resources
+C:\Users\mac-alex\source\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.LoginForm.resources

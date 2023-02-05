@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace DatabaseBETA
 {
-    public class UnitOfWork : IDisposable
+    public class UnitOfWork //: IDisposable
     {
         private static UnitOfWork instance = null;
         private static readonly object locker = new object();
 
-        private SqlConnection con = Database.Instance.GetDBConnection();
         public List<string> queries = new List<string>();
+        private List<SqlCommand> commands = new List<SqlCommand>();
 
         public static UnitOfWork Instance
         {
@@ -28,6 +28,16 @@ namespace DatabaseBETA
                     return instance;
                 }
             }
+        }
+
+        public void Add(SqlCommand command)
+        {
+
+        }
+
+        public void Remove()
+        {
+
         }
 
         public void Commit()

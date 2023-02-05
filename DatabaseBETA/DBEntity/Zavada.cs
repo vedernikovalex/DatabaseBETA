@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +15,7 @@ namespace DatabaseBETA
         private string description;
 
         //Nalez tabulka
-        private int nalezl_id;
+        private int nalez_id;
         private int kontrola_id;
 
         public int Id
@@ -37,8 +39,8 @@ namespace DatabaseBETA
         //nalez
         public int Nalez_id
         {
-            get { return nalezl_id; }
-            set { nalezl_id = value; }
+            get { return nalez_id; }
+            set { nalez_id = value; }
         }
 
         public int Kontrola_id
@@ -47,13 +49,24 @@ namespace DatabaseBETA
             set { kontrola_id = value; }
         }
 
-        public Zavada(int id, string category, string description, int nalezl_id, int kontrola_id)
+        public Zavada()
         {
-            this.id = id;
-            this.category = category;
-            this.description = description;
-            this.nalezl_id = nalezl_id;
-            this.kontrola_id = kontrola_id;
+
+        }
+
+        public Zavada(SqlDataReader reader)
+        {
+            this.id = reader.GetInt32(0);
+            this.category = reader.GetString(1);
+            this.description = reader.GetString(2);
+            //get nalez_id (table id)
+            this.nalez_id = reader.GetInt32(4); // WRONG ID
+            this.kontrola_id = reader.GetInt32(3);
+        }
+
+        public override string? ToString()
+        {
+            return string.Format("ID: {0} | Category: {1} | Description: {2} | Nalez_id: {3} | Kontrola_id: {4} ",id,category,description,nalez_id,kontrola_id);
         }
     }
 }
