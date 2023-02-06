@@ -45,7 +45,7 @@ namespace DatabaseBETA
                     var data = new T();
                     while (reader.Read())
                     {
-                        data = ((T)Activator.CreateInstance(typeof(T), reader));
+                        data = (T)Activator.CreateInstance(typeof(T), reader);
                     }
                     con.Close();
 
@@ -61,15 +61,30 @@ namespace DatabaseBETA
             cmd = new SqlCommand(command, con);
             using (cmd)
             {
-                using (var reader = cmd.ExecuteReader())
-                {
-                    var data = new T();
-                    while (reader.Read())
-                    {
-                        data = ((T)Activator.CreateInstance(typeof(T), reader));
-                    }
-                    con.Close();
-                }
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+        }
+
+        public void Update(string command)
+        {
+            con.Open();
+            cmd = new SqlCommand(command, con);
+            using (cmd)
+            {
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+        }
+
+        public void Delete(string command)
+        {
+            con.Open();
+            cmd = new SqlCommand(command, con);
+            using (cmd)
+            {
+                cmd.ExecuteNonQuery();
+                con.Close();
             }
         }
     }

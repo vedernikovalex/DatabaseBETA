@@ -6,49 +6,48 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace DatabaseBETA
 {
-    public partial class LoginForm : Form
+    public partial class Create : Form
     {
         private string loginInput;
         private string passwordInput;
-        private bool loggedIn = false;
         private Database database;
 
-        public LoginForm()
+        public Create()
         {
             InitializeComponent();
             database = new Database();
         }
 
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            e.Cancel = false;
+            base.OnFormClosing(e);
+            Environment.Exit(0);
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
-            Debug.WriteLine("Label 1 clicked");
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            loginInput = usernameBox.Text;
         }
 
         private void passwordBox_TextChanged(object sender, EventArgs e)
         {
-            passwordInput = passwordBox.Text;
         }
 
         private void loginButton_Click(object sender, EventArgs e)
         {
+            //TODO kontrola a prihlaseni pomoci user
             if (String.IsNullOrEmpty(loginInput) || String.IsNullOrEmpty(passwordInput))
             {
                 MessageBox.Show("Login or Password was empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (!String.IsNullOrEmpty(loginInput) && !String.IsNullOrEmpty(passwordInput))
+            else
             {
-                loggedIn = true;
-                ZavadaRepository repo = new ZavadaRepository();
-                var result = repo.GetAll();
-                foreach (var i in result)
-                {
-                    Debug.WriteLine("ITEM: "+i);
-                }
+
             }
         }
 
@@ -56,6 +55,12 @@ namespace DatabaseBETA
         {
             //database = new Database();
             //database.Connect();
+        }
+
+        private void personButton_Click(object sender, EventArgs e)
+        {
+            mainMenu.Hide();
+
         }
     }
 }

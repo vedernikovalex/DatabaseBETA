@@ -13,4 +13,13 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Forms\Create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>

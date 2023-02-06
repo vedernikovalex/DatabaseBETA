@@ -9,7 +9,7 @@ namespace DatabaseBETA
     public interface IZavadaRepository
     {
         IEnumerable<Zavada> GetAll();
-        Zavada GetById();
+        Zavada GetById(int id);
         void Insert(Zavada zavada);
         void Update(Zavada zavada);
         void Delete(Zavada zavada);
