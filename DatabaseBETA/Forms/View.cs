@@ -6,16 +6,14 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace DatabaseBETA
 {
-    public partial class Create : Form
+    public partial class View : Form
     {
         private string loginInput;
         private string passwordInput;
-        private Database database;
 
-        public Create()
+        public View()
         {
             InitializeComponent();
-            database = new Database();
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -60,6 +58,7 @@ namespace DatabaseBETA
         private void personButton_Click(object sender, EventArgs e)
         {
             mainMenu.Hide();
+
         }
     }
 }

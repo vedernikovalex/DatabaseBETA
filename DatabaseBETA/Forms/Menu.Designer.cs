@@ -101,6 +101,7 @@
             this.logoutButton.Size = new System.Drawing.Size(102, 101);
             this.logoutButton.TabIndex = 9;
             this.logoutButton.UseVisualStyleBackColor = false;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // label2
             // 

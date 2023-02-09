@@ -8,16 +8,16 @@ namespace DatabaseBETA
 {
     public class ProvozovatelVozidla
     {
-        private int id;
-        private int osoba_fyzicka_id;
-        private int osoba_pravnicka_id;
-        private string adresa_ulice;
-        private string adresa_cislo_popisne;
-        private int adresa_psc;
-        private string adresa_obec;
-        private int telefonni_cislo;
-        private string email;
-        private string adresa_mesto;
+        public int id;
+        public int osoba_fyzicka_id;
+        public int osoba_pravnicka_id;
+        public string adresa_ulice;
+        public string adresa_cislo_popisne;
+        public int adresa_psc;
+        public string adresa_obec;
+        public int telefonni_cislo;
+        public string email;
+        public string adresa_mesto;
 
 
     }

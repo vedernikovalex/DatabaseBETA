@@ -9,6 +9,8 @@ namespace DatabaseBETA
     public partial class Menu : Form
     {
         private Create createForm = new Create();
+        private LoginForm loginForm = new LoginForm();
+        private View viewForm = new View();
 
         public Menu()
         {
@@ -39,7 +41,8 @@ namespace DatabaseBETA
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            viewForm.ShowDialog();
         }
 
         private void guestButton_Click(object sender, EventArgs e)
@@ -79,6 +82,12 @@ namespace DatabaseBETA
         {
             this.Hide();
             createForm.ShowDialog();
+        }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            loginForm.ShowDialog();
         }
     }
 }

@@ -14,6 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Forms\View.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Create.cs">
       <SubType>Form</SubType>
     </Compile>
