@@ -11,12 +11,10 @@ namespace DatabaseBETA
         private string loginInput;
         private string passwordInput;
         private Database database;
-        private Menu menuForm = new Menu();
 
         public LoginForm()
         {
             InitializeComponent();
-            database = new Database();
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -51,8 +49,9 @@ namespace DatabaseBETA
             }
             else
             {
+                database = new Database();
                 this.Hide();
-                menuForm.ShowDialog();
+                Forms.menuForm.ShowDialog();
             }
         }
 

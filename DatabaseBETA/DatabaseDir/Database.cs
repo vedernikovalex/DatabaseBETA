@@ -52,7 +52,7 @@ namespace DatabaseBETA
 
         private void ConnectionStringBuilder()
         {
-            conStrBuilder.DataSource = @"(LocalDb)\beta";
+            conStrBuilder.DataSource = @"localhost";
             conStrBuilder.InitialCatalog = "technicka_kontrola";
             conStrBuilder.IntegratedSecurity = true;
             connectionString = conStrBuilder.ConnectionString;
@@ -81,7 +81,6 @@ namespace DatabaseBETA
             {
                 Debug.WriteLine(ex);
             }
-
         }
     }
 }

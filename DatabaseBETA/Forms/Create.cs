@@ -10,12 +10,10 @@ namespace DatabaseBETA
     {
         private string loginInput;
         private string passwordInput;
-        private Database database;
 
         public Create()
         {
             InitializeComponent();
-            database = new Database();
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)

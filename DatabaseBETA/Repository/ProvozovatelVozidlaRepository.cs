@@ -6,12 +6,31 @@ using System.Threading.Tasks;
 
 namespace DatabaseBETA
 {
-    public class ProvozovatelVozidlaRepository : IProvozovatelVozidlaRepository
+    public class ProvozovatelVozidlaRepository : IProvozovatelVozidlaRepository , IDisposable
     {
-        private bool disposed = false;
-        private string command, command2;
+        private string command;
 
         private GenericRepository<ProvozovatelVozidla> repository = new GenericRepository<ProvozovatelVozidla>();
+        private bool disposed = false;
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposed)
+            {
+                if (disposing)
+                {
+                    repository.Dispose();
+                }
+
+                disposed = true;
+            }
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
 
         public IEnumerable<ProvozovatelVozidla> GetAll()
         {

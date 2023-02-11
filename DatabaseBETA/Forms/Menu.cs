@@ -8,9 +8,6 @@ namespace DatabaseBETA
 {
     public partial class Menu : Form
     {
-        private Create createForm = new Create();
-        private LoginForm loginForm = new LoginForm();
-        private View viewForm = new View();
 
         public Menu()
         {
@@ -42,19 +39,7 @@ namespace DatabaseBETA
         private void loginButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            viewForm.ShowDialog();
-        }
-
-        private void guestButton_Click(object sender, EventArgs e)
-        {
-            //database = new Database();
-            //database.Connect();
-            ZavadaRepository repo = new ZavadaRepository();
-            var result = repo.GetAll();
-            foreach (var i in result)
-            {
-                Debug.WriteLine("ITEM: " + i);
-            }
+            Forms.viewForm.ShowDialog();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -81,13 +66,25 @@ namespace DatabaseBETA
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            createForm.ShowDialog();
+            Forms.createForm.ShowDialog();
         }
 
         private void logoutButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            loginForm.ShowDialog();
+            Forms.loginForm.ShowDialog();
+        }
+
+        private void testConnection_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("select @@VERSION;",Database.Instance.Connection);
+            Database.Instance.Connection.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                Debug.WriteLine(reader.GetString(0));
+            }
+            Database.Instance.Connection.Close();
         }
     }
 }

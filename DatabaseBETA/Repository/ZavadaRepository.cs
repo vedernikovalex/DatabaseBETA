@@ -8,8 +8,7 @@ namespace DatabaseBETA
 {
     public class ZavadaRepository : IZavadaRepository//, IDisposable
     {
-        private bool disposed = false;
-        private string command, command2;
+        private string command;
         
         private GenericRepository<Zavada> repository = new GenericRepository<Zavada>() ;
 
@@ -27,19 +26,19 @@ namespace DatabaseBETA
 
         public void Insert(Zavada zavada)
         {
-            command = string.Format("insert into Zavada(kategorie, popis) values ({0},{1});",zavada.Category,zavada.Description);
+            command = string.Format("insert into Zavada(kategorie, popis) values ({0},{1});",zavada.category,zavada.description);
             repository.Insert(command);
         }
 
         public void Update(Zavada zavada)
         {
-            command = string.Format("update Zavada(kategorie, popis) values ({0},{1}) where id={2};", zavada.Category, zavada.Description, zavada.Id);
+            command = string.Format("update Zavada(kategorie, popis) values ({0},{1}) where id={2};", zavada.category, zavada.description, zavada.id);
             repository.Update(command);
         }
 
         public void Delete(Zavada zavada)
         {
-            command = string.Format("delete from Zavada where id={0} ;", zavada.Id);
+            command = string.Format("delete from Zavada where id={0} ;", zavada.id);
             repository.Delete(command);
         }
     }

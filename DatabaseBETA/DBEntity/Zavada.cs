@@ -10,44 +10,13 @@ namespace DatabaseBETA
 {
     public class Zavada
     {
-        private int id;
-        private string category;
-        private string description;
+        public int id;
+        public string category;
+        public string description;
 
         //Nalez tabulka
-        private int nalez_id;
-        private int kontrola_id;
-
-        public int Id
-        {
-            get { return id; }
-            set { id = value; }
-        }
-
-        public string Category
-        {
-            get { return category; }
-            set { category = value; }
-        }
-
-        public string Description
-        {
-            get { return description; }
-            set { description = value; }
-        }
-
-        //nalez
-        public int Nalez_id
-        {
-            get { return nalez_id; }
-            set { nalez_id = value; }
-        }
-
-        public int Kontrola_id
-        {
-            get { return kontrola_id; }
-            set { kontrola_id = value; }
-        }
+        public int nalez_id;
+        public int kontrola_id;
 
         public Zavada()
         {

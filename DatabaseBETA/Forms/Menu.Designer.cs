@@ -38,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.testConnection = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // viewButton
@@ -148,11 +149,22 @@
             this.label7.Text = "ICONS: https://icons8.com";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
+            // testConnection
+            // 
+            this.testConnection.Location = new System.Drawing.Point(711, 857);
+            this.testConnection.Name = "testConnection";
+            this.testConnection.Size = new System.Drawing.Size(102, 45);
+            this.testConnection.TabIndex = 16;
+            this.testConnection.Text = "Test Connection";
+            this.testConnection.UseVisualStyleBackColor = true;
+            this.testConnection.Click += new System.EventHandler(this.testConnection_Click);
+            // 
             // Menu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1480, 957);
+            this.Controls.Add(this.testConnection);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -184,5 +196,6 @@
         private Label label3;
         private Label label5;
         private Label label7;
+        private Button testConnection;
     }
 }

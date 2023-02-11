@@ -24,6 +24,7 @@ D:\Git\C#\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.
 D:\Git\C#\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.Create.resources
 D:\Git\C#\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.LoginForm.resources
 D:\Git\C#\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.Menu.resources
+D:\Git\C#\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.View.resources
 D:\Git\C#\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.Properties.Resources.resources
 D:\Git\C#\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.csproj.GenerateResource.cache
 D:\Git\C#\repos\DatabaseBETA\DatabaseBETA\obj\Debug\net6.0-windows\DatabaseBETA.GeneratedMSBuildEditorConfig.editorconfig

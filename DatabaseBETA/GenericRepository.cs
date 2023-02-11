@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,22 @@ namespace DatabaseBETA
         private SqlConnection con = Database.Instance.Connection;
         private SqlCommand cmd;
 
+        private bool disposed = false;
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposed)
+            {
+                disposed = true;
+            }
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
         public IEnumerable<T> GetAll(string command)
         {
             con.Open();
@@ -22,6 +39,7 @@ namespace DatabaseBETA
                 using (var reader = cmd.ExecuteReader())
                 {
                     var data = new List<T>();
+
                     while (reader.Read())
                     {
                         data.Add((T)Activator.CreateInstance(typeof(T), reader));
