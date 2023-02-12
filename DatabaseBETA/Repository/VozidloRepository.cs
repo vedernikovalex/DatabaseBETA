@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,9 @@ namespace DatabaseBETA
 {
     public class VozidloRepository
     {
-        private string command;
+        private SqlCommand command;
+        private string cmdString;
+        private SqlConnection con = Database.Instance.Connection;
         private GenericRepository<Vozidlo> repository = new GenericRepository<Vozidlo>();
 
         private bool disposed = false;
@@ -34,31 +37,57 @@ namespace DatabaseBETA
 
         public IEnumerable<Vozidlo> GetAll()
         {
-            command = "select v.ID,v.kategorie_vozidla_ID,v.tovarni_znacka,v.obchodni_oznaceni,v.VIN,v.cislo_technickeho_prukazu,v.najeto_km,v.registracni_znacka,v.datum_prvni_registrace,v.barva,k.nazev from Vozidlo v inner join Kategorie_Vozidla k on k.id = v.kategorie_vozidla_ID;";
+            cmdString = "select v.ID,v.kategorie_vozidla_ID,v.tovarni_znacka,v.obchodni_oznaceni,v.VIN,v.cislo_technickeho_prukazu,v.najeto_km,v.registracni_znacka,v.datum_prvni_registrace,v.barva,k.nazev from Vozidlo v inner join Kategorie_Vozidla k on k.id = v.kategorie_vozidla_ID;";
+            command = new SqlCommand(cmdString, con);
             return repository.GetAll(command);
         }
 
         public Vozidlo GetById(int id)
         {
-            command = string.Format("select v.ID,v.kategorie_vozidla_ID,v.tovarni_znacka,v.obchodni_oznaceni,v.VIN,v.cislo_technickeho_prukazu,v.najeto_km,v.registracni_znacka,v.datum_prvni_registrace,v.barva,k.nazev from Vozidlo v inner join Kategorie_Vozidla k on k.id = v.kategorie_vozidla_ID where v.ID = {0};", id);
+            cmdString = "select v.ID,v.kategorie_vozidla_ID,v.tovarni_znacka,v.obchodni_oznaceni,v.VIN,v.cislo_technickeho_prukazu,v.najeto_km,v.registracni_znacka,v.datum_prvni_registrace,v.barva,k.nazev from Vozidlo v inner join Kategorie_Vozidla k on k.id = v.kategorie_vozidla_ID where v.ID =@id;";
+            command = new SqlCommand(cmdString, con);
+            command.Parameters.AddWithValue("id", id);
             return repository.GetById(command);
         }
 
         public void Insert(Vozidlo vozidlo)
         {
-            command = string.Format("insert into Vozidlo(kategorie_vozidla_id,tovarni_znacka,obchodni_oznaceni,VIN,cislo_technickeho_prukazu,najeto_km,registracni_znacka,datum_prvni_registrace,barva) values ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9});", vozidlo.kategorie_vozidla_id,vozidlo.tovarni_znacka,vozidlo.obchodni_oznaceni,vozidlo.VIN,vozidlo.cislo_technickeho_prukazu,vozidlo.najeto_km,vozidlo.registracni_znacka,vozidlo.datum_prvni_registrace,vozidlo.barva );
+            cmdString = "insert into Vozidlo(kategorie_vozidla_id,tovarni_znacka,obchodni_oznaceni,VIN,cislo_technickeho_prukazu,najeto_km,registracni_znacka,datum_prvni_registrace,barva) values (@kategorie_vozidla_id,@tovarni_znacka,@obchodni_oznaceni,@VIN,@cislo_technickeho_prukazu,@najeto_km,@registracni_znacka,@datum_prvni_registrace,@barva);";
+            command = new SqlCommand(cmdString, con);
+            command.Parameters.AddWithValue("kategorie_vozidla_id", vozidlo.kategorie_vozidla_id);
+            command.Parameters.AddWithValue("tovarni_znacka", vozidlo.tovarni_znacka);
+            command.Parameters.AddWithValue("obchodni_oznaceni", vozidlo.obchodni_oznaceni);
+            command.Parameters.AddWithValue("VIN", vozidlo.VIN);
+            command.Parameters.AddWithValue("cislo_technickeho_prukazu", vozidlo.cislo_technickeho_prukazu);
+            command.Parameters.AddWithValue("najeto_km", vozidlo.najeto_km);
+            command.Parameters.AddWithValue("registracni_znacka", vozidlo.registracni_znacka);
+            command.Parameters.AddWithValue("datum_prvni_registrace", vozidlo.datum_prvni_registrace == DateTime.MinValue ? (object)DBNull.Value : vozidlo.datum_prvni_registrace);
+            command.Parameters.AddWithValue("barva", vozidlo.barva);
             repository.Insert(command);
         }
 
-        public void Update(Vozidlo vozidlo)
+        public void Update(Vozidlo vozidlo, int id)
         {
-            command = string.Format("update Vozidlo(kategorie_vozidla_id,tovarni_znacka,obchodni_oznaceni,VIN,cislo_technickeho_prukazu,najeto_km,registracni_znacka,datum_prvni_registrace,barva) values ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10}) where id={0};", vozidlo.id, vozidlo.kategorie_vozidla_id, vozidlo.tovarni_znacka, vozidlo.obchodni_oznaceni, vozidlo.VIN, vozidlo.cislo_technickeho_prukazu, vozidlo.najeto_km, vozidlo.registracni_znacka, vozidlo.datum_prvni_registrace, vozidlo.barva);
+            cmdString = "insert into Vozidlo(kategorie_vozidla_id,tovarni_znacka,obchodni_oznaceni,VIN,cislo_technickeho_prukazu,najeto_km,registracni_znacka,datum_prvni_registrace,barva) values (@kategorie_vozidla_id,@tovarni_znacka,@obchodni_oznaceni,@VIN,@cislo_technickeho_prukazu,@najeto_km,@registracni_znacka,@datum_prvni_registrace,@barva) where id=@id;";
+            command = new SqlCommand(cmdString, con);
+            command.Parameters.AddWithValue("kategorie_vozidla_id", vozidlo.kategorie_vozidla_id);
+            command.Parameters.AddWithValue("tovarni_znacka", vozidlo.tovarni_znacka);
+            command.Parameters.AddWithValue("obchodni_oznaceni", vozidlo.obchodni_oznaceni);
+            command.Parameters.AddWithValue("VIN", vozidlo.VIN);
+            command.Parameters.AddWithValue("cislo_technickeho_prukazu", vozidlo.cislo_technickeho_prukazu);
+            command.Parameters.AddWithValue("najeto_km", vozidlo.najeto_km);
+            command.Parameters.AddWithValue("registracni_znacka", vozidlo.registracni_znacka);
+            command.Parameters.AddWithValue("datum_prvni_registrace", vozidlo.datum_prvni_registrace == DateTime.MinValue ? (object)DBNull.Value : vozidlo.datum_prvni_registrace);
+            command.Parameters.AddWithValue("barva", vozidlo.barva);
+            command.Parameters.AddWithValue("id", id);
             repository.Update(command);
         }
 
-        public void Delete(Vozidlo vozidlo)
+        public void Delete(int id)
         {
-            command = string.Format("delete from Vozidlo where id={0} ;", vozidlo.id);
+            cmdString = "delete from Vozidlo where id=@id; ";
+            command = new SqlCommand(cmdString, con);
+            command.Parameters.AddWithValue("id", id);
             repository.Delete(command);
         }
 

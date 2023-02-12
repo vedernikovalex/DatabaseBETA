@@ -80,14 +80,17 @@ namespace DatabaseBETA
 
                 jmenoLabel.Hide();
                 personJmeno.Hide();
+                personJmeno.Clear();
 
                 prijmeniLabel.Hide();
                 personPrijmeni.Hide();
+                personPrijmeni.Clear();
             }
             else
             {
                 nazevFLabel.Hide();
                 personNazevF.Hide();
+                personNazevF.Clear();
 
                 jmenoLabel.Show();
                 personJmeno.Show();
@@ -97,25 +100,31 @@ namespace DatabaseBETA
             }
         }
 
-        private void personCreate_Click(object sender, EventArgs e)
+        private ProvozovatelVozidla PersonCreate()
         {
             provozovatel = new ProvozovatelVozidla();
+            int fyzickaid = 0;
+            int pravnickaid = 0;
             //todo podminky
             if (personBool.Checked)
             {
                 osobaPravnicka = new OsobaPravnicka();
                 osobaPravnicka.nazev_firmy = personNazevF.Text;
                 OsobaPravnickaRepository repo = new OsobaPravnickaRepository();
-                repo.Insert(osobaPravnicka);
+                pravnickaid = repo.InsertRetrieveId(osobaPravnicka);
+                repo.Dispose();
             }
-            else 
+            else
             {
                 osobaFyzicka = new OsobaFyzicka();
                 osobaFyzicka.jmeno = personJmeno.Text;
                 osobaFyzicka.prijmeni = personPrijmeni.Text;
                 OsobaFyzickaRepository repo = new OsobaFyzickaRepository();
-                repo.Insert(osobaFyzicka);
+                fyzickaid = repo.InsertRetrieveId(osobaFyzicka);
+                repo.Dispose();
             }
+            provozovatel.osoba_fyzicka_id = fyzickaid;
+            provozovatel.osoba_pravnicka_id = pravnickaid;
             provozovatel.adresa_ulice = personUlice.Text;
             provozovatel.adresa_cislo_popisne = personPopisne.Text;
             provozovatel.adresa_psc = Int32.Parse(personPsc.Text);
@@ -124,19 +133,121 @@ namespace DatabaseBETA
             provozovatel.email = personEmail.Text;
             provozovatel.adresa_mesto = personMesto.Text;
 
-            ProvozovatelVozidlaRepository repoProvozovatel = new ProvozovatelVozidlaRepository();
-            repoProvozovatel.Insert(provozovatel);
+            return provozovatel;
+        }
 
+        private void personCreate_Click(object sender, EventArgs e)
+        {
+            ProvozovatelVozidlaRepository repoProvozovatel = new ProvozovatelVozidlaRepository();
+            repoProvozovatel.Insert(PersonCreate());
+            repoProvozovatel.Dispose();
         }
 
         private void personUpdate_Click(object sender, EventArgs e)
         {
-
+            ProvozovatelVozidlaRepository repoProvozovatel = new ProvozovatelVozidlaRepository();
+            repoProvozovatel.Update(PersonCreate(), Int32.Parse(personId.Text));
+            repoProvozovatel.Dispose();
         }
 
         private void personDelete_Click(object sender, EventArgs e)
         {
+            ProvozovatelVozidlaRepository repoProvozovatel = new ProvozovatelVozidlaRepository();
+            repoProvozovatel.Delete(Int32.Parse(personId.Text));
+            repoProvozovatel.Dispose();
+        }
 
+        private void commitPerson_Click(object sender, EventArgs e)
+        {
+            if (UnitOfWork.Instance.localTransActive)
+            {
+                UnitOfWork.Instance.Commit();
+            }
+            else
+            {
+                MessageBox.Show("No transaction found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void rollbackPerson_Click(object sender, EventArgs e)
+        {
+            if (UnitOfWork.Instance.localTransActive)
+            {
+                UnitOfWork.Instance.Rollback();
+            }
+            else
+            {
+                MessageBox.Show("No transaction found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void personExit_Click(object sender, EventArgs e)
+        {
+            personPanel.Hide();
+            mainMenu.Show();
+        }
+
+        private Vozidlo vozidlo;
+
+        private Vozidlo VozidloCreate()
+        {
+            vozidlo = new Vozidlo();
+            vozidlo.kategorie_vozidla_id = Int32.Parse(repairKategorieId.Text);
+            vozidlo.tovarni_znacka = repairZnacka.Text;
+            vozidlo.obchodni_oznaceni = repairOznaceni.Text;
+            vozidlo.VIN = repairVin.Text;
+            vozidlo.cislo_technickeho_prukazu = repairCisloTp.Text;
+            vozidlo.najeto_km = Int32.Parse(repairNajeto.Text);
+            vozidlo.registracni_znacka = repairSpz.Text;
+            vozidlo.datum_prvni_registrace = repairDatum.Value.Date;
+            vozidlo.barva = repairBarva.Text;
+            return vozidlo;
+        }
+
+        private void repairCreate_Click(object sender, EventArgs e)
+        {
+            VozidloRepository repo = new VozidloRepository();
+            repo.Insert(VozidloCreate());
+            repo.Dispose();
+        }
+
+        private void repairUpdate_Click(object sender, EventArgs e)
+        {
+            VozidloRepository repo = new VozidloRepository();
+            repo.Update(VozidloCreate(), Int32.Parse(repairId.Text));
+            repo.Dispose();
+
+        }
+
+        private void repairDelete_Click(object sender, EventArgs e)
+        {
+            VozidloRepository repo = new VozidloRepository();
+            repo.Delete(Int32.Parse(repairId.Text));
+            repo.Dispose();
+        }
+
+        private void repairCommit_Click(object sender, EventArgs e)
+        {
+            if (UnitOfWork.Instance.localTransActive)
+            {
+                UnitOfWork.Instance.Commit();
+            }
+            else
+            {
+                MessageBox.Show("No transaction found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void repairRollback_Click(object sender, EventArgs e)
+        {
+            if (UnitOfWork.Instance.localTransActive)
+            {
+                UnitOfWork.Instance.Rollback();
+            }
+            else
+            {
+                MessageBox.Show("No transaction found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

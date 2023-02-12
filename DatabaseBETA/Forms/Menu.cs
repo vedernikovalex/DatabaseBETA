@@ -1,8 +1,5 @@
 using System.Data.SqlClient;
-using System.Configuration;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Diagnostics;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace DatabaseBETA
 {
@@ -77,7 +74,7 @@ namespace DatabaseBETA
 
         private void testConnection_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("select @@VERSION;",Database.Instance.Connection);
+            SqlCommand cmd = new SqlCommand("select @@VERSION;", Database.Instance.Connection);
             Database.Instance.Connection.Open();
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())

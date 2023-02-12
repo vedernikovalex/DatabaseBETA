@@ -10,8 +10,8 @@ namespace DatabaseBETA
     {
         IEnumerable<OsobaPravnicka> GetAll();
         OsobaPravnicka GetById(int id);
-        void Insert(OsobaPravnicka osobaPravnicka);
-        void Update(OsobaPravnicka osobaPravnicka);
-        void Delete(OsobaPravnicka osobaPravnicka);
+        int InsertRetrieveId(OsobaPravnicka osobaPravnicka);
+        void Update(OsobaPravnicka osobaPravnicka, int id);
+        void Delete(int id);
     }
 }

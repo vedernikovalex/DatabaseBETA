@@ -18,7 +18,7 @@ namespace DatabaseBETA
         public string cislo_technickeho_prukazu;
         public int najeto_km;
         public string registracni_znacka;
-        public DateTime datum_prvni_registrace;
+        public DateTime datum_prvni_registrace = DateTime.MinValue;
         public string barva;
         //kategorie vozidla
         public string kategorie_vozidla_nazev;

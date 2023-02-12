@@ -11,7 +11,7 @@ namespace DatabaseBETA
         IEnumerable<Zavada> GetAll();
         Zavada GetById(int id);
         void Insert(Zavada zavada);
-        void Update(Zavada zavada);
-        void Delete(Zavada zavada);
+        void Update(Zavada zavada, int id);
+        void Delete(int id);
     }
 }

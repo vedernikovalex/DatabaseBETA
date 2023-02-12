@@ -11,7 +11,7 @@ namespace DatabaseBETA
         IEnumerable<Kontrola> GetAll();
         Kontrola GetById(int id);
         void Insert(Kontrola kontrola);
-        void Update(Kontrola kontrola);
-        void Delete(Kontrola kontrola);
+        void Update(Kontrola kontrola, int id);
+        void Delete(int id);
     }
 }

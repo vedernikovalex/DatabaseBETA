@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,9 +9,11 @@ namespace DatabaseBETA
 {
     public class ProvozovatelVozidlaRepository : IProvozovatelVozidlaRepository , IDisposable
     {
-        private string command;
+        private SqlCommand command;
+        private string cmdString;
 
         private GenericRepository<ProvozovatelVozidla> repository = new GenericRepository<ProvozovatelVozidla>();
+        private SqlConnection con = Database.Instance.Connection;
         private bool disposed = false;
 
         protected virtual void Dispose(bool disposing)
@@ -34,31 +37,58 @@ namespace DatabaseBETA
 
         public IEnumerable<ProvozovatelVozidla> GetAll()
         {
-            command = "select * from Provozovatel_Vozidla;";
+            cmdString = "select * from Provozovatel_Vozidla;";
+            command = new SqlCommand(cmdString, con);
             return repository.GetAll(command);
         }
 
         public ProvozovatelVozidla GetById(int id)
         {
-            command = string.Format("select * from Provozovatel_Vozidla where id = {0};", id);
+            cmdString = "select* from Provozovatel_Vozidla where id = @id; ";
+            command = new SqlCommand(cmdString, con);
+            command.Parameters.AddWithValue("id", id);
             return repository.GetById(command);
         }
 
         public void Insert(ProvozovatelVozidla provozovatel)
         {
-            command = string.Format("insert into Provozovatel_Vozidla(osoba_fyzicka_id,osoba_pravnicka_id,adresa_ulice,adresa_cislo_popisne,adresa_psc,adresa_obec,telefonni_cislo,email,adresa_mesto) values ({0},{1},{2},{3},{4},{5},{6},{7},{8});", provozovatel.osoba_fyzicka_id, provozovatel.osoba_pravnicka_id, provozovatel.adresa_ulice, provozovatel.adresa_cislo_popisne, provozovatel.adresa_psc, provozovatel.adresa_obec, provozovatel.telefonni_cislo, provozovatel.email, provozovatel.adresa_mesto);
+            cmdString = "INSERT INTO Provozovatel_Vozidla (osoba_fyzicka_id, osoba_pravnicka_id, adresa_ulice, adresa_cislo_popisne, adresa_psc, adresa_obec, telefonni_cislo, email, adresa_mesto) VALUES (@osoba_fyzicka_id, @osoba_pravnicka_id, @adresa_ulice, @adresa_cislo_popisne, @adresa_psc, @adresa_obec, @telefonni_cislo, @email, @adresa_mesto);";
+            command = new SqlCommand(cmdString, con);
+            command.Parameters.AddWithValue("osoba_fyzicka_id", provozovatel.osoba_fyzicka_id != 0 ? (object)provozovatel.osoba_fyzicka_id : DBNull.Value);
+            command.Parameters.AddWithValue("osoba_pravnicka_id", provozovatel.osoba_pravnicka_id != 0 ? (object)provozovatel.osoba_pravnicka_id : DBNull.Value);
+            command.Parameters.AddWithValue("adresa_ulice", provozovatel.adresa_ulice);
+            command.Parameters.AddWithValue("adresa_cislo_popisne", provozovatel.adresa_cislo_popisne);
+            command.Parameters.AddWithValue("adresa_psc", provozovatel.adresa_psc);
+            command.Parameters.AddWithValue("adresa_obec", provozovatel.adresa_obec);
+            command.Parameters.AddWithValue("telefonni_cislo", provozovatel.telefonni_cislo);
+            command.Parameters.AddWithValue("email", provozovatel.email);
+            command.Parameters.AddWithValue("adresa_mesto", provozovatel.adresa_mesto);
             repository.Insert(command);
         }
 
-        public void Update(ProvozovatelVozidla provozovatel)
+        public void Update(ProvozovatelVozidla provozovatel, int id)
         {
-            command = string.Format("update Provozovatel_Vozidla(osoba_fyzicka_id,osoba_pravnicka_id,adresa_ulice,adresa_cislo_popisne,adresa_psc,adresa_obec,telefonni_cislo,email,adresa_mesto) values ({0},{1},{2},{3},{4},{5},{6},{7},{8}) where id={9};", provozovatel.osoba_fyzicka_id, provozovatel.osoba_pravnicka_id, provozovatel.adresa_ulice, provozovatel.adresa_cislo_popisne, provozovatel.adresa_psc, provozovatel.adresa_obec, provozovatel.telefonni_cislo, provozovatel.email, provozovatel.adresa_mesto, provozovatel.id);
+            cmdString = "INSERT INTO Provozovatel_Vozidla (osoba_fyzicka_id, osoba_pravnicka_id, adresa_ulice, adresa_cislo_popisne, adresa_psc, adresa_obec, telefonni_cislo, email, adresa_mesto) VALUES (@osoba_fyzicka_id, @osoba_pravnicka_id, @adresa_ulice, @adresa_cislo_popisne, @adresa_psc, @adresa_obec, @telefonni_cislo, @email, @adresa_mesto) where id = @id;";
+            command = new SqlCommand(cmdString, con);
+            command.Parameters.AddWithValue("osoba_fyzicka_id", provozovatel.osoba_fyzicka_id != 0 ? (object)provozovatel.osoba_fyzicka_id : DBNull.Value);
+            command.Parameters.AddWithValue("osoba_pravnicka_id", provozovatel.osoba_pravnicka_id != 0 ? (object)provozovatel.osoba_pravnicka_id : DBNull.Value);
+            command.Parameters.AddWithValue("adresa_ulice", provozovatel.adresa_ulice);
+            command.Parameters.AddWithValue("adresa_cislo_popisne", provozovatel.adresa_cislo_popisne);
+            command.Parameters.AddWithValue("adresa_psc", provozovatel.adresa_psc);
+            command.Parameters.AddWithValue("adresa_obec", provozovatel.adresa_obec);
+            command.Parameters.AddWithValue("telefonni_cislo", provozovatel.telefonni_cislo);
+            command.Parameters.AddWithValue("email", provozovatel.email);
+            command.Parameters.AddWithValue("adresa_mesto", provozovatel.adresa_mesto);
+
+            command.Parameters.AddWithValue("id", id);
             repository.Update(command);
         }
 
-        public void Delete(ProvozovatelVozidla provozovatel)
+        public void Delete(int id)
         {
-            command = string.Format("delete from Provozovatel_Vozidla where id={0} ;", provozovatel.id);
+            cmdString = "delete from Provozovatel_Vozidla where id = @id; ";
+            command = new SqlCommand(cmdString, con);
+            command.Parameters.AddWithValue("id", id);
             repository.Delete(command);
         }
     }

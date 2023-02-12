@@ -11,7 +11,7 @@ namespace DatabaseBETA
         IEnumerable<Vozidlo> GetAll();
         Vozidlo GetById(int id);
         void Insert(Vozidlo vozidlo);
-        void Update(Vozidlo vozidlo);
-        void Delete(Vozidlo vozidlo);
+        void Update(Vozidlo vozidlo, int id);
+        void Delete(int id);
     }
 }

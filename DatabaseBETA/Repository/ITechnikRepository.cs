@@ -11,7 +11,7 @@ namespace DatabaseBETA
         IEnumerable<Technik> GetAll();
         Technik GetById(int id);
         void Insert(Technik technik);
-        void Update(Technik technik);
-        void Delete(Technik technik);
+        void Update(Technik technik, int id);
+        void Delete(int id);
     }
 }

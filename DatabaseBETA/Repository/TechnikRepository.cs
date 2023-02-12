@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,9 @@ namespace DatabaseBETA
 {
     public class TechnikRepository : ITechnikRepository, IDisposable
     {
-        private string command;
+        private SqlCommand command;
+        private string cmdString;
+        private SqlConnection con = Database.Instance.Connection;
         private GenericRepository<Technik> repository = new GenericRepository<Technik>();
 
         private bool disposed = false;
@@ -34,31 +37,45 @@ namespace DatabaseBETA
 
         public IEnumerable<Technik> GetAll()
         {
-            command = "select * from Technik;";
+            cmdString = "select * from Technik;";
+            command = new SqlCommand(cmdString, con);
             return repository.GetAll(command);
         }
 
         public Technik GetById(int id)
         {
-            command = string.Format("select * from Technik where id = {0};", id);
+            cmdString = "select * from Technik where id=@id;";
+            command = new SqlCommand(cmdString, con);
+            command.Parameters.AddWithValue("id", id);
             return repository.GetById(command);
         }
 
         public void Insert(Technik technik)
         {
-            command = string.Format("insert into Technik(jmeno,prijmeni,nadrizeny_technik) values ({0},{1});", technik.jmeno, technik.prijmeni, technik.nadrizeny_technik);
+            cmdString = "insert into Technik(jmeno,prijmeni,nadrizeny_technik) values (@jmeno,@prijmeni,@nadrizeny_technik);";
+            command = new SqlCommand(cmdString, con);
+            command.Parameters.AddWithValue("jmeno", technik.jmeno);
+            command.Parameters.AddWithValue("prijmeni", technik.prijmeni);
+            command.Parameters.AddWithValue("nadrizeny_technik", technik.nadrizeny_technik);
             repository.Insert(command);
         }
 
-        public void Update(Technik technik)
+        public void Update(Technik technik, int id)
         {
-            command = string.Format("update Technik(jmeno,prijmeni,nadrizeny_technik) values ({1},{2},{3}) where id={0};", technik.id, technik.jmeno, technik.prijmeni, technik.nadrizeny_technik);
+            cmdString = "insert into Technik(jmeno,prijmeni,nadrizeny_technik) values (@jmeno,@prijmeni,@nadrizeny_technik) where id=@id;";
+            command = new SqlCommand(cmdString, con);
+            command.Parameters.AddWithValue("jmeno", technik.jmeno);
+            command.Parameters.AddWithValue("prijmeni", technik.prijmeni);
+            command.Parameters.AddWithValue("nadrizeny_technik", technik.nadrizeny_technik);
+            command.Parameters.AddWithValue("id", id);
             repository.Update(command);
         }
 
-        public void Delete(Technik technik)
+        public void Delete(int id)
         {
-            command = string.Format("delete from Technik where id={0} ;", technik.id);
+            cmdString = "delete from Technik where id=@id; ";
+            command = new SqlCommand(cmdString, con);
+            command.Parameters.AddWithValue("id", id);
             repository.Delete(command);
         }
 

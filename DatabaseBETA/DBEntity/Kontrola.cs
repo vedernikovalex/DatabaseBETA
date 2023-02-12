@@ -18,7 +18,7 @@ namespace DatabaseBETA
         public int provozovatel_vozidla_id;
         public bool plny_rozsah;
         public DateTime datum;
-        public string poznamka;
+        public string poznamka = "";
         //druh_kontroly
         public string nazev_kontroly;
 

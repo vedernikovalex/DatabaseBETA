@@ -30,10 +30,9 @@ namespace DatabaseBETA
             GC.SuppressFinalize(this);
         }
 
-        public IEnumerable<T> GetAll(string command)
+        public IEnumerable<T> GetAll(SqlCommand cmd)
         {
             con.Open();
-            cmd = new SqlCommand(command,con);
             using (cmd)
             {
                 using (var reader = cmd.ExecuteReader())
@@ -52,10 +51,9 @@ namespace DatabaseBETA
             }
         }
 
-        public T GetById(string command)
+        public T GetById(SqlCommand cmd)
         {
             con.Open();
-            cmd = new SqlCommand(command, con);
             using (cmd)
             {
                 using (var reader = cmd.ExecuteReader())
@@ -73,36 +71,51 @@ namespace DatabaseBETA
             }
         }
 
-        public void Insert(string command)
+        public void Insert(SqlCommand cmd)
         {
-            con.Open();
-            cmd = new SqlCommand(command, con);
+            if(con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
             using (cmd)
             {
-                cmd.ExecuteNonQuery();
-                con.Close();
+                UnitOfWork.Instance.Add(cmd);
             }
         }
 
-        public void Update(string command)
+        public int InsertRetrieveId(SqlCommand cmd)
         {
-            con.Open();
-            cmd = new SqlCommand(command, con);
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
             using (cmd)
             {
-                cmd.ExecuteNonQuery();
-                con.Close();
+                return UnitOfWork.Instance.RetrieveId(cmd);
             }
         }
 
-        public void Delete(string command)
+        public void Update(SqlCommand cmd)
         {
-            con.Open();
-            cmd = new SqlCommand(command, con);
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
             using (cmd)
             {
-                cmd.ExecuteNonQuery();
-                con.Close();
+                UnitOfWork.Instance.Add(cmd);
+            }
+        }
+
+        public void Delete(SqlCommand cmd)
+        {
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+            using (cmd)
+            {
+                UnitOfWork.Instance.Add(cmd);
             }
         }
     }

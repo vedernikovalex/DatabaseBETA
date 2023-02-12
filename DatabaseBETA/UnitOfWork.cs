@@ -18,7 +18,7 @@ namespace DatabaseBETA
 
         private SqlConnection con = Database.Instance.Connection;
         private SqlTransaction transaction;
-        private bool localTransActive = false;
+        public bool localTransActive = false;
 
         public static UnitOfWork Instance
         {
@@ -37,68 +37,90 @@ namespace DatabaseBETA
 
         public void Add(SqlCommand command)
         {
-            if (!localTransActive)
-            {
-                con.Open();
-                transaction = con.BeginTransaction();
-                localTransActive = true;
-            }
-            command.Connection = con;
-            command.Transaction = transaction;
-
-            commands.Add(command);
-
             try
             {
-                command.ExecuteNonQuery();
+                if (!localTransActive)
+                {
+                    Debug.WriteLine("ADD CON");
+                    transaction = con.BeginTransaction();
+                    localTransActive = true;
+                }
+                command.Connection = con;
+                command.Transaction = transaction;
+
+                commands.Add(command);
+
+                try
+                {
+                    command.ExecuteNonQuery();
+                }
+                catch (SqlException ex)
+                {
+                    Debug.WriteLine(ex.Message);
+                    MessageBox.Show("Error occured in sql command. Please make sure given inputs are correct!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex.Message);
+                    MessageBox.Show("Unknown error occured!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
+                MessageBox.Show("Unknown error occured!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        public void Commit(SqlTransaction transaction)
+        public void Commit()
         {
             try
             {
-                transaction.Commit();
+                if (localTransActive)
+                {
+                    transaction.Commit();
 
-                localTransActive = false;
+                    localTransActive = false;
 
-                con.Close();
-                Log(commands, true);
-                commands.Clear();
+                    con.Close();
+                    Log(commands, false);
+                    commands.Clear();
 
-                Debug.WriteLine("Queries successfully writen to a database");
+                    Debug.WriteLine("Queries successfully writen into a database");
+                }
             }
             catch (Exception ex)
             {
                 Debug.WriteLine("Commit error");
-                Debug.WriteLine(ex.Message);
+                Debug.WriteLine(ex.ToString());
                 Debug.WriteLine("Rollback start");
-                Rollback(transaction);
+                MessageBox.Show("Commit error! \nRollback start.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Rollback();
             }
         }
 
-        public void Rollback(SqlTransaction transaction)
+        public void Rollback()
         {
             try
             {
-                transaction.Rollback();
+                if (localTransActive)
+                {
+                    transaction.Rollback();
 
-                localTransActive = false;
+                    localTransActive = false;
 
-                con.Close();
-                Log(commands, true);
-                commands.Clear();
+                    con.Close();
+                    Log(commands, true);
+                    commands.Clear();
 
-                Debug.WriteLine("Rollback successful");
+                    Debug.WriteLine("Rollback successful");
+                }
             }
             catch(Exception ex)
             {
                 Debug.WriteLine("Rollback error");
-                Debug.WriteLine(ex.Message);
+                Debug.WriteLine(ex.ToString());
+                MessageBox.Show("Rollback error! \nTerminating transaction.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 localTransActive = false;
                 con.Close();
@@ -110,7 +132,7 @@ namespace DatabaseBETA
             string messageLog;
             for (int i = 0;i < commands.Count; i++)
             {
-                messageLog = DateTime.Now.ToString() + commands[i].CommandText + Environment.NewLine;
+                messageLog = DateTime.Now.ToString() + " " + commands[i].CommandText + Environment.NewLine;
                 if (!rollback)
                 {
                     File.AppendAllText("commit_log.txt", messageLog);
@@ -120,6 +142,24 @@ namespace DatabaseBETA
                     File.AppendAllText("rollback_log.txt", messageLog);
                 }
             }
+        }
+
+        //BAD
+        public int RetrieveId(SqlCommand insertCommand)
+        {
+            if(con.State == System.Data.ConnectionState.Open)
+            {
+                int id;
+                SqlCommand cmd = new SqlCommand(insertCommand.CommandText+"select SCOPE_IDENTITY();", con);
+                cmd.Transaction = transaction;
+                using (cmd)
+                {
+                    object result = cmd.ExecuteScalar();
+                    id = result != DBNull.Value ? Convert.ToInt32(result) : 0;
+                }
+                return id;
+            }
+            return 0;
         }
     }
 }

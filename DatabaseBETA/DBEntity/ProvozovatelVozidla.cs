@@ -11,8 +11,8 @@ namespace DatabaseBETA
     public class ProvozovatelVozidla
     {
         public int id;
-        public int osoba_fyzicka_id;
-        public int osoba_pravnicka_id;
+        public int osoba_fyzicka_id = 0;
+        public int osoba_pravnicka_id = 0;
         public string adresa_ulice;
         public string adresa_cislo_popisne;
         public int adresa_psc;

@@ -1,0 +1,7 @@
+2/12/2023 1:50:23 PMinsert into Osoba_Pravnicka(nazev_firmy) values ('asd asd ');
+2/12/2023 1:50:23 PMinsert into Provozovatel_Vozidla(osoba_fyzicka_id,osoba_pravnicka_id,adresa_ulice,adresa_cislo_popisne,adresa_psc,adresa_obec,telefonni_cislo,email,adresa_mesto) values (NULL,15,'sfgsg','213312',12312,'sdfgdgdfgss',123123123,'ffd@dad.cz','asdasdg');
+2/12/2023 2:02:34 PMinsert into Osoba_Pravnicka(nazev_firmy) values ('asdasd');
+2/12/2023 2:02:34 PMinsert into Provozovatel_Vozidla(osoba_fyzicka_id,osoba_pravnicka_id,adresa_ulice,adresa_cislo_popisne,adresa_psc,adresa_obec,telefonni_cislo,email,adresa_mesto) values (NULL,17,'asdasdasd','12345',12312,'dasdasd',123123123,'sdsslakdj@maslkdj.cz','asdasdsadasda');
+2/12/2023 2:13:44 PMdelete from Provozovatel_Vozidla where id=6 ;
+2/12/2023 2:13:44 PMdelete from Provozovatel_Vozidla where id=14 ;
+2/12/2023 2:13:44 PMdelete from Provozovatel_Vozidla where id=13 ;
