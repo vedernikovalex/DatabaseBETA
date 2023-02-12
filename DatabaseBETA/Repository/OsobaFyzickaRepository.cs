@@ -52,7 +52,7 @@ namespace DatabaseBETA
 
         public void Update(OsobaFyzicka osobaFyzicka)
         {
-            command = string.Format("update Osoba_Fyzicka(jmeno,prijmeni) values ({0},{1}) where id={2};", osobaFyzicka.id);
+            command = string.Format("update Osoba_Fyzicka(jmeno,prijmeni) values ({1},{2}) where id={0};", osobaFyzicka.id, osobaFyzicka.jmeno, osobaFyzicka.prijmeni);
             repository.Update(command);
         }
 

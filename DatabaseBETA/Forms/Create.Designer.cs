@@ -42,8 +42,35 @@
             this.defectButton = new System.Windows.Forms.Button();
             this.mainMenu = new System.Windows.Forms.Panel();
             this.personPanel = new System.Windows.Forms.Panel();
+            this.personNazevF = new System.Windows.Forms.TextBox();
+            this.nazevFLabel = new System.Windows.Forms.Label();
+            this.personPrijmeni = new System.Windows.Forms.TextBox();
+            this.prijmeniLabel = new System.Windows.Forms.Label();
+            this.personJmeno = new System.Windows.Forms.TextBox();
+            this.jmenoLabel = new System.Windows.Forms.Label();
+            this.personMesto = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.personEmail = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.personTelefon = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.personObec = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.personPsc = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.personPopisne = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.personUlice = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.personBool = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.personCreate = new System.Windows.Forms.Button();
+            this.personUpdate = new System.Windows.Forms.Button();
+            this.personDelete = new System.Windows.Forms.Button();
+            this.personId = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.mainMenu.SuspendLayout();
             this.personPanel.SuspendLayout();
             this.SuspendLayout();
@@ -194,12 +221,231 @@
             // 
             // personPanel
             // 
+            this.personPanel.Controls.Add(this.label18);
+            this.personPanel.Controls.Add(this.personId);
+            this.personPanel.Controls.Add(this.personDelete);
+            this.personPanel.Controls.Add(this.personUpdate);
+            this.personPanel.Controls.Add(this.personCreate);
+            this.personPanel.Controls.Add(this.personNazevF);
+            this.personPanel.Controls.Add(this.nazevFLabel);
+            this.personPanel.Controls.Add(this.personPrijmeni);
+            this.personPanel.Controls.Add(this.prijmeniLabel);
+            this.personPanel.Controls.Add(this.personJmeno);
+            this.personPanel.Controls.Add(this.jmenoLabel);
+            this.personPanel.Controls.Add(this.personMesto);
+            this.personPanel.Controls.Add(this.label17);
+            this.personPanel.Controls.Add(this.personEmail);
+            this.personPanel.Controls.Add(this.label16);
+            this.personPanel.Controls.Add(this.personTelefon);
+            this.personPanel.Controls.Add(this.label15);
+            this.personPanel.Controls.Add(this.personObec);
+            this.personPanel.Controls.Add(this.label14);
+            this.personPanel.Controls.Add(this.personPsc);
+            this.personPanel.Controls.Add(this.label13);
+            this.personPanel.Controls.Add(this.personPopisne);
+            this.personPanel.Controls.Add(this.label12);
+            this.personPanel.Controls.Add(this.personUlice);
+            this.personPanel.Controls.Add(this.label11);
+            this.personPanel.Controls.Add(this.personBool);
+            this.personPanel.Controls.Add(this.label10);
             this.personPanel.Controls.Add(this.label8);
             this.personPanel.Controls.Add(this.label9);
             this.personPanel.Location = new System.Drawing.Point(161, 60);
             this.personPanel.Name = "personPanel";
             this.personPanel.Size = new System.Drawing.Size(1195, 850);
             this.personPanel.TabIndex = 26;
+            // 
+            // personNazevF
+            // 
+            this.personNazevF.Location = new System.Drawing.Point(491, 324);
+            this.personNazevF.Name = "personNazevF";
+            this.personNazevF.Size = new System.Drawing.Size(187, 23);
+            this.personNazevF.TabIndex = 46;
+            // 
+            // nazevFLabel
+            // 
+            this.nazevFLabel.AutoSize = true;
+            this.nazevFLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nazevFLabel.Location = new System.Drawing.Point(491, 300);
+            this.nazevFLabel.Name = "nazevFLabel";
+            this.nazevFLabel.Size = new System.Drawing.Size(116, 21);
+            this.nazevFLabel.TabIndex = 45;
+            this.nazevFLabel.Text = "NAZEV FIRMY";
+            // 
+            // personPrijmeni
+            // 
+            this.personPrijmeni.Location = new System.Drawing.Point(491, 381);
+            this.personPrijmeni.Name = "personPrijmeni";
+            this.personPrijmeni.Size = new System.Drawing.Size(187, 23);
+            this.personPrijmeni.TabIndex = 44;
+            // 
+            // prijmeniLabel
+            // 
+            this.prijmeniLabel.AutoSize = true;
+            this.prijmeniLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.prijmeniLabel.Location = new System.Drawing.Point(491, 357);
+            this.prijmeniLabel.Name = "prijmeniLabel";
+            this.prijmeniLabel.Size = new System.Drawing.Size(84, 21);
+            this.prijmeniLabel.TabIndex = 43;
+            this.prijmeniLabel.Text = "PRIJMENI";
+            // 
+            // personJmeno
+            // 
+            this.personJmeno.Location = new System.Drawing.Point(492, 324);
+            this.personJmeno.Name = "personJmeno";
+            this.personJmeno.Size = new System.Drawing.Size(187, 23);
+            this.personJmeno.TabIndex = 42;
+            // 
+            // jmenoLabel
+            // 
+            this.jmenoLabel.AutoSize = true;
+            this.jmenoLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.jmenoLabel.Location = new System.Drawing.Point(492, 300);
+            this.jmenoLabel.Name = "jmenoLabel";
+            this.jmenoLabel.Size = new System.Drawing.Size(66, 21);
+            this.jmenoLabel.TabIndex = 41;
+            this.jmenoLabel.Text = "JMENO";
+            // 
+            // personMesto
+            // 
+            this.personMesto.Location = new System.Drawing.Point(491, 569);
+            this.personMesto.Name = "personMesto";
+            this.personMesto.Size = new System.Drawing.Size(187, 23);
+            this.personMesto.TabIndex = 40;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label17.Location = new System.Drawing.Point(491, 545);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(63, 21);
+            this.label17.TabIndex = 39;
+            this.label17.Text = "MESTO";
+            // 
+            // personEmail
+            // 
+            this.personEmail.Location = new System.Drawing.Point(491, 446);
+            this.personEmail.Name = "personEmail";
+            this.personEmail.Size = new System.Drawing.Size(187, 23);
+            this.personEmail.TabIndex = 38;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(491, 422);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(58, 21);
+            this.label16.TabIndex = 37;
+            this.label16.Text = "EMAIL";
+            // 
+            // personTelefon
+            // 
+            this.personTelefon.Location = new System.Drawing.Point(491, 509);
+            this.personTelefon.Name = "personTelefon";
+            this.personTelefon.Size = new System.Drawing.Size(187, 23);
+            this.personTelefon.TabIndex = 36;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(491, 485);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(144, 21);
+            this.label15.TabIndex = 35;
+            this.label15.Text = "TELEFONNI CISLO";
+            // 
+            // personObec
+            // 
+            this.personObec.Location = new System.Drawing.Point(491, 631);
+            this.personObec.Name = "personObec";
+            this.personObec.Size = new System.Drawing.Size(187, 23);
+            this.personObec.TabIndex = 34;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(491, 607);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(51, 21);
+            this.label14.TabIndex = 33;
+            this.label14.Text = "OBEC";
+            // 
+            // personPsc
+            // 
+            this.personPsc.Location = new System.Drawing.Point(491, 812);
+            this.personPsc.Name = "personPsc";
+            this.personPsc.Size = new System.Drawing.Size(187, 23);
+            this.personPsc.TabIndex = 32;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(491, 788);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(39, 21);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "PSC";
+            // 
+            // personPopisne
+            // 
+            this.personPopisne.Location = new System.Drawing.Point(491, 754);
+            this.personPopisne.Name = "personPopisne";
+            this.personPopisne.Size = new System.Drawing.Size(187, 23);
+            this.personPopisne.TabIndex = 30;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(491, 730);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(126, 21);
+            this.label12.TabIndex = 29;
+            this.label12.Text = "CISLO POPISNE";
+            // 
+            // personUlice
+            // 
+            this.personUlice.Location = new System.Drawing.Point(491, 696);
+            this.personUlice.Name = "personUlice";
+            this.personUlice.Size = new System.Drawing.Size(187, 23);
+            this.personUlice.TabIndex = 28;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(491, 672);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(54, 21);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "ULICE";
+            // 
+            // personBool
+            // 
+            this.personBool.AutoSize = true;
+            this.personBool.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.personBool.Location = new System.Drawing.Point(531, 256);
+            this.personBool.Name = "personBool";
+            this.personBool.Size = new System.Drawing.Size(119, 25);
+            this.personBool.TabIndex = 12;
+            this.personBool.Text = "PRAVNICKA";
+            this.personBool.UseVisualStyleBackColor = true;
+            this.personBool.CheckedChanged += new System.EventHandler(this.personBool_CheckedChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(540, 196);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(100, 32);
+            this.label10.TabIndex = 11;
+            this.label10.Text = "CREATE";
             // 
             // label8
             // 
@@ -215,20 +461,68 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(475, 101);
+            this.label9.Location = new System.Drawing.Point(524, 101);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(268, 54);
+            this.label9.Size = new System.Drawing.Size(142, 54);
             this.label9.TabIndex = 10;
-            this.label9.Text = "Person Create";
+            this.label9.Text = "Person";
+            // 
+            // personCreate
+            // 
+            this.personCreate.Location = new System.Drawing.Point(916, 771);
+            this.personCreate.Name = "personCreate";
+            this.personCreate.Size = new System.Drawing.Size(91, 59);
+            this.personCreate.TabIndex = 47;
+            this.personCreate.Text = "CREATE";
+            this.personCreate.UseVisualStyleBackColor = true;
+            this.personCreate.Click += new System.EventHandler(this.personCreate_Click);
+            // 
+            // personUpdate
+            // 
+            this.personUpdate.Location = new System.Drawing.Point(102, 771);
+            this.personUpdate.Name = "personUpdate";
+            this.personUpdate.Size = new System.Drawing.Size(91, 59);
+            this.personUpdate.TabIndex = 48;
+            this.personUpdate.Text = "UPDATE";
+            this.personUpdate.UseVisualStyleBackColor = true;
+            this.personUpdate.Click += new System.EventHandler(this.personUpdate_Click);
+            // 
+            // personDelete
+            // 
+            this.personDelete.Location = new System.Drawing.Point(242, 771);
+            this.personDelete.Name = "personDelete";
+            this.personDelete.Size = new System.Drawing.Size(91, 59);
+            this.personDelete.TabIndex = 49;
+            this.personDelete.Text = "DELETE";
+            this.personDelete.UseVisualStyleBackColor = true;
+            this.personDelete.Click += new System.EventHandler(this.personDelete_Click);
+            // 
+            // personId
+            // 
+            this.personId.Location = new System.Drawing.Point(171, 742);
+            this.personId.Name = "personId";
+            this.personId.Size = new System.Drawing.Size(100, 23);
+            this.personId.TabIndex = 50;
+            this.personId.Text = "id";
+            this.personId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(202, 724);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(38, 15);
+            this.label18.TabIndex = 51;
+            this.label18.Text = "BY ID";
             // 
             // Create
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1480, 957);
-            this.Controls.Add(this.mainMenu);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.personPanel);
+            this.Controls.Add(this.mainMenu);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -262,5 +556,32 @@
         private Panel personPanel;
         private Label label8;
         private Label label9;
+        private TextBox personMesto;
+        private Label label17;
+        private TextBox personEmail;
+        private Label label16;
+        private TextBox personTelefon;
+        private Label label15;
+        private TextBox personObec;
+        private Label label14;
+        private TextBox personPsc;
+        private Label label13;
+        private TextBox personPopisne;
+        private Label label12;
+        private TextBox personUlice;
+        private Label label11;
+        private CheckBox personBool;
+        private Label label10;
+        private TextBox personPrijmeni;
+        private Label prijmeniLabel;
+        private TextBox personJmeno;
+        private Label jmenoLabel;
+        private TextBox personNazevF;
+        private Label nazevFLabel;
+        private Label label18;
+        private TextBox personId;
+        private Button personDelete;
+        private Button personUpdate;
+        private Button personCreate;
     }
 }

@@ -14,25 +14,25 @@ namespace DatabaseBETA
 
         public IEnumerable<Zavada> GetAll()
         {
-            command = "select * from Zavady_vozidla;";
+            command = "select z.ID,z.kategorie,z.popis,n.ID,n.kontrola_ID from Zavada z inner join Nalez n on z.ID = n.zavada_ID;";
             return repository.GetAll(command);
         }
 
         public Zavada GetById(int id)
         {
-            command = string.Format("select * from Zavady_vozidla where 'Identifikacni cislo zavady' = {0};",id);
+            command = string.Format("select z.ID,z.kategorie,z.popis,n.ID,n.kontrola_ID from Zavada z inner join Nalez n on z.ID = n.zavada_ID where n.kontrola_ID = {0};", id);
             return repository.GetById(command);
         }
 
         public void Insert(Zavada zavada)
         {
-            command = string.Format("insert into Zavada(kategorie, popis) values ({0},{1});",zavada.category,zavada.description);
+            command = string.Format("insert into Zavada(kategorie, popis) values ({0},{1});",zavada.kategorie,zavada.popis);
             repository.Insert(command);
         }
 
         public void Update(Zavada zavada)
         {
-            command = string.Format("update Zavada(kategorie, popis) values ({0},{1}) where id={2};", zavada.category, zavada.description, zavada.id);
+            command = string.Format("update Zavada(kategorie, popis) values ({0},{1}) where id={2};", zavada.kategorie, zavada.popis, zavada.id);
             repository.Update(command);
         }
 

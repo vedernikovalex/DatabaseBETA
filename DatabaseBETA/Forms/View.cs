@@ -18,6 +18,8 @@ namespace DatabaseBETA
             InitializeComponent();
             personPanel.Hide();
             repairPanel.Hide();
+            vozidloPanel.Hide();
+            zavadaPanel.Hide();
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -186,5 +188,128 @@ namespace DatabaseBETA
                 repairTable.DataSource = table;
             }
         }
+
+        private void repairExit_Click(object sender, EventArgs e)
+        {
+            repairPanel.Hide();
+            mainMenu.Show();
+        }
+
+        private void viewExit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Forms.menuForm.ShowDialog();
+        }
+
+        private void displayAllTechnik_Click(object sender, EventArgs e)
+        {
+            TechnikRepository repo = new TechnikRepository();
+            var data = repo.GetAll();
+            table = DatabaseTables.Technik();
+
+            foreach (var item in data)
+            {
+                table.Merge(item.GetTable());
+            }
+
+            repairTable.DataSource = table;
+        }
+
+        private void displayIdTechnik_Click(object sender, EventArgs e)
+        {
+            if (Int32.TryParse(idTechnik.Text, out int a))
+            {
+                TechnikRepository repo = new TechnikRepository();
+                var data = repo.GetById(Int32.Parse(idTechnik.Text));
+                table = DatabaseTables.Technik();
+
+                table.Merge(data.GetTable());
+
+                repairTable.DataSource = table;
+            }
+        }
+
+
+        private void vechicleButtonView_Click(object sender, EventArgs e)
+        {
+            mainMenu.Hide();
+            vozidloPanel.Show();
+        }
+
+        private void displayAllVozidlo_Click(object sender, EventArgs e)
+        {
+            VozidloRepository repo = new VozidloRepository();
+            var data = repo.GetAll();
+            table = DatabaseTables.Vozidlo();
+
+            foreach (var item in data)
+            {
+                table.Merge(item.GetTable());
+            }
+
+            vozidloTable.DataSource = table;
+        }
+
+        private void displayIdVozidlo_Click(object sender, EventArgs e)
+        {
+            if (Int32.TryParse(idVozidlo.Text, out int a))
+            {
+                VozidloRepository repo = new VozidloRepository();
+                var data = repo.GetById(Int32.Parse(idVozidlo.Text));
+                table = DatabaseTables.Vozidlo();
+
+                table.Merge(data.GetTable());
+
+                vozidloTable.DataSource = table;
+            }
+        }
+
+        private void vozidloExit_Click(object sender, EventArgs e)
+        {
+            vozidloPanel.Hide();
+            mainMenu.Show();
+        }
+
+        private void defectButtonView_Click(object sender, EventArgs e)
+        {
+            mainMenu.Hide();
+            zavadaPanel.Show();
+        }
+
+        private void displayAllZavada_Click(object sender, EventArgs e)
+        {
+            ZavadaRepository repo = new ZavadaRepository();
+            var data = repo.GetAll();
+            table = DatabaseTables.Zavada();
+
+            foreach (var item in data)
+            {
+                table.Merge(item.GetTable());
+            }
+
+            zavadaTable.DataSource = table;
+        }
+
+        private void displayIdZavada_Click(object sender, EventArgs e)
+        {
+            if (Int32.TryParse(idZavada.Text, out int a)) { 
+
+                ZavadaRepository repo = new ZavadaRepository();
+                var data = repo.GetById(Int32.Parse(idZavada.Text));
+                table = DatabaseTables.Zavada();
+
+                table.Merge(data.GetTable());
+
+                zavadaTable.DataSource = table;
+            }
+        }
+
+        private void zavadaExit_Click(object sender, EventArgs e)
+        {
+            zavadaPanel.Hide();
+            mainMenu.Show();
+        }
+
+
     }
 }
