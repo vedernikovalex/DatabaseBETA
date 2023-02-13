@@ -45,22 +45,37 @@ namespace DatabaseBETA
         /// <returns> Enumetable result of target entity filled with data </returns>
         public IEnumerable<T> GetAll(SqlCommand cmd)
         {
-            con2.Open();
-            using (cmd)
+            try
             {
-                using (var reader = cmd.ExecuteReader())
+                con2.Open();
+                using (cmd)
                 {
-                    var data = new List<T>();
-
-                    while (reader.Read())
+                    using (var reader = cmd.ExecuteReader())
                     {
-                        data.Add((T)Activator.CreateInstance(typeof(T), reader));
-                    }
-                    con.Close();
+                        var data = new List<T>();
 
-                    IEnumerable<T> result = data;
-                    return result;
+                        while (reader.Read())
+                        {
+                            data.Add((T)Activator.CreateInstance(typeof(T), reader));
+                        }
+                        con.Close();
+
+                        IEnumerable<T> result = data;
+                        return result;
+                    }
                 }
+            }
+            catch (SqlException ex)
+            {
+                Debug.WriteLine(ex.Message);
+                MessageBox.Show("Error occured in sql command!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                MessageBox.Show("Unknown error occured!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
             }
         }
 
@@ -72,21 +87,36 @@ namespace DatabaseBETA
         /// <returns> Target entity filled with data </returns>
         public T GetById(SqlCommand cmd)
         {
-            con2.Open();
-            using (cmd)
+            try
             {
-                using (var reader = cmd.ExecuteReader())
+                con2.Open();
+                using (cmd)
                 {
-                    var data = new T();
-                    while (reader.Read())
+                    using (var reader = cmd.ExecuteReader())
                     {
-                        data = (T)Activator.CreateInstance(typeof(T), reader);
-                    }
-                    con.Close();
+                        var data = new T();
+                        while (reader.Read())
+                        {
+                            data = (T)Activator.CreateInstance(typeof(T), reader);
+                        }
+                        con.Close();
 
-                    T result = data;
-                    return result;
+                        T result = data;
+                        return result;
+                    }
                 }
+            }
+            catch (SqlException ex)
+            {
+                Debug.WriteLine(ex.Message);
+                MessageBox.Show("Error occured in sql command!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                MessageBox.Show("Unknown error occured!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
             }
         }
 

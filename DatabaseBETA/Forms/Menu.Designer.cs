@@ -61,7 +61,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(543, 87);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(433, 72);
+            this.label1.Size = new System.Drawing.Size(761, 125);
             this.label1.TabIndex = 0;
             this.label1.Text = "AUTOMECHANIK";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -72,7 +72,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(696, 159);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 54);
+            this.label4.Size = new System.Drawing.Size(220, 93);
             this.label4.TabIndex = 7;
             this.label4.Text = "Menu";
             // 
@@ -110,7 +110,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(553, 526);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 37);
+            this.label2.Size = new System.Drawing.Size(196, 62);
             this.label2.TabIndex = 10;
             this.label2.Text = "CREATE";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -122,7 +122,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(873, 526);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 37);
+            this.label3.Size = new System.Drawing.Size(146, 62);
             this.label3.TabIndex = 11;
             this.label3.Text = "VIEW";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -134,7 +134,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(711, 780);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 30);
+            this.label5.Size = new System.Drawing.Size(174, 51);
             this.label5.TabIndex = 12;
             this.label5.Text = "LOGOUT";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -144,7 +144,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(12, 933);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(153, 15);
+            this.label7.Size = new System.Drawing.Size(276, 30);
             this.label7.TabIndex = 15;
             this.label7.Text = "ICONS: https://icons8.com";
             this.label7.Click += new System.EventHandler(this.label7_Click);

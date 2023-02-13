@@ -555,5 +555,16 @@ namespace DatabaseBETA
             zavadaPanel.Hide();
             mainMenu.Show();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
+            startInfo.FileName = "https://icons8.com";
+            startInfo.UseShellExecute = true;
+            process.StartInfo = startInfo;
+            process.Start();
+        }
     }
 }

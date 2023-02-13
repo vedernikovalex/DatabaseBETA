@@ -82,6 +82,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.zavadaPanel = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.idNalez = new System.Windows.Forms.TextBox();
@@ -95,7 +96,6 @@
             this.displayAllZavada = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.mainMenu.SuspendLayout();
             this.personPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.provozovatelTable)).BeginInit();
@@ -113,7 +113,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(92, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(433, 72);
+            this.label1.Size = new System.Drawing.Size(761, 125);
             this.label1.TabIndex = 0;
             this.label1.Text = "AUTOMECHANIK";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -124,7 +124,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(243, 109);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 54);
+            this.label4.Size = new System.Drawing.Size(188, 93);
             this.label4.TabIndex = 8;
             this.label4.Text = "View";
             // 
@@ -133,9 +133,10 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(12, 933);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(153, 15);
+            this.label7.Size = new System.Drawing.Size(276, 30);
             this.label7.TabIndex = 16;
             this.label7.Text = "ICONS: https://icons8.com";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label5
             // 
@@ -143,7 +144,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(499, 460);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 30);
+            this.label5.Size = new System.Drawing.Size(171, 51);
             this.label5.TabIndex = 18;
             this.label5.Text = "VEHICLE";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -168,7 +169,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(206, 472);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(224, 37);
+            this.label2.Size = new System.Drawing.Size(387, 62);
             this.label2.TabIndex = 20;
             this.label2.Text = "REPAIR RECORD";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -193,7 +194,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(35, 460);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 30);
+            this.label3.Size = new System.Drawing.Size(170, 51);
             this.label3.TabIndex = 22;
             this.label3.Text = "PERSON";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -218,7 +219,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(263, 703);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 30);
+            this.label6.Size = new System.Drawing.Size(156, 51);
             this.label6.TabIndex = 24;
             this.label6.Text = "DEFECT";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -300,6 +301,7 @@
             this.provozovatelTable.Location = new System.Drawing.Point(98, 475);
             this.provozovatelTable.Name = "provozovatelTable";
             this.provozovatelTable.ReadOnly = true;
+            this.provozovatelTable.RowHeadersWidth = 72;
             this.provozovatelTable.RowTemplate.Height = 25;
             this.provozovatelTable.Size = new System.Drawing.Size(999, 339);
             this.provozovatelTable.TabIndex = 0;
@@ -310,7 +312,7 @@
             this.label12.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label12.Location = new System.Drawing.Point(927, 217);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(230, 37);
+            this.label12.Size = new System.Drawing.Size(393, 62);
             this.label12.TabIndex = 23;
             this.label12.Text = "Osoba Pravnicka";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -319,7 +321,7 @@
             // 
             this.idPravnicka.Location = new System.Drawing.Point(987, 343);
             this.idPravnicka.Name = "idPravnicka";
-            this.idPravnicka.Size = new System.Drawing.Size(110, 23);
+            this.idPravnicka.Size = new System.Drawing.Size(110, 35);
             this.idPravnicka.TabIndex = 22;
             this.idPravnicka.Text = "id";
             this.idPravnicka.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -350,7 +352,7 @@
             this.label11.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label11.Location = new System.Drawing.Point(503, 217);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(198, 37);
+            this.label11.Size = new System.Drawing.Size(339, 62);
             this.label11.TabIndex = 19;
             this.label11.Text = "Osoba Fyzicka";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -359,7 +361,7 @@
             // 
             this.IdFyzicka.Location = new System.Drawing.Point(542, 343);
             this.IdFyzicka.Name = "IdFyzicka";
-            this.IdFyzicka.Size = new System.Drawing.Size(110, 23);
+            this.IdFyzicka.Size = new System.Drawing.Size(110, 35);
             this.IdFyzicka.TabIndex = 18;
             this.IdFyzicka.Text = "id";
             this.IdFyzicka.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -390,7 +392,7 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(27, 217);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(289, 37);
+            this.label10.Size = new System.Drawing.Size(488, 62);
             this.label10.TabIndex = 15;
             this.label10.Text = "Provozovatel Vozidla";
             // 
@@ -398,7 +400,7 @@
             // 
             this.idProvoz.Location = new System.Drawing.Point(98, 343);
             this.idProvoz.Name = "idProvoz";
-            this.idProvoz.Size = new System.Drawing.Size(110, 23);
+            this.idProvoz.Size = new System.Drawing.Size(110, 35);
             this.idProvoz.TabIndex = 14;
             this.idProvoz.Text = "id";
             this.idProvoz.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -429,7 +431,7 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(389, 29);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(433, 72);
+            this.label8.Size = new System.Drawing.Size(761, 125);
             this.label8.TabIndex = 9;
             this.label8.Text = "AUTOMECHANIK";
             // 
@@ -439,7 +441,7 @@
             this.label9.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label9.Location = new System.Drawing.Point(475, 101);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(238, 54);
+            this.label9.Size = new System.Drawing.Size(415, 93);
             this.label9.TabIndex = 10;
             this.label9.Text = "Person View";
             // 
@@ -468,7 +470,7 @@
             this.label13.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(648, 217);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(114, 37);
+            this.label13.Size = new System.Drawing.Size(194, 62);
             this.label13.TabIndex = 28;
             this.label13.Text = "Technik";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -477,7 +479,7 @@
             // 
             this.idTechnik.Location = new System.Drawing.Point(648, 343);
             this.idTechnik.Name = "idTechnik";
-            this.idTechnik.Size = new System.Drawing.Size(110, 23);
+            this.idTechnik.Size = new System.Drawing.Size(110, 35);
             this.idTechnik.TabIndex = 27;
             this.idTechnik.Text = "id";
             this.idTechnik.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -524,6 +526,7 @@
             this.repairTable.Location = new System.Drawing.Point(98, 475);
             this.repairTable.Name = "repairTable";
             this.repairTable.ReadOnly = true;
+            this.repairTable.RowHeadersWidth = 72;
             this.repairTable.RowTemplate.Height = 25;
             this.repairTable.Size = new System.Drawing.Size(999, 339);
             this.repairTable.TabIndex = 0;
@@ -534,7 +537,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label14.Location = new System.Drawing.Point(436, 217);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(100, 37);
+            this.label14.Size = new System.Drawing.Size(168, 62);
             this.label14.TabIndex = 19;
             this.label14.Text = "Repair";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -543,7 +546,7 @@
             // 
             this.idRepair.Location = new System.Drawing.Point(426, 343);
             this.idRepair.Name = "idRepair";
-            this.idRepair.Size = new System.Drawing.Size(110, 23);
+            this.idRepair.Size = new System.Drawing.Size(110, 35);
             this.idRepair.TabIndex = 18;
             this.idRepair.Text = "id";
             this.idRepair.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -574,7 +577,7 @@
             this.label16.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label16.Location = new System.Drawing.Point(389, 29);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(433, 72);
+            this.label16.Size = new System.Drawing.Size(761, 125);
             this.label16.TabIndex = 9;
             this.label16.Text = "AUTOMECHANIK";
             // 
@@ -584,7 +587,7 @@
             this.label17.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label17.Location = new System.Drawing.Point(475, 101);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(231, 54);
+            this.label17.Size = new System.Drawing.Size(402, 93);
             this.label17.TabIndex = 10;
             this.label17.Text = "Repair View";
             // 
@@ -623,7 +626,7 @@
             this.label15.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label15.Location = new System.Drawing.Point(532, 214);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(113, 37);
+            this.label15.Size = new System.Drawing.Size(191, 62);
             this.label15.TabIndex = 28;
             this.label15.Text = "Vozidlo";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -632,7 +635,7 @@
             // 
             this.idVozidlo.Location = new System.Drawing.Point(532, 340);
             this.idVozidlo.Name = "idVozidlo";
-            this.idVozidlo.Size = new System.Drawing.Size(110, 23);
+            this.idVozidlo.Size = new System.Drawing.Size(110, 35);
             this.idVozidlo.TabIndex = 27;
             this.idVozidlo.Text = "id";
             this.idVozidlo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -679,6 +682,7 @@
             this.vozidloTable.Location = new System.Drawing.Point(98, 475);
             this.vozidloTable.Name = "vozidloTable";
             this.vozidloTable.ReadOnly = true;
+            this.vozidloTable.RowHeadersWidth = 72;
             this.vozidloTable.RowTemplate.Height = 25;
             this.vozidloTable.Size = new System.Drawing.Size(999, 339);
             this.vozidloTable.TabIndex = 0;
@@ -689,7 +693,7 @@
             this.label19.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label19.Location = new System.Drawing.Point(389, 29);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(433, 72);
+            this.label19.Size = new System.Drawing.Size(761, 125);
             this.label19.TabIndex = 9;
             this.label19.Text = "AUTOMECHANIK";
             // 
@@ -699,7 +703,7 @@
             this.label20.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label20.Location = new System.Drawing.Point(475, 101);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(231, 54);
+            this.label20.Size = new System.Drawing.Size(402, 93);
             this.label20.TabIndex = 10;
             this.label20.Text = "Repair View";
             // 
@@ -724,12 +728,21 @@
             this.zavadaPanel.Size = new System.Drawing.Size(1195, 850);
             this.zavadaPanel.TabIndex = 29;
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(670, 325);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(143, 30);
+            this.label25.TabIndex = 30;
+            this.label25.Text = "(Kontrola ID)";
+            // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(446, 325);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(79, 15);
+            this.label24.Size = new System.Drawing.Size(143, 30);
             this.label24.TabIndex = 29;
             this.label24.Text = "(Kontrola ID)";
             // 
@@ -739,7 +752,7 @@
             this.label18.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label18.Location = new System.Drawing.Point(660, 217);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(89, 37);
+            this.label18.Size = new System.Drawing.Size(150, 62);
             this.label18.TabIndex = 28;
             this.label18.Text = "Nalez";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -748,7 +761,7 @@
             // 
             this.idNalez.Location = new System.Drawing.Point(648, 343);
             this.idNalez.Name = "idNalez";
-            this.idNalez.Size = new System.Drawing.Size(110, 23);
+            this.idNalez.Size = new System.Drawing.Size(110, 35);
             this.idNalez.TabIndex = 27;
             this.idNalez.Text = "id";
             this.idNalez.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -795,6 +808,7 @@
             this.zavadaTable.Location = new System.Drawing.Point(98, 475);
             this.zavadaTable.Name = "zavadaTable";
             this.zavadaTable.ReadOnly = true;
+            this.zavadaTable.RowHeadersWidth = 72;
             this.zavadaTable.RowTemplate.Height = 25;
             this.zavadaTable.Size = new System.Drawing.Size(999, 339);
             this.zavadaTable.TabIndex = 0;
@@ -805,7 +819,7 @@
             this.label21.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label21.Location = new System.Drawing.Point(426, 217);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(110, 37);
+            this.label21.Size = new System.Drawing.Size(184, 62);
             this.label21.TabIndex = 19;
             this.label21.Text = "Zavada";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -814,7 +828,7 @@
             // 
             this.idZavada.Location = new System.Drawing.Point(426, 343);
             this.idZavada.Name = "idZavada";
-            this.idZavada.Size = new System.Drawing.Size(110, 23);
+            this.idZavada.Size = new System.Drawing.Size(110, 35);
             this.idZavada.TabIndex = 18;
             this.idZavada.Text = "id";
             this.idZavada.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -845,7 +859,7 @@
             this.label22.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label22.Location = new System.Drawing.Point(389, 29);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(433, 72);
+            this.label22.Size = new System.Drawing.Size(761, 125);
             this.label22.TabIndex = 9;
             this.label22.Text = "AUTOMECHANIK";
             // 
@@ -855,18 +869,9 @@
             this.label23.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label23.Location = new System.Drawing.Point(475, 101);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(234, 54);
+            this.label23.Size = new System.Drawing.Size(408, 93);
             this.label23.TabIndex = 10;
             this.label23.Text = "Defect View";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(670, 325);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(79, 15);
-            this.label25.TabIndex = 30;
-            this.label25.Text = "(Kontrola ID)";
             // 
             // View
             // 

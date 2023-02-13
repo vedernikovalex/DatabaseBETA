@@ -210,6 +210,7 @@
             this.label7.Size = new System.Drawing.Size(276, 30);
             this.label7.TabIndex = 16;
             this.label7.Text = "ICONS: https://icons8.com";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label5
             // 
