@@ -68,7 +68,7 @@ namespace DatabaseBETA
 
         public void Update(Vozidlo vozidlo, int id)
         {
-            cmdString = "insert into Vozidlo(kategorie_vozidla_id,tovarni_znacka,obchodni_oznaceni,VIN,cislo_technickeho_prukazu,najeto_km,registracni_znacka,datum_prvni_registrace,barva) values (@kategorie_vozidla_id,@tovarni_znacka,@obchodni_oznaceni,@VIN,@cislo_technickeho_prukazu,@najeto_km,@registracni_znacka,@datum_prvni_registrace,@barva) where id=@id;";
+            cmdString = "update Vozidlo set kategorie_vozidla_id=@kategorie_vozidla_id,tovarni_znacka=@tovarni_znacka,obchodni_oznaceni=@obchodni_oznaceni,vin=@VIN,cislo_technickeho_prukazu=@cislo_technickeho_prukazu,najeto_km=@najeto_km,registracni_znacka=@registracni_znacka,datum_prvni_registrace=@datum_prvni_registrace,barva=@barva where id=@id;";
             command = new SqlCommand(cmdString, con);
             command.Parameters.AddWithValue("kategorie_vozidla_id", vozidlo.kategorie_vozidla_id);
             command.Parameters.AddWithValue("tovarni_znacka", vozidlo.tovarni_znacka);

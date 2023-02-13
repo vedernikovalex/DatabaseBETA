@@ -62,7 +62,7 @@ namespace DatabaseBETA
 
         public void Update(Technik technik, int id)
         {
-            cmdString = "insert into Technik(jmeno,prijmeni,nadrizeny_technik) values (@jmeno,@prijmeni,@nadrizeny_technik) where id=@id;";
+            cmdString = "update Technik set jmeno=@jmeno, prijmeni=@prijmeni, nadrizeny_technik=@nadrizeny_technik where id=@id;";
             command = new SqlCommand(cmdString, con);
             command.Parameters.AddWithValue("jmeno", technik.jmeno);
             command.Parameters.AddWithValue("prijmeni", technik.prijmeni);

@@ -82,6 +82,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.zavadaPanel = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.idNalez = new System.Windows.Forms.TextBox();
             this.displayIdNalez = new System.Windows.Forms.Button();
@@ -94,7 +95,7 @@
             this.displayAllZavada = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.mainMenu.SuspendLayout();
             this.personPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.provozovatelTable)).BeginInit();
@@ -704,6 +705,7 @@
             // 
             // zavadaPanel
             // 
+            this.zavadaPanel.Controls.Add(this.label25);
             this.zavadaPanel.Controls.Add(this.label24);
             this.zavadaPanel.Controls.Add(this.label18);
             this.zavadaPanel.Controls.Add(this.idNalez);
@@ -721,6 +723,15 @@
             this.zavadaPanel.Name = "zavadaPanel";
             this.zavadaPanel.Size = new System.Drawing.Size(1195, 850);
             this.zavadaPanel.TabIndex = 29;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(446, 325);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(79, 15);
+            this.label24.TabIndex = 29;
+            this.label24.Text = "(Kontrola ID)";
             // 
             // label18
             // 
@@ -750,6 +761,7 @@
             this.displayIdNalez.TabIndex = 26;
             this.displayIdNalez.Text = "DISPLAY BY ID";
             this.displayIdNalez.UseVisualStyleBackColor = true;
+            this.displayIdNalez.Click += new System.EventHandler(this.displayIdNalez_Click);
             // 
             // displayAllNalez
             // 
@@ -759,6 +771,7 @@
             this.displayAllNalez.TabIndex = 25;
             this.displayAllNalez.Text = "DISPLAY ALL";
             this.displayAllNalez.UseVisualStyleBackColor = true;
+            this.displayAllNalez.Click += new System.EventHandler(this.displayAllNalez_Click);
             // 
             // zavadaExit
             // 
@@ -846,14 +859,14 @@
             this.label23.TabIndex = 10;
             this.label23.Text = "Defect View";
             // 
-            // label24
+            // label25
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(446, 325);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(79, 15);
-            this.label24.TabIndex = 29;
-            this.label24.Text = "(Kontrola ID)";
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(670, 325);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(79, 15);
+            this.label25.TabIndex = 30;
+            this.label25.Text = "(Kontrola ID)";
             // 
             // View
             // 
@@ -961,5 +974,6 @@
         private Label label22;
         private Label label23;
         private Label label24;
+        private Label label25;
     }
 }

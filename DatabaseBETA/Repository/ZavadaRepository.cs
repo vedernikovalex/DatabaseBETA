@@ -39,14 +39,14 @@ namespace DatabaseBETA
 
         public IEnumerable<Zavada> GetAll()
         {
-            cmdString = "select z.ID,z.kategorie,z.popis,n.ID,n.kontrola_ID from Zavada z inner join Nalez n on z.ID = n.zavada_ID";
+            cmdString = "select * from Zavada";
             command = new SqlCommand(cmdString, con);
             return repository.GetAll(command);
         }
 
         public Zavada GetById(int id)
         {
-            cmdString = "select z.ID,z.kategorie,z.popis,n.ID,n.kontrola_ID from Zavada z inner join Nalez n on z.ID = n.zavada_ID where n.kontrola_ID = @id;";
+            cmdString = "select * from Zavada where id = @id;";
             command = new SqlCommand(cmdString, con);
             command.Parameters.AddWithValue("id", id);
             return repository.GetById(command);
@@ -63,7 +63,7 @@ namespace DatabaseBETA
 
         public void Update(Zavada zavada, int id)
         {
-            cmdString = "insert into Zavada(kategorie, popis) values (@kategorie, @popis) where id=@id;";
+            cmdString = "update Zavada set kategorie=@kategorie, popis=@popis where id=@id;";
             command = new SqlCommand(cmdString, con);
             command.Parameters.AddWithValue("kategorie", zavada.kategorie);
             command.Parameters.AddWithValue("popis", zavada.popis);

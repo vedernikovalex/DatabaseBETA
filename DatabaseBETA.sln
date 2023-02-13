@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseBETA", "DatabaseBETA\DatabaseBETA.csproj", "{047D6836-F7F7-49FF-AFE4-9042805EAA14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabaseBETA", "DatabaseBETA\DatabaseBETA.csproj", "{047D6836-F7F7-49FF-AFE4-9042805EAA14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseBETAUnitTest", "DatabaseBETAUnitTest\DatabaseBETAUnitTest.csproj", "{ED6C0143-D125-4FAA-A1DF-24855E6BA971}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{047D6836-F7F7-49FF-AFE4-9042805EAA14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{047D6836-F7F7-49FF-AFE4-9042805EAA14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{047D6836-F7F7-49FF-AFE4-9042805EAA14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED6C0143-D125-4FAA-A1DF-24855E6BA971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED6C0143-D125-4FAA-A1DF-24855E6BA971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED6C0143-D125-4FAA-A1DF-24855E6BA971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED6C0143-D125-4FAA-A1DF-24855E6BA971}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

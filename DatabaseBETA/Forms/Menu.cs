@@ -3,14 +3,23 @@ using System.Diagnostics;
 
 namespace DatabaseBETA
 {
+    /// <summary>
+    /// class that represents a main menu that can navigate through all application
+    /// </summary>
     public partial class Menu : Form
     {
-
+        /// <summary>
+        /// Drawing form components
+        /// </summary>
         public Menu()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Proper form closing
+        /// </summary>
+        /// <param name="e"> event </param>
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             e.Cancel = false;
@@ -35,8 +44,9 @@ namespace DatabaseBETA
 
         private void loginButton_Click(object sender, EventArgs e)
         {
+            View viewForm = new View();
             this.Hide();
-            Forms.viewForm.ShowDialog();
+            viewForm.ShowDialog();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -49,6 +59,10 @@ namespace DatabaseBETA
 
         }
 
+        /// <summary>
+        /// icon link lable
+        /// opens default web browser with a source of used icons
+        /// </summary>
         private void label7_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process process = new System.Diagnostics.Process();
@@ -62,16 +76,22 @@ namespace DatabaseBETA
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Create createForm = new Create();
             this.Hide();
-            Forms.createForm.ShowDialog();
+            createForm.ShowDialog();
         }
 
         private void logoutButton_Click(object sender, EventArgs e)
         {
+            LoginForm loginForm = new LoginForm();
             this.Hide();
-            Forms.loginForm.ShowDialog();
+            loginForm.ShowDialog();
         }
 
+        /// <summary>
+        /// Tests connection by requesting operating version of server
+        /// only displays result in debug console
+        /// </summary>
         private void testConnection_Click(object sender, EventArgs e)
         {
             SqlCommand cmd = new SqlCommand("select @@VERSION;", Database.Instance.Connection);

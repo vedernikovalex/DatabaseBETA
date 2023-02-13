@@ -10,24 +10,35 @@ using System.Threading.Tasks;
 
 namespace DatabaseBETA
 {
+    /// <summary>
+    /// Database singleton class
+    /// contains SqlConnection
+    /// Builds ConnectionString in its constructor
+    /// </summary>
     public sealed class Database : IDatabase
     {
         private static Database instance = null;
         private static readonly object locker = new object();
 
-        private SqlCommand command;
-        private SqlDataReader reader;
         private SqlConnection con;
-        private string sqlCommand, output, loginCredentials, passwordCredentials;
 
         private SqlConnectionStringBuilder conStrBuilder = new SqlConnectionStringBuilder();
         private string connectionString;
 
-        //private ArrayList entities = new ArrayList();
-
+        /// <summary>
+        /// Initializing connection string as windows login
+        /// </summary>
         public Database()
         {
             ConnectionStringBuilder();
+        }
+
+        /// <summary>
+        /// Initializing connection string as user login
+        /// </summary>
+        public Database(string login, string password)
+        {
+            ConnectionStringBuilder(login, password);
         }
 
         public SqlConnection Connection
@@ -50,6 +61,9 @@ namespace DatabaseBETA
             }
         }
 
+        /// <summary>
+        /// Initializing connection string as windows login
+        /// </summary>
         private void ConnectionStringBuilder()
         {
             conStrBuilder.DataSource = @"localhost";
@@ -59,28 +73,17 @@ namespace DatabaseBETA
             con = new SqlConnection(connectionString);
         }
 
-        public void Connect()
+        /// <summary>
+        /// Initializing connection string as user login
+        /// </summary>
+        private void ConnectionStringBuilder(string login, string password)
         {
-            try
-            {
-                con.Open();
-                if (con.State == System.Data.ConnectionState.Open)
-                {
-                    Debug.WriteLine(con.State);
-                    sqlCommand = "select * from Kontrola;";
-                    command = new SqlCommand(sqlCommand, con);
-                    reader = command.ExecuteReader();
-                    while (reader.Read())
-                    {
-                        output = output + reader.GetValue(0);
-                    }
-                    MessageBox.Show(output);
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
+            conStrBuilder.DataSource = @"localhost";
+            conStrBuilder.InitialCatalog = "technicka_kontrola";
+            conStrBuilder.UserID= login;
+            conStrBuilder.Password= password;
+            connectionString = conStrBuilder.ConnectionString;
+            con = new SqlConnection(connectionString);
         }
     }
 }

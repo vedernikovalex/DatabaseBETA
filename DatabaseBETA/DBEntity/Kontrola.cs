@@ -9,6 +9,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace DatabaseBETA
 {
+    /// <summary>
+    /// Class of entity representitng table or tables connected with relationship
+    /// </summary>
     public class Kontrola
     {
         public int id;
@@ -24,6 +27,11 @@ namespace DatabaseBETA
 
         public Kontrola() { }
 
+        /// <summary>
+        /// Constructor with input parameter as SqlDataReader to retrieve data from SELECT and create current entity
+        /// Predifined parameters to match select
+        /// </summary>
+        /// <param name="reader"> SqlDataReader containing returned data from sql select </param>
         public Kontrola(SqlDataReader reader)
         {
             this.id = reader.GetInt32(0);
@@ -38,6 +46,10 @@ namespace DatabaseBETA
             this.nazev_kontroly = reader.GetString(8);
         }
 
+        /// <summary>
+        /// GetTable method which creates a predefined table for displaying in DataTable 
+        /// </summary>
+        /// <returns>DataTable </returns>
         public DataTable GetTable()
         {
             DataTable dt = DatabaseTables.Kontrola();

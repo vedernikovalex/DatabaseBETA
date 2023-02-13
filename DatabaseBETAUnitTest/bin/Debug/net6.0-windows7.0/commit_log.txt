@@ -1,0 +1,11 @@
+2/12/2023 11:33:04 PM insert into Technik(jmeno,prijmeni,nadrizeny_technik) values (@jmeno,@prijmeni,@nadrizeny_technik);
+2/12/2023 11:41:13 PM insert into Technik(jmeno,prijmeni,nadrizeny_technik) values (@jmeno,@prijmeni,@nadrizeny_technik);
+2/12/2023 11:41:50 PM insert into Technik(jmeno,prijmeni,nadrizeny_technik) values (@jmeno,@prijmeni,@nadrizeny_technik);
+2/12/2023 11:43:19 PM update Technik set jmeno=@jmeno, prijmeni=@prijmeni, nadrizeny_technik=@nadrizeny_technik where id=@id;
+2/12/2023 11:44:34 PM update Technik set jmeno=@jmeno, prijmeni=@prijmeni, nadrizeny_technik=@nadrizeny_technik where id=@id;
+2/12/2023 11:45:24 PM update Technik set jmeno=@jmeno, prijmeni=@prijmeni, nadrizeny_technik=@nadrizeny_technik where id=@id;
+2/12/2023 11:46:14 PM update Technik set jmeno=@jmeno, prijmeni=@prijmeni, nadrizeny_technik=@nadrizeny_technik where id=@id;
+2/12/2023 11:52:04 PM update Technik set jmeno=@jmeno, prijmeni=@prijmeni, nadrizeny_technik=@nadrizeny_technik where id=@id;
+2/12/2023 11:54:18 PM update Technik set jmeno=@jmeno, prijmeni=@prijmeni, nadrizeny_technik=@nadrizeny_technik where id=@id;
+2/13/2023 12:09:17 AM update Technik set jmeno=@jmeno, prijmeni=@prijmeni, nadrizeny_technik=@nadrizeny_technik where id=@id;
+2/13/2023 12:09:55 AM update Technik set jmeno=@jmeno, prijmeni=@prijmeni, nadrizeny_technik=@nadrizeny_technik where id=@id;

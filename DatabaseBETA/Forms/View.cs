@@ -9,10 +9,18 @@ using System.Reflection.PortableExecutable;
 
 namespace DatabaseBETA
 {
+    /// <summary>
+    /// Class of form
+    /// visual representation of database tables records
+    /// </summary>
     public partial class View : Form
     {
         private DataTable table;
-
+        
+        /// <summary>
+        /// Drawing all components
+        /// Constructor to hide all available panels
+        /// </summary>
         public View()
         {
             InitializeComponent();
@@ -22,6 +30,10 @@ namespace DatabaseBETA
             zavadaPanel.Hide();
         }
 
+        /// <summary>
+        /// Proper form closing
+        /// </summary>
+        /// <param name="e"> event </param>
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             e.Cancel = false;
@@ -53,6 +65,9 @@ namespace DatabaseBETA
             //database.Connect();
         }
 
+        /// <summary>
+        /// Hide current panel and open target panel
+        /// </summary>
         private void personButton_Click(object sender, EventArgs e)
         {
             mainMenu.Hide();
@@ -70,6 +85,10 @@ namespace DatabaseBETA
 
         }
 
+        /// <summary>
+        /// Method that executes target entity "GetAll" function
+        /// Displays retrieved data into DataTable
+        /// </summary>
         private void displayAllProvoz_Click(object sender, EventArgs e)
         {
             ProvozovatelVozidlaRepository repo = new ProvozovatelVozidlaRepository();
@@ -84,6 +103,10 @@ namespace DatabaseBETA
             provozovatelTable.DataSource = table;
         }
 
+        /// <summary>
+        /// Method that executes target entity "GetByID" function
+        /// Displays retrieved data into DataTable
+        /// </summary>
         private void displayIdProvoz_Click(object sender, EventArgs e)
         {
             if (Int32.TryParse(idProvoz.Text,out int a))
@@ -197,8 +220,9 @@ namespace DatabaseBETA
 
         private void viewExit_Click(object sender, EventArgs e)
         {
+            Menu menuForm= new Menu();
             this.Hide();
-            Forms.menuForm.ShowDialog();
+            menuForm.ShowDialog();
         }
 
         private void displayAllTechnik_Click(object sender, EventArgs e)
@@ -304,12 +328,39 @@ namespace DatabaseBETA
             }
         }
 
+        private void displayAllNalez_Click(object sender, EventArgs e)
+        {
+            NalezRepository repo = new NalezRepository();
+            var data = repo.GetAll();
+            table = DatabaseTables.Nalez();
+
+            foreach (var item in data)
+            {
+                table.Merge(item.GetTable());
+            }
+
+            zavadaTable.DataSource = table;
+        }
+
+        private void displayIdNalez_Click(object sender, EventArgs e)
+        {
+            if (Int32.TryParse(idNalez.Text, out int a))
+            {
+
+                NalezRepository repo = new NalezRepository();
+                var data = repo.GetById(Int32.Parse(idNalez.Text));
+                table = DatabaseTables.Nalez();
+
+                table.Merge(data.GetTable());
+
+                zavadaTable.DataSource = table;
+            }
+        }
+
         private void zavadaExit_Click(object sender, EventArgs e)
         {
             zavadaPanel.Hide();
             mainMenu.Show();
         }
-
-
     }
 }

@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace DatabaseBETA
 {
+    /// <summary>
+    /// Static class
+    /// Methods to generate specific tables requested by entity class
+    /// </summary>
     public static class DatabaseTables
     {
         public static DataTable ProvozovatelVozidlaTable()
@@ -99,9 +103,19 @@ namespace DatabaseBETA
             dt.Columns.Add("kategorie", typeof(char));
             dt.Columns.Add("popis", typeof(string));
             //nalez
-            dt.Columns.Add("nalez_id", typeof(int));
-            dt.Columns.Add("kontrola_id", typeof(int));
+            //dt.Columns.Add("nalez_id", typeof(int));
+            //dt.Columns.Add("kontrola_id", typeof(int));
 
+            return dt;
+        }
+
+        public static DataTable Nalez()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("kontrola_id", typeof(int));
+            dt.Columns.Add("zavada_id", typeof(int));
+            dt.Columns.Add("kategorie", typeof(char));
+            dt.Columns.Add("zavada_popis", typeof(string));
             return dt;
         }
     }

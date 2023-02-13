@@ -42,38 +42,6 @@
             this.defectButton = new System.Windows.Forms.Button();
             this.mainMenu = new System.Windows.Forms.Panel();
             this.personPanel = new System.Windows.Forms.Panel();
-            this.repairPanel = new System.Windows.Forms.Panel();
-            this.repairDatum = new System.Windows.Forms.DateTimePicker();
-            this.repairExit = new System.Windows.Forms.Button();
-            this.repairRollback = new System.Windows.Forms.Button();
-            this.repairCommit = new System.Windows.Forms.Button();
-            this.label19 = new System.Windows.Forms.Label();
-            this.repairId = new System.Windows.Forms.TextBox();
-            this.repairDelete = new System.Windows.Forms.Button();
-            this.repairUpdate = new System.Windows.Forms.Button();
-            this.repairCreate = new System.Windows.Forms.Button();
-            this.repairKategorieId = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.repairZnacka = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.repairCisloTp = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.repairOznaceni = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.repairVin = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.repairNajeto = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.repairBarva = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.repairSpz = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
             this.personExit = new System.Windows.Forms.Button();
             this.rollbackPerson = new System.Windows.Forms.Button();
             this.commitPerson = new System.Windows.Forms.Button();
@@ -106,7 +74,55 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.repairPanel = new System.Windows.Forms.Panel();
+            this.repairDatum = new System.Windows.Forms.DateTimePicker();
+            this.repairExit = new System.Windows.Forms.Button();
+            this.repairRollback = new System.Windows.Forms.Button();
+            this.repairCommit = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.repairId = new System.Windows.Forms.TextBox();
+            this.repairDelete = new System.Windows.Forms.Button();
+            this.repairUpdate = new System.Windows.Forms.Button();
+            this.repairCreate = new System.Windows.Forms.Button();
+            this.repairKategorieId = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.repairZnacka = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.repairCisloTp = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.repairOznaceni = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.repairVin = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.repairNajeto = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.repairBarva = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.repairSpz = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.repairRealPanel = new System.Windows.Forms.Panel();
+            this.technikNadrizeny = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.technikId = new System.Windows.Forms.TextBox();
+            this.technikDelete = new System.Windows.Forms.Button();
+            this.technikUpdate = new System.Windows.Forms.Button();
+            this.technikCreate = new System.Windows.Forms.Button();
+            this.technikJmeno = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.technikPrijmeni = new System.Windows.Forms.TextBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.kontrolaPoznamka = new System.Windows.Forms.RichTextBox();
+            this.kontrolaRozsahPlny = new System.Windows.Forms.CheckBox();
             this.kontrolaDatum = new System.Windows.Forms.DateTimePicker();
             this.kontrolaExit = new System.Windows.Forms.Button();
             this.kontrolaRollback = new System.Windows.Forms.Button();
@@ -131,12 +147,38 @@
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.kontrolaRozsahPlny = new System.Windows.Forms.CheckBox();
-            this.kontrolaPoznamka = new System.Windows.Forms.RichTextBox();
+            this.zavadaPanel = new System.Windows.Forms.Panel();
+            this.label54 = new System.Windows.Forms.Label();
+            this.nalezId = new System.Windows.Forms.TextBox();
+            this.nalezDelete = new System.Windows.Forms.Button();
+            this.nalezUpdate = new System.Windows.Forms.Button();
+            this.nalezCreate = new System.Windows.Forms.Button();
+            this.label53 = new System.Windows.Forms.Label();
+            this.zavadaPopis = new System.Windows.Forms.RichTextBox();
+            this.zavadaKategorie = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.zavadaRollback = new System.Windows.Forms.Button();
+            this.zavadaCommit = new System.Windows.Forms.Button();
+            this.label48 = new System.Windows.Forms.Label();
+            this.zavadaId = new System.Windows.Forms.TextBox();
+            this.zavadaDelete = new System.Windows.Forms.Button();
+            this.zavadaUpdate = new System.Windows.Forms.Button();
+            this.zavadaCreate = new System.Windows.Forms.Button();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.nalezKontrolaId = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.nalezZavadaId = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.logoutButton = new System.Windows.Forms.Button();
             this.mainMenu.SuspendLayout();
             this.personPanel.SuspendLayout();
             this.repairPanel.SuspendLayout();
             this.repairRealPanel.SuspendLayout();
+            this.zavadaPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -192,6 +234,7 @@
             this.vechicleButton.Size = new System.Drawing.Size(130, 130);
             this.vechicleButton.TabIndex = 17;
             this.vechicleButton.UseVisualStyleBackColor = false;
+            this.vechicleButton.Click += new System.EventHandler(this.vechicleButton_Click);
             // 
             // label2
             // 
@@ -216,6 +259,7 @@
             this.repairsButton.Size = new System.Drawing.Size(158, 153);
             this.repairsButton.TabIndex = 19;
             this.repairsButton.UseVisualStyleBackColor = false;
+            this.repairsButton.Click += new System.EventHandler(this.repairsButton_Click);
             // 
             // label3
             // 
@@ -265,6 +309,7 @@
             this.defectButton.Size = new System.Drawing.Size(120, 120);
             this.defectButton.TabIndex = 23;
             this.defectButton.UseVisualStyleBackColor = false;
+            this.defectButton.Click += new System.EventHandler(this.defectButton_Click);
             // 
             // mainMenu
             // 
@@ -321,326 +366,6 @@
             this.personPanel.Name = "personPanel";
             this.personPanel.Size = new System.Drawing.Size(1195, 850);
             this.personPanel.TabIndex = 26;
-            // 
-            // repairPanel
-            // 
-            this.repairPanel.Controls.Add(this.repairDatum);
-            this.repairPanel.Controls.Add(this.repairExit);
-            this.repairPanel.Controls.Add(this.repairRollback);
-            this.repairPanel.Controls.Add(this.repairCommit);
-            this.repairPanel.Controls.Add(this.label19);
-            this.repairPanel.Controls.Add(this.repairId);
-            this.repairPanel.Controls.Add(this.repairDelete);
-            this.repairPanel.Controls.Add(this.repairUpdate);
-            this.repairPanel.Controls.Add(this.repairCreate);
-            this.repairPanel.Controls.Add(this.repairKategorieId);
-            this.repairPanel.Controls.Add(this.label20);
-            this.repairPanel.Controls.Add(this.repairZnacka);
-            this.repairPanel.Controls.Add(this.label21);
-            this.repairPanel.Controls.Add(this.textBox4);
-            this.repairPanel.Controls.Add(this.label22);
-            this.repairPanel.Controls.Add(this.repairCisloTp);
-            this.repairPanel.Controls.Add(this.label23);
-            this.repairPanel.Controls.Add(this.repairOznaceni);
-            this.repairPanel.Controls.Add(this.label24);
-            this.repairPanel.Controls.Add(this.repairVin);
-            this.repairPanel.Controls.Add(this.label25);
-            this.repairPanel.Controls.Add(this.repairNajeto);
-            this.repairPanel.Controls.Add(this.label26);
-            this.repairPanel.Controls.Add(this.repairBarva);
-            this.repairPanel.Controls.Add(this.label27);
-            this.repairPanel.Controls.Add(this.label28);
-            this.repairPanel.Controls.Add(this.repairSpz);
-            this.repairPanel.Controls.Add(this.label29);
-            this.repairPanel.Controls.Add(this.label30);
-            this.repairPanel.Controls.Add(this.label31);
-            this.repairPanel.Controls.Add(this.label32);
-            this.repairPanel.Location = new System.Drawing.Point(161, 60);
-            this.repairPanel.Name = "repairPanel";
-            this.repairPanel.Size = new System.Drawing.Size(1195, 850);
-            this.repairPanel.TabIndex = 55;
-            // 
-            // repairDatum
-            // 
-            this.repairDatum.Location = new System.Drawing.Point(492, 726);
-            this.repairDatum.Name = "repairDatum";
-            this.repairDatum.Size = new System.Drawing.Size(186, 23);
-            this.repairDatum.TabIndex = 55;
-            this.repairDatum.Value = new System.DateTime(2023, 2, 12, 15, 51, 8, 0);
-            // 
-            // repairExit
-            // 
-            this.repairExit.BackColor = System.Drawing.Color.Transparent;
-            this.repairExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("repairExit.BackgroundImage")));
-            this.repairExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.repairExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.repairExit.Location = new System.Drawing.Point(17, 767);
-            this.repairExit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.repairExit.Name = "repairExit";
-            this.repairExit.Size = new System.Drawing.Size(68, 66);
-            this.repairExit.TabIndex = 54;
-            this.repairExit.UseVisualStyleBackColor = false;
-            // 
-            // repairRollback
-            // 
-            this.repairRollback.Location = new System.Drawing.Point(997, 692);
-            this.repairRollback.Name = "repairRollback";
-            this.repairRollback.Size = new System.Drawing.Size(91, 59);
-            this.repairRollback.TabIndex = 53;
-            this.repairRollback.Text = "ROLLBACK";
-            this.repairRollback.UseVisualStyleBackColor = true;
-            this.repairRollback.Click += new System.EventHandler(this.repairRollback_Click);
-            // 
-            // repairCommit
-            // 
-            this.repairCommit.Location = new System.Drawing.Point(997, 771);
-            this.repairCommit.Name = "repairCommit";
-            this.repairCommit.Size = new System.Drawing.Size(91, 59);
-            this.repairCommit.TabIndex = 52;
-            this.repairCommit.Text = "COMMIT";
-            this.repairCommit.UseVisualStyleBackColor = true;
-            this.repairCommit.Click += new System.EventHandler(this.repairCommit_Click);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(205, 700);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(38, 15);
-            this.label19.TabIndex = 51;
-            this.label19.Text = "BY ID";
-            // 
-            // repairId
-            // 
-            this.repairId.Location = new System.Drawing.Point(174, 718);
-            this.repairId.Name = "repairId";
-            this.repairId.Size = new System.Drawing.Size(100, 23);
-            this.repairId.TabIndex = 50;
-            this.repairId.Text = "id";
-            this.repairId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // repairDelete
-            // 
-            this.repairDelete.Location = new System.Drawing.Point(174, 803);
-            this.repairDelete.Name = "repairDelete";
-            this.repairDelete.Size = new System.Drawing.Size(100, 32);
-            this.repairDelete.TabIndex = 49;
-            this.repairDelete.Text = "DELETE";
-            this.repairDelete.UseVisualStyleBackColor = true;
-            this.repairDelete.Click += new System.EventHandler(this.repairDelete_Click);
-            // 
-            // repairUpdate
-            // 
-            this.repairUpdate.Location = new System.Drawing.Point(174, 760);
-            this.repairUpdate.Name = "repairUpdate";
-            this.repairUpdate.Size = new System.Drawing.Size(100, 30);
-            this.repairUpdate.TabIndex = 48;
-            this.repairUpdate.Text = "UPDATE";
-            this.repairUpdate.UseVisualStyleBackColor = true;
-            this.repairUpdate.Click += new System.EventHandler(this.repairUpdate_Click);
-            // 
-            // repairCreate
-            // 
-            this.repairCreate.Location = new System.Drawing.Point(709, 776);
-            this.repairCreate.Name = "repairCreate";
-            this.repairCreate.Size = new System.Drawing.Size(91, 59);
-            this.repairCreate.TabIndex = 47;
-            this.repairCreate.Text = "CREATE";
-            this.repairCreate.UseVisualStyleBackColor = true;
-            this.repairCreate.Click += new System.EventHandler(this.repairCreate_Click);
-            // 
-            // repairKategorieId
-            // 
-            this.repairKategorieId.Location = new System.Drawing.Point(491, 290);
-            this.repairKategorieId.Name = "repairKategorieId";
-            this.repairKategorieId.Size = new System.Drawing.Size(187, 23);
-            this.repairKategorieId.TabIndex = 46;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(491, 266);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(201, 21);
-            this.label20.TabIndex = 45;
-            this.label20.Text = "KATEGORIE VOZIDLA (ID)";
-            // 
-            // repairZnacka
-            // 
-            this.repairZnacka.Location = new System.Drawing.Point(491, 347);
-            this.repairZnacka.Name = "repairZnacka";
-            this.repairZnacka.Size = new System.Drawing.Size(187, 23);
-            this.repairZnacka.TabIndex = 44;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(491, 323);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(148, 21);
-            this.label21.TabIndex = 43;
-            this.label21.Text = "TOVARNI ZNACKA";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(492, 290);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(187, 23);
-            this.textBox4.TabIndex = 42;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label22.Location = new System.Drawing.Point(492, 266);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(66, 21);
-            this.label22.TabIndex = 41;
-            this.label22.Text = "JMENO";
-            // 
-            // repairCisloTp
-            // 
-            this.repairCisloTp.Location = new System.Drawing.Point(491, 535);
-            this.repairCisloTp.Name = "repairCisloTp";
-            this.repairCisloTp.Size = new System.Drawing.Size(187, 23);
-            this.repairCisloTp.TabIndex = 40;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(491, 511);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(77, 21);
-            this.label23.TabIndex = 39;
-            this.label23.Text = "CISLO TP";
-            // 
-            // repairOznaceni
-            // 
-            this.repairOznaceni.Location = new System.Drawing.Point(491, 412);
-            this.repairOznaceni.Name = "repairOznaceni";
-            this.repairOznaceni.Size = new System.Drawing.Size(187, 23);
-            this.repairOznaceni.TabIndex = 38;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label24.Location = new System.Drawing.Point(491, 388);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(178, 21);
-            this.label24.TabIndex = 37;
-            this.label24.Text = "OBCHODNI OZNACEN";
-            // 
-            // repairVin
-            // 
-            this.repairVin.Location = new System.Drawing.Point(491, 475);
-            this.repairVin.Name = "repairVin";
-            this.repairVin.Size = new System.Drawing.Size(187, 23);
-            this.repairVin.TabIndex = 36;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label25.Location = new System.Drawing.Point(491, 451);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(39, 21);
-            this.label25.TabIndex = 35;
-            this.label25.Text = "VIN";
-            // 
-            // repairNajeto
-            // 
-            this.repairNajeto.Location = new System.Drawing.Point(491, 597);
-            this.repairNajeto.Name = "repairNajeto";
-            this.repairNajeto.Size = new System.Drawing.Size(187, 23);
-            this.repairNajeto.TabIndex = 34;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label26.Location = new System.Drawing.Point(491, 573);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(100, 21);
-            this.label26.TabIndex = 33;
-            this.label26.Text = "NAJETO KM";
-            // 
-            // repairBarva
-            // 
-            this.repairBarva.Location = new System.Drawing.Point(491, 786);
-            this.repairBarva.Name = "repairBarva";
-            this.repairBarva.Size = new System.Drawing.Size(187, 23);
-            this.repairBarva.TabIndex = 32;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label27.Location = new System.Drawing.Point(490, 762);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(62, 21);
-            this.label27.TabIndex = 31;
-            this.label27.Text = "BARVA";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label28.Location = new System.Drawing.Point(491, 696);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(165, 21);
-            this.label28.TabIndex = 29;
-            this.label28.Text = "DATUM REGISTRACE";
-            // 
-            // repairSpz
-            // 
-            this.repairSpz.Location = new System.Drawing.Point(491, 662);
-            this.repairSpz.Name = "repairSpz";
-            this.repairSpz.Size = new System.Drawing.Size(187, 23);
-            this.repairSpz.TabIndex = 28;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label29.Location = new System.Drawing.Point(491, 638);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(39, 21);
-            this.label29.TabIndex = 27;
-            this.label29.Text = "SPZ";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label30.Location = new System.Drawing.Point(540, 196);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(100, 32);
-            this.label30.TabIndex = 11;
-            this.label30.Text = "CREATE";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label31.Location = new System.Drawing.Point(389, 29);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(433, 72);
-            this.label31.TabIndex = 9;
-            this.label31.Text = "AUTOMECHANIK";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label32.Location = new System.Drawing.Point(524, 101);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(153, 54);
-            this.label32.TabIndex = 10;
-            this.label32.Text = "Vozidlo";
             // 
             // personExit
             // 
@@ -936,8 +661,343 @@
             this.label9.TabIndex = 10;
             this.label9.Text = "Person";
             // 
+            // repairPanel
+            // 
+            this.repairPanel.Controls.Add(this.repairDatum);
+            this.repairPanel.Controls.Add(this.repairExit);
+            this.repairPanel.Controls.Add(this.repairRollback);
+            this.repairPanel.Controls.Add(this.repairCommit);
+            this.repairPanel.Controls.Add(this.label19);
+            this.repairPanel.Controls.Add(this.repairId);
+            this.repairPanel.Controls.Add(this.repairDelete);
+            this.repairPanel.Controls.Add(this.repairUpdate);
+            this.repairPanel.Controls.Add(this.repairCreate);
+            this.repairPanel.Controls.Add(this.repairKategorieId);
+            this.repairPanel.Controls.Add(this.label20);
+            this.repairPanel.Controls.Add(this.repairZnacka);
+            this.repairPanel.Controls.Add(this.label21);
+            this.repairPanel.Controls.Add(this.textBox4);
+            this.repairPanel.Controls.Add(this.label22);
+            this.repairPanel.Controls.Add(this.repairCisloTp);
+            this.repairPanel.Controls.Add(this.label23);
+            this.repairPanel.Controls.Add(this.repairOznaceni);
+            this.repairPanel.Controls.Add(this.label24);
+            this.repairPanel.Controls.Add(this.repairVin);
+            this.repairPanel.Controls.Add(this.label25);
+            this.repairPanel.Controls.Add(this.repairNajeto);
+            this.repairPanel.Controls.Add(this.label26);
+            this.repairPanel.Controls.Add(this.repairBarva);
+            this.repairPanel.Controls.Add(this.label27);
+            this.repairPanel.Controls.Add(this.label28);
+            this.repairPanel.Controls.Add(this.repairSpz);
+            this.repairPanel.Controls.Add(this.label29);
+            this.repairPanel.Controls.Add(this.label30);
+            this.repairPanel.Controls.Add(this.label31);
+            this.repairPanel.Controls.Add(this.label32);
+            this.repairPanel.Location = new System.Drawing.Point(161, 60);
+            this.repairPanel.Name = "repairPanel";
+            this.repairPanel.Size = new System.Drawing.Size(1195, 850);
+            this.repairPanel.TabIndex = 55;
+            // 
+            // repairDatum
+            // 
+            this.repairDatum.Location = new System.Drawing.Point(492, 726);
+            this.repairDatum.Name = "repairDatum";
+            this.repairDatum.Size = new System.Drawing.Size(186, 23);
+            this.repairDatum.TabIndex = 55;
+            this.repairDatum.Value = new System.DateTime(2023, 2, 12, 15, 51, 8, 0);
+            // 
+            // repairExit
+            // 
+            this.repairExit.BackColor = System.Drawing.Color.Transparent;
+            this.repairExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("repairExit.BackgroundImage")));
+            this.repairExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.repairExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.repairExit.Location = new System.Drawing.Point(17, 767);
+            this.repairExit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.repairExit.Name = "repairExit";
+            this.repairExit.Size = new System.Drawing.Size(68, 66);
+            this.repairExit.TabIndex = 54;
+            this.repairExit.UseVisualStyleBackColor = false;
+            this.repairExit.Click += new System.EventHandler(this.repairExit_Click);
+            // 
+            // repairRollback
+            // 
+            this.repairRollback.Location = new System.Drawing.Point(997, 692);
+            this.repairRollback.Name = "repairRollback";
+            this.repairRollback.Size = new System.Drawing.Size(91, 59);
+            this.repairRollback.TabIndex = 53;
+            this.repairRollback.Text = "ROLLBACK";
+            this.repairRollback.UseVisualStyleBackColor = true;
+            this.repairRollback.Click += new System.EventHandler(this.repairRollback_Click);
+            // 
+            // repairCommit
+            // 
+            this.repairCommit.Location = new System.Drawing.Point(997, 771);
+            this.repairCommit.Name = "repairCommit";
+            this.repairCommit.Size = new System.Drawing.Size(91, 59);
+            this.repairCommit.TabIndex = 52;
+            this.repairCommit.Text = "COMMIT";
+            this.repairCommit.UseVisualStyleBackColor = true;
+            this.repairCommit.Click += new System.EventHandler(this.repairCommit_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(205, 700);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(38, 15);
+            this.label19.TabIndex = 51;
+            this.label19.Text = "BY ID";
+            // 
+            // repairId
+            // 
+            this.repairId.Location = new System.Drawing.Point(174, 718);
+            this.repairId.Name = "repairId";
+            this.repairId.Size = new System.Drawing.Size(100, 23);
+            this.repairId.TabIndex = 50;
+            this.repairId.Text = "id";
+            this.repairId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // repairDelete
+            // 
+            this.repairDelete.Location = new System.Drawing.Point(174, 803);
+            this.repairDelete.Name = "repairDelete";
+            this.repairDelete.Size = new System.Drawing.Size(100, 32);
+            this.repairDelete.TabIndex = 49;
+            this.repairDelete.Text = "DELETE";
+            this.repairDelete.UseVisualStyleBackColor = true;
+            this.repairDelete.Click += new System.EventHandler(this.repairDelete_Click);
+            // 
+            // repairUpdate
+            // 
+            this.repairUpdate.Location = new System.Drawing.Point(174, 760);
+            this.repairUpdate.Name = "repairUpdate";
+            this.repairUpdate.Size = new System.Drawing.Size(100, 30);
+            this.repairUpdate.TabIndex = 48;
+            this.repairUpdate.Text = "UPDATE";
+            this.repairUpdate.UseVisualStyleBackColor = true;
+            this.repairUpdate.Click += new System.EventHandler(this.repairUpdate_Click);
+            // 
+            // repairCreate
+            // 
+            this.repairCreate.Location = new System.Drawing.Point(709, 776);
+            this.repairCreate.Name = "repairCreate";
+            this.repairCreate.Size = new System.Drawing.Size(91, 59);
+            this.repairCreate.TabIndex = 47;
+            this.repairCreate.Text = "CREATE";
+            this.repairCreate.UseVisualStyleBackColor = true;
+            this.repairCreate.Click += new System.EventHandler(this.repairCreate_Click);
+            // 
+            // repairKategorieId
+            // 
+            this.repairKategorieId.Location = new System.Drawing.Point(491, 290);
+            this.repairKategorieId.Name = "repairKategorieId";
+            this.repairKategorieId.Size = new System.Drawing.Size(187, 23);
+            this.repairKategorieId.TabIndex = 46;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label20.Location = new System.Drawing.Point(491, 266);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(201, 21);
+            this.label20.TabIndex = 45;
+            this.label20.Text = "KATEGORIE VOZIDLA (ID)";
+            // 
+            // repairZnacka
+            // 
+            this.repairZnacka.Location = new System.Drawing.Point(491, 347);
+            this.repairZnacka.Name = "repairZnacka";
+            this.repairZnacka.Size = new System.Drawing.Size(187, 23);
+            this.repairZnacka.TabIndex = 44;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label21.Location = new System.Drawing.Point(491, 323);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(148, 21);
+            this.label21.TabIndex = 43;
+            this.label21.Text = "TOVARNI ZNACKA";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(492, 290);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(187, 23);
+            this.textBox4.TabIndex = 42;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label22.Location = new System.Drawing.Point(492, 266);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(66, 21);
+            this.label22.TabIndex = 41;
+            this.label22.Text = "JMENO";
+            // 
+            // repairCisloTp
+            // 
+            this.repairCisloTp.Location = new System.Drawing.Point(491, 535);
+            this.repairCisloTp.Name = "repairCisloTp";
+            this.repairCisloTp.Size = new System.Drawing.Size(187, 23);
+            this.repairCisloTp.TabIndex = 40;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label23.Location = new System.Drawing.Point(491, 511);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(77, 21);
+            this.label23.TabIndex = 39;
+            this.label23.Text = "CISLO TP";
+            // 
+            // repairOznaceni
+            // 
+            this.repairOznaceni.Location = new System.Drawing.Point(491, 412);
+            this.repairOznaceni.Name = "repairOznaceni";
+            this.repairOznaceni.Size = new System.Drawing.Size(187, 23);
+            this.repairOznaceni.TabIndex = 38;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label24.Location = new System.Drawing.Point(491, 388);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(178, 21);
+            this.label24.TabIndex = 37;
+            this.label24.Text = "OBCHODNI OZNACEN";
+            // 
+            // repairVin
+            // 
+            this.repairVin.Location = new System.Drawing.Point(491, 475);
+            this.repairVin.Name = "repairVin";
+            this.repairVin.Size = new System.Drawing.Size(187, 23);
+            this.repairVin.TabIndex = 36;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label25.Location = new System.Drawing.Point(491, 451);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(39, 21);
+            this.label25.TabIndex = 35;
+            this.label25.Text = "VIN";
+            // 
+            // repairNajeto
+            // 
+            this.repairNajeto.Location = new System.Drawing.Point(491, 597);
+            this.repairNajeto.Name = "repairNajeto";
+            this.repairNajeto.Size = new System.Drawing.Size(187, 23);
+            this.repairNajeto.TabIndex = 34;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label26.Location = new System.Drawing.Point(491, 573);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(100, 21);
+            this.label26.TabIndex = 33;
+            this.label26.Text = "NAJETO KM";
+            // 
+            // repairBarva
+            // 
+            this.repairBarva.Location = new System.Drawing.Point(491, 786);
+            this.repairBarva.Name = "repairBarva";
+            this.repairBarva.Size = new System.Drawing.Size(187, 23);
+            this.repairBarva.TabIndex = 32;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label27.Location = new System.Drawing.Point(490, 762);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(62, 21);
+            this.label27.TabIndex = 31;
+            this.label27.Text = "BARVA";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label28.Location = new System.Drawing.Point(491, 696);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(165, 21);
+            this.label28.TabIndex = 29;
+            this.label28.Text = "DATUM REGISTRACE";
+            // 
+            // repairSpz
+            // 
+            this.repairSpz.Location = new System.Drawing.Point(491, 662);
+            this.repairSpz.Name = "repairSpz";
+            this.repairSpz.Size = new System.Drawing.Size(187, 23);
+            this.repairSpz.TabIndex = 28;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label29.Location = new System.Drawing.Point(491, 638);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(39, 21);
+            this.label29.TabIndex = 27;
+            this.label29.Text = "SPZ";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label30.Location = new System.Drawing.Point(540, 196);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(100, 32);
+            this.label30.TabIndex = 11;
+            this.label30.Text = "CREATE";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label31.Location = new System.Drawing.Point(389, 29);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(433, 72);
+            this.label31.TabIndex = 9;
+            this.label31.Text = "AUTOMECHANIK";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label32.Location = new System.Drawing.Point(524, 101);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(153, 54);
+            this.label32.TabIndex = 10;
+            this.label32.Text = "Vozidlo";
+            // 
             // repairRealPanel
             // 
+            this.repairRealPanel.Controls.Add(this.technikNadrizeny);
+            this.repairRealPanel.Controls.Add(this.label47);
+            this.repairRealPanel.Controls.Add(this.label41);
+            this.repairRealPanel.Controls.Add(this.technikId);
+            this.repairRealPanel.Controls.Add(this.technikDelete);
+            this.repairRealPanel.Controls.Add(this.technikUpdate);
+            this.repairRealPanel.Controls.Add(this.technikCreate);
+            this.repairRealPanel.Controls.Add(this.technikJmeno);
+            this.repairRealPanel.Controls.Add(this.label38);
+            this.repairRealPanel.Controls.Add(this.textBox6);
+            this.repairRealPanel.Controls.Add(this.label42);
+            this.repairRealPanel.Controls.Add(this.technikPrijmeni);
+            this.repairRealPanel.Controls.Add(this.label49);
+            this.repairRealPanel.Controls.Add(this.label51);
             this.repairRealPanel.Controls.Add(this.kontrolaPoznamka);
             this.repairRealPanel.Controls.Add(this.kontrolaRozsahPlny);
             this.repairRealPanel.Controls.Add(this.kontrolaDatum);
@@ -969,9 +1029,154 @@
             this.repairRealPanel.Size = new System.Drawing.Size(1195, 850);
             this.repairRealPanel.TabIndex = 56;
             // 
+            // technikNadrizeny
+            // 
+            this.technikNadrizeny.Location = new System.Drawing.Point(739, 478);
+            this.technikNadrizeny.Name = "technikNadrizeny";
+            this.technikNadrizeny.Size = new System.Drawing.Size(187, 23);
+            this.technikNadrizeny.TabIndex = 77;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label47.Location = new System.Drawing.Point(739, 454);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(124, 21);
+            this.label47.TabIndex = 76;
+            this.label47.Text = "NADRIZENY ID";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(812, 673);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(38, 15);
+            this.label41.TabIndex = 75;
+            this.label41.Text = "BY ID";
+            // 
+            // technikId
+            // 
+            this.technikId.Location = new System.Drawing.Point(780, 691);
+            this.technikId.Name = "technikId";
+            this.technikId.Size = new System.Drawing.Size(100, 23);
+            this.technikId.TabIndex = 74;
+            this.technikId.Text = "id";
+            this.technikId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // technikDelete
+            // 
+            this.technikDelete.Location = new System.Drawing.Point(780, 776);
+            this.technikDelete.Name = "technikDelete";
+            this.technikDelete.Size = new System.Drawing.Size(100, 32);
+            this.technikDelete.TabIndex = 73;
+            this.technikDelete.Text = "DELETE";
+            this.technikDelete.UseVisualStyleBackColor = true;
+            this.technikDelete.Click += new System.EventHandler(this.technikDelete_Click);
+            // 
+            // technikUpdate
+            // 
+            this.technikUpdate.Location = new System.Drawing.Point(780, 733);
+            this.technikUpdate.Name = "technikUpdate";
+            this.technikUpdate.Size = new System.Drawing.Size(100, 30);
+            this.technikUpdate.TabIndex = 72;
+            this.technikUpdate.Text = "UPDATE";
+            this.technikUpdate.UseVisualStyleBackColor = true;
+            this.technikUpdate.Click += new System.EventHandler(this.technikUpdate_Click);
+            // 
+            // technikCreate
+            // 
+            this.technikCreate.Location = new System.Drawing.Point(780, 566);
+            this.technikCreate.Name = "technikCreate";
+            this.technikCreate.Size = new System.Drawing.Size(100, 59);
+            this.technikCreate.TabIndex = 71;
+            this.technikCreate.Text = "CREATE";
+            this.technikCreate.UseVisualStyleBackColor = true;
+            this.technikCreate.Click += new System.EventHandler(this.technikCreate_Click);
+            // 
+            // technikJmeno
+            // 
+            this.technikJmeno.Location = new System.Drawing.Point(739, 346);
+            this.technikJmeno.Name = "technikJmeno";
+            this.technikJmeno.Size = new System.Drawing.Size(187, 23);
+            this.technikJmeno.TabIndex = 70;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label38.Location = new System.Drawing.Point(739, 322);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(66, 21);
+            this.label38.TabIndex = 69;
+            this.label38.Text = "JMENO";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(740, 346);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(187, 23);
+            this.textBox6.TabIndex = 66;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label42.Location = new System.Drawing.Point(740, 322);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(66, 21);
+            this.label42.TabIndex = 65;
+            this.label42.Text = "JMENO";
+            // 
+            // technikPrijmeni
+            // 
+            this.technikPrijmeni.Location = new System.Drawing.Point(740, 409);
+            this.technikPrijmeni.Name = "technikPrijmeni";
+            this.technikPrijmeni.Size = new System.Drawing.Size(187, 23);
+            this.technikPrijmeni.TabIndex = 62;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label49.Location = new System.Drawing.Point(740, 385);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(84, 21);
+            this.label49.TabIndex = 61;
+            this.label49.Text = "PRIJMENI";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label51.Location = new System.Drawing.Point(721, 215);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(210, 32);
+            this.label51.TabIndex = 58;
+            this.label51.Text = "CREATE TECHNIK";
+            // 
+            // kontrolaPoznamka
+            // 
+            this.kontrolaPoznamka.Location = new System.Drawing.Point(163, 670);
+            this.kontrolaPoznamka.Name = "kontrolaPoznamka";
+            this.kontrolaPoznamka.Size = new System.Drawing.Size(377, 163);
+            this.kontrolaPoznamka.TabIndex = 57;
+            this.kontrolaPoznamka.Text = "";
+            // 
+            // kontrolaRozsahPlny
+            // 
+            this.kontrolaRozsahPlny.AutoSize = true;
+            this.kontrolaRozsahPlny.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.kontrolaRozsahPlny.Location = new System.Drawing.Point(286, 515);
+            this.kontrolaRozsahPlny.Name = "kontrolaRozsahPlny";
+            this.kontrolaRozsahPlny.Size = new System.Drawing.Size(138, 25);
+            this.kontrolaRozsahPlny.TabIndex = 56;
+            this.kontrolaRozsahPlny.Text = "PLNY ROZSAH";
+            this.kontrolaRozsahPlny.UseVisualStyleBackColor = true;
+            // 
             // kontrolaDatum
             // 
-            this.kontrolaDatum.Location = new System.Drawing.Point(492, 597);
+            this.kontrolaDatum.Location = new System.Drawing.Point(266, 595);
             this.kontrolaDatum.Name = "kontrolaDatum";
             this.kontrolaDatum.Size = new System.Drawing.Size(186, 23);
             this.kontrolaDatum.TabIndex = 55;
@@ -989,29 +1194,32 @@
             this.kontrolaExit.Size = new System.Drawing.Size(68, 66);
             this.kontrolaExit.TabIndex = 54;
             this.kontrolaExit.UseVisualStyleBackColor = false;
+            this.kontrolaExit.Click += new System.EventHandler(this.kontrolaExit_Click);
             // 
             // kontrolaRollback
             // 
-            this.kontrolaRollback.Location = new System.Drawing.Point(997, 692);
+            this.kontrolaRollback.Location = new System.Drawing.Point(1072, 692);
             this.kontrolaRollback.Name = "kontrolaRollback";
             this.kontrolaRollback.Size = new System.Drawing.Size(91, 59);
             this.kontrolaRollback.TabIndex = 53;
             this.kontrolaRollback.Text = "ROLLBACK";
             this.kontrolaRollback.UseVisualStyleBackColor = true;
+            this.kontrolaRollback.Click += new System.EventHandler(this.kontrolaRollback_Click);
             // 
             // kontrolaCommit
             // 
-            this.kontrolaCommit.Location = new System.Drawing.Point(997, 771);
+            this.kontrolaCommit.Location = new System.Drawing.Point(1072, 771);
             this.kontrolaCommit.Name = "kontrolaCommit";
             this.kontrolaCommit.Size = new System.Drawing.Size(91, 59);
             this.kontrolaCommit.TabIndex = 52;
             this.kontrolaCommit.Text = "COMMIT";
             this.kontrolaCommit.UseVisualStyleBackColor = true;
+            this.kontrolaCommit.Click += new System.EventHandler(this.kontrolaCommit_Click);
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(205, 700);
+            this.label33.Location = new System.Drawing.Point(103, 229);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(38, 15);
             this.label33.TabIndex = 51;
@@ -1019,7 +1227,7 @@
             // 
             // kontrolaId
             // 
-            this.kontrolaId.Location = new System.Drawing.Point(174, 718);
+            this.kontrolaId.Location = new System.Drawing.Point(74, 247);
             this.kontrolaId.Name = "kontrolaId";
             this.kontrolaId.Size = new System.Drawing.Size(100, 23);
             this.kontrolaId.TabIndex = 50;
@@ -1028,34 +1236,37 @@
             // 
             // kontrolaDelete
             // 
-            this.kontrolaDelete.Location = new System.Drawing.Point(174, 803);
+            this.kontrolaDelete.Location = new System.Drawing.Point(74, 332);
             this.kontrolaDelete.Name = "kontrolaDelete";
             this.kontrolaDelete.Size = new System.Drawing.Size(100, 32);
             this.kontrolaDelete.TabIndex = 49;
             this.kontrolaDelete.Text = "DELETE";
             this.kontrolaDelete.UseVisualStyleBackColor = true;
+            this.kontrolaDelete.Click += new System.EventHandler(this.kontrolaDelete_Click);
             // 
             // kontrolaUpdate
             // 
-            this.kontrolaUpdate.Location = new System.Drawing.Point(174, 760);
+            this.kontrolaUpdate.Location = new System.Drawing.Point(74, 289);
             this.kontrolaUpdate.Name = "kontrolaUpdate";
             this.kontrolaUpdate.Size = new System.Drawing.Size(100, 30);
             this.kontrolaUpdate.TabIndex = 48;
             this.kontrolaUpdate.Text = "UPDATE";
             this.kontrolaUpdate.UseVisualStyleBackColor = true;
+            this.kontrolaUpdate.Click += new System.EventHandler(this.kontrolaUpdate_Click);
             // 
             // kontrolaCreate
             // 
-            this.kontrolaCreate.Location = new System.Drawing.Point(864, 776);
+            this.kontrolaCreate.Location = new System.Drawing.Point(74, 393);
             this.kontrolaCreate.Name = "kontrolaCreate";
-            this.kontrolaCreate.Size = new System.Drawing.Size(91, 59);
+            this.kontrolaCreate.Size = new System.Drawing.Size(100, 59);
             this.kontrolaCreate.TabIndex = 47;
             this.kontrolaCreate.Text = "CREATE";
             this.kontrolaCreate.UseVisualStyleBackColor = true;
+            this.kontrolaCreate.Click += new System.EventHandler(this.kontrolaCreate_Click);
             // 
             // kontrolaVozidloId
             // 
-            this.kontrolaVozidloId.Location = new System.Drawing.Point(491, 290);
+            this.kontrolaVozidloId.Location = new System.Drawing.Point(265, 288);
             this.kontrolaVozidloId.Name = "kontrolaVozidloId";
             this.kontrolaVozidloId.Size = new System.Drawing.Size(187, 23);
             this.kontrolaVozidloId.TabIndex = 46;
@@ -1064,7 +1275,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label34.Location = new System.Drawing.Point(491, 266);
+            this.label34.Location = new System.Drawing.Point(265, 264);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(101, 21);
             this.label34.TabIndex = 45;
@@ -1072,7 +1283,7 @@
             // 
             // kontrolaDruh
             // 
-            this.kontrolaDruh.Location = new System.Drawing.Point(491, 479);
+            this.kontrolaDruh.Location = new System.Drawing.Point(265, 477);
             this.kontrolaDruh.Name = "kontrolaDruh";
             this.kontrolaDruh.Size = new System.Drawing.Size(187, 23);
             this.kontrolaDruh.TabIndex = 44;
@@ -1081,7 +1292,7 @@
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label35.Location = new System.Drawing.Point(491, 455);
+            this.label35.Location = new System.Drawing.Point(265, 453);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(143, 21);
             this.label35.TabIndex = 43;
@@ -1089,7 +1300,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(492, 290);
+            this.textBox5.Location = new System.Drawing.Point(266, 288);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(187, 23);
             this.textBox5.TabIndex = 42;
@@ -1098,7 +1309,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label36.Location = new System.Drawing.Point(492, 266);
+            this.label36.Location = new System.Drawing.Point(266, 264);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(66, 21);
             this.label36.TabIndex = 41;
@@ -1108,7 +1319,7 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label37.Location = new System.Drawing.Point(524, 648);
+            this.label37.Location = new System.Drawing.Point(298, 646);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(101, 21);
             this.label37.TabIndex = 39;
@@ -1118,7 +1329,7 @@
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label39.Location = new System.Drawing.Point(492, 568);
+            this.label39.Location = new System.Drawing.Point(266, 566);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(155, 21);
             this.label39.TabIndex = 35;
@@ -1126,7 +1337,7 @@
             // 
             // kontrolaTechnikId
             // 
-            this.kontrolaTechnikId.Location = new System.Drawing.Point(492, 353);
+            this.kontrolaTechnikId.Location = new System.Drawing.Point(266, 351);
             this.kontrolaTechnikId.Name = "kontrolaTechnikId";
             this.kontrolaTechnikId.Size = new System.Drawing.Size(187, 23);
             this.kontrolaTechnikId.TabIndex = 34;
@@ -1135,7 +1346,7 @@
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label40.Location = new System.Drawing.Point(492, 329);
+            this.label40.Location = new System.Drawing.Point(266, 327);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(99, 21);
             this.label40.TabIndex = 33;
@@ -1143,7 +1354,7 @@
             // 
             // kontrolaProvozovatelId
             // 
-            this.kontrolaProvozovatelId.Location = new System.Drawing.Point(492, 418);
+            this.kontrolaProvozovatelId.Location = new System.Drawing.Point(266, 416);
             this.kontrolaProvozovatelId.Name = "kontrolaProvozovatelId";
             this.kontrolaProvozovatelId.Size = new System.Drawing.Size(187, 23);
             this.kontrolaProvozovatelId.TabIndex = 28;
@@ -1152,7 +1363,7 @@
             // 
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label43.Location = new System.Drawing.Point(492, 394);
+            this.label43.Location = new System.Drawing.Point(266, 392);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(154, 21);
             this.label43.TabIndex = 27;
@@ -1162,11 +1373,11 @@
             // 
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label44.Location = new System.Drawing.Point(535, 196);
+            this.label44.Location = new System.Drawing.Point(247, 215);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(100, 32);
+            this.label44.Size = new System.Drawing.Size(211, 32);
             this.label44.TabIndex = 11;
-            this.label44.Text = "CREATE";
+            this.label44.Text = "CREATE VOZIDLO";
             // 
             // label45
             // 
@@ -1182,41 +1393,314 @@
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label46.Location = new System.Drawing.Point(524, 101);
+            this.label46.Location = new System.Drawing.Point(521, 101);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(135, 54);
             this.label46.TabIndex = 10;
             this.label46.Text = "Repair";
             // 
-            // kontrolaRozsahPlny
+            // zavadaPanel
             // 
-            this.kontrolaRozsahPlny.AutoSize = true;
-            this.kontrolaRozsahPlny.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.kontrolaRozsahPlny.Location = new System.Drawing.Point(512, 517);
-            this.kontrolaRozsahPlny.Name = "kontrolaRozsahPlny";
-            this.kontrolaRozsahPlny.Size = new System.Drawing.Size(138, 25);
-            this.kontrolaRozsahPlny.TabIndex = 56;
-            this.kontrolaRozsahPlny.Text = "PLNY ROZSAH";
-            this.kontrolaRozsahPlny.UseVisualStyleBackColor = true;
+            this.zavadaPanel.Controls.Add(this.label54);
+            this.zavadaPanel.Controls.Add(this.nalezId);
+            this.zavadaPanel.Controls.Add(this.nalezDelete);
+            this.zavadaPanel.Controls.Add(this.nalezUpdate);
+            this.zavadaPanel.Controls.Add(this.nalezCreate);
+            this.zavadaPanel.Controls.Add(this.label53);
+            this.zavadaPanel.Controls.Add(this.zavadaPopis);
+            this.zavadaPanel.Controls.Add(this.zavadaKategorie);
+            this.zavadaPanel.Controls.Add(this.button1);
+            this.zavadaPanel.Controls.Add(this.zavadaRollback);
+            this.zavadaPanel.Controls.Add(this.zavadaCommit);
+            this.zavadaPanel.Controls.Add(this.label48);
+            this.zavadaPanel.Controls.Add(this.zavadaId);
+            this.zavadaPanel.Controls.Add(this.zavadaDelete);
+            this.zavadaPanel.Controls.Add(this.zavadaUpdate);
+            this.zavadaPanel.Controls.Add(this.zavadaCreate);
+            this.zavadaPanel.Controls.Add(this.label50);
+            this.zavadaPanel.Controls.Add(this.label52);
+            this.zavadaPanel.Controls.Add(this.nalezKontrolaId);
+            this.zavadaPanel.Controls.Add(this.label55);
+            this.zavadaPanel.Controls.Add(this.nalezZavadaId);
+            this.zavadaPanel.Controls.Add(this.label56);
+            this.zavadaPanel.Controls.Add(this.label61);
+            this.zavadaPanel.Controls.Add(this.label62);
+            this.zavadaPanel.Controls.Add(this.label63);
+            this.zavadaPanel.Location = new System.Drawing.Point(161, 60);
+            this.zavadaPanel.Name = "zavadaPanel";
+            this.zavadaPanel.Size = new System.Drawing.Size(1195, 850);
+            this.zavadaPanel.TabIndex = 57;
             // 
-            // kontrolaPoznamka
+            // label54
             // 
-            this.kontrolaPoznamka.Location = new System.Drawing.Point(389, 672);
-            this.kontrolaPoznamka.Name = "kontrolaPoznamka";
-            this.kontrolaPoznamka.Size = new System.Drawing.Size(377, 163);
-            this.kontrolaPoznamka.TabIndex = 57;
-            this.kontrolaPoznamka.Text = "";
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(731, 524);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(38, 15);
+            this.label54.TabIndex = 63;
+            this.label54.Text = "BY ID";
+            // 
+            // nalezId
+            // 
+            this.nalezId.Location = new System.Drawing.Point(700, 542);
+            this.nalezId.Name = "nalezId";
+            this.nalezId.Size = new System.Drawing.Size(100, 23);
+            this.nalezId.TabIndex = 62;
+            this.nalezId.Text = "id";
+            this.nalezId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // nalezDelete
+            // 
+            this.nalezDelete.Location = new System.Drawing.Point(700, 627);
+            this.nalezDelete.Name = "nalezDelete";
+            this.nalezDelete.Size = new System.Drawing.Size(100, 32);
+            this.nalezDelete.TabIndex = 61;
+            this.nalezDelete.Text = "DELETE";
+            this.nalezDelete.UseVisualStyleBackColor = true;
+            this.nalezDelete.Click += new System.EventHandler(this.nalezDelete_Click);
+            // 
+            // nalezUpdate
+            // 
+            this.nalezUpdate.Location = new System.Drawing.Point(700, 584);
+            this.nalezUpdate.Name = "nalezUpdate";
+            this.nalezUpdate.Size = new System.Drawing.Size(100, 30);
+            this.nalezUpdate.TabIndex = 60;
+            this.nalezUpdate.Text = "UPDATE";
+            this.nalezUpdate.UseVisualStyleBackColor = true;
+            this.nalezUpdate.Click += new System.EventHandler(this.nalezUpdate_Click);
+            // 
+            // nalezCreate
+            // 
+            this.nalezCreate.Location = new System.Drawing.Point(700, 456);
+            this.nalezCreate.Name = "nalezCreate";
+            this.nalezCreate.Size = new System.Drawing.Size(100, 59);
+            this.nalezCreate.TabIndex = 59;
+            this.nalezCreate.Text = "CREATE";
+            this.nalezCreate.UseVisualStyleBackColor = true;
+            this.nalezCreate.Click += new System.EventHandler(this.nalezCreate_Click);
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label53.Location = new System.Drawing.Point(663, 235);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(174, 32);
+            this.label53.TabIndex = 58;
+            this.label53.Text = "LINK ZAVADA";
+            // 
+            // zavadaPopis
+            // 
+            this.zavadaPopis.Location = new System.Drawing.Point(332, 399);
+            this.zavadaPopis.Name = "zavadaPopis";
+            this.zavadaPopis.Size = new System.Drawing.Size(185, 211);
+            this.zavadaPopis.TabIndex = 57;
+            this.zavadaPopis.Text = "";
+            // 
+            // zavadaKategorie
+            // 
+            this.zavadaKategorie.FormattingEnabled = true;
+            this.zavadaKategorie.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C"});
+            this.zavadaKategorie.Location = new System.Drawing.Point(332, 337);
+            this.zavadaKategorie.Name = "zavadaKategorie";
+            this.zavadaKategorie.Size = new System.Drawing.Size(185, 23);
+            this.zavadaKategorie.TabIndex = 56;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Location = new System.Drawing.Point(18, 767);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(68, 66);
+            this.button1.TabIndex = 54;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // zavadaRollback
+            // 
+            this.zavadaRollback.Location = new System.Drawing.Point(1051, 692);
+            this.zavadaRollback.Name = "zavadaRollback";
+            this.zavadaRollback.Size = new System.Drawing.Size(91, 59);
+            this.zavadaRollback.TabIndex = 53;
+            this.zavadaRollback.Text = "ROLLBACK";
+            this.zavadaRollback.UseVisualStyleBackColor = true;
+            this.zavadaRollback.Click += new System.EventHandler(this.zavadaRollback_Click);
+            // 
+            // zavadaCommit
+            // 
+            this.zavadaCommit.Location = new System.Drawing.Point(1051, 771);
+            this.zavadaCommit.Name = "zavadaCommit";
+            this.zavadaCommit.Size = new System.Drawing.Size(91, 59);
+            this.zavadaCommit.TabIndex = 52;
+            this.zavadaCommit.Text = "COMMIT";
+            this.zavadaCommit.UseVisualStyleBackColor = true;
+            this.zavadaCommit.Click += new System.EventHandler(this.zavadaCommit_Click);
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(406, 706);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(38, 15);
+            this.label48.TabIndex = 51;
+            this.label48.Text = "BY ID";
+            // 
+            // zavadaId
+            // 
+            this.zavadaId.Location = new System.Drawing.Point(375, 724);
+            this.zavadaId.Name = "zavadaId";
+            this.zavadaId.Size = new System.Drawing.Size(100, 23);
+            this.zavadaId.TabIndex = 50;
+            this.zavadaId.Text = "id";
+            this.zavadaId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // zavadaDelete
+            // 
+            this.zavadaDelete.Location = new System.Drawing.Point(375, 809);
+            this.zavadaDelete.Name = "zavadaDelete";
+            this.zavadaDelete.Size = new System.Drawing.Size(100, 32);
+            this.zavadaDelete.TabIndex = 49;
+            this.zavadaDelete.Text = "DELETE";
+            this.zavadaDelete.UseVisualStyleBackColor = true;
+            this.zavadaDelete.Click += new System.EventHandler(this.zavadaDelete_Click);
+            // 
+            // zavadaUpdate
+            // 
+            this.zavadaUpdate.Location = new System.Drawing.Point(375, 766);
+            this.zavadaUpdate.Name = "zavadaUpdate";
+            this.zavadaUpdate.Size = new System.Drawing.Size(100, 30);
+            this.zavadaUpdate.TabIndex = 48;
+            this.zavadaUpdate.Text = "UPDATE";
+            this.zavadaUpdate.UseVisualStyleBackColor = true;
+            this.zavadaUpdate.Click += new System.EventHandler(this.zavadaUpdate_Click);
+            // 
+            // zavadaCreate
+            // 
+            this.zavadaCreate.Location = new System.Drawing.Point(375, 638);
+            this.zavadaCreate.Name = "zavadaCreate";
+            this.zavadaCreate.Size = new System.Drawing.Size(100, 59);
+            this.zavadaCreate.TabIndex = 47;
+            this.zavadaCreate.Text = "CREATE";
+            this.zavadaCreate.UseVisualStyleBackColor = true;
+            this.zavadaCreate.Click += new System.EventHandler(this.zavadaCreate_Click);
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label50.Location = new System.Drawing.Point(330, 307);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(99, 21);
+            this.label50.TabIndex = 45;
+            this.label50.Text = "KATEGORIE ";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label52.Location = new System.Drawing.Point(332, 370);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(56, 21);
+            this.label52.TabIndex = 43;
+            this.label52.Text = "POPIS";
+            // 
+            // nalezKontrolaId
+            // 
+            this.nalezKontrolaId.Location = new System.Drawing.Point(663, 331);
+            this.nalezKontrolaId.Name = "nalezKontrolaId";
+            this.nalezKontrolaId.Size = new System.Drawing.Size(187, 23);
+            this.nalezKontrolaId.TabIndex = 38;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label55.Location = new System.Drawing.Point(663, 307);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(116, 21);
+            this.label55.TabIndex = 37;
+            this.label55.Text = "KONTROLA ID";
+            // 
+            // nalezZavadaId
+            // 
+            this.nalezZavadaId.Location = new System.Drawing.Point(663, 394);
+            this.nalezZavadaId.Name = "nalezZavadaId";
+            this.nalezZavadaId.Size = new System.Drawing.Size(187, 23);
+            this.nalezZavadaId.TabIndex = 36;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label56.Location = new System.Drawing.Point(663, 370);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(95, 21);
+            this.label56.TabIndex = 35;
+            this.label56.Text = "ZAVADA ID";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label61.Location = new System.Drawing.Point(328, 235);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(205, 32);
+            this.label61.TabIndex = 11;
+            this.label61.Text = "CREATE ZAVADA";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label62.Location = new System.Drawing.Point(389, 29);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(433, 72);
+            this.label62.TabIndex = 9;
+            this.label62.Text = "AUTOMECHANIK";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label63.Location = new System.Drawing.Point(524, 101);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(149, 54);
+            this.label63.TabIndex = 10;
+            this.label63.Text = "Zavada";
+            // 
+            // logoutButton
+            // 
+            this.logoutButton.BackColor = System.Drawing.Color.Transparent;
+            this.logoutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logoutButton.BackgroundImage")));
+            this.logoutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.logoutButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logoutButton.Location = new System.Drawing.Point(12, 815);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(102, 101);
+            this.logoutButton.TabIndex = 58;
+            this.logoutButton.UseVisualStyleBackColor = false;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // Create
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1480, 957);
+            this.Controls.Add(this.logoutButton);
+            this.Controls.Add(this.zavadaPanel);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.repairRealPanel);
             this.Controls.Add(this.mainMenu);
-            this.Controls.Add(this.repairPanel);
             this.Controls.Add(this.personPanel);
+            this.Controls.Add(this.repairRealPanel);
+            this.Controls.Add(this.repairPanel);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -1232,6 +1716,8 @@
             this.repairPanel.PerformLayout();
             this.repairRealPanel.ResumeLayout(false);
             this.repairRealPanel.PerformLayout();
+            this.zavadaPanel.ResumeLayout(false);
+            this.zavadaPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1343,5 +1829,46 @@
         private Label label46;
         private RichTextBox kontrolaPoznamka;
         private CheckBox kontrolaRozsahPlny;
+        private TextBox technikId;
+        private Button technikDelete;
+        private Button technikUpdate;
+        private Button technikCreate;
+        private TextBox technikJmeno;
+        private Label label38;
+        private TextBox textBox6;
+        private Label label42;
+        private TextBox technikPrijmeni;
+        private Label label49;
+        private Label label51;
+        private Label label41;
+        private TextBox technikNadrizeny;
+        private Label label47;
+        private Panel zavadaPanel;
+        private Label label53;
+        private RichTextBox zavadaPopis;
+        private ComboBox zavadaKategorie;
+        private Button button1;
+        private Button zavadaRollback;
+        private Button zavadaCommit;
+        private Label label48;
+        private TextBox zavadaId;
+        private Button zavadaDelete;
+        private Button zavadaUpdate;
+        private Button zavadaCreate;
+        private Label label50;
+        private Label label52;
+        private TextBox nalezKontrolaId;
+        private Label label55;
+        private TextBox nalezZavadaId;
+        private Label label56;
+        private Label label61;
+        private Label label62;
+        private Label label63;
+        private Label label54;
+        private TextBox nalezId;
+        private Button nalezDelete;
+        private Button nalezUpdate;
+        private Button nalezCreate;
+        private Button logoutButton;
     }
 }

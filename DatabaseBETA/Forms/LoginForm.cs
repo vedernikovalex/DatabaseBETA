@@ -6,6 +6,10 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace DatabaseBETA
 {
+    /// <summary>
+    /// First page of application
+    /// Logging in
+    /// </summary>
     public partial class LoginForm : Form
     {
         private string loginInput;
@@ -30,11 +34,17 @@ namespace DatabaseBETA
 
         }
 
+        /// <summary>
+        /// On textbox change it writes into target string
+        /// </summary>
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             loginInput = usernameBox.Text;
         }
 
+        /// <summary>
+        /// On textbox change it writes into target string
+        /// </summary>
         private void passwordBox_TextChanged(object sender, EventArgs e)
         {
             passwordInput = passwordBox.Text;
@@ -42,7 +52,6 @@ namespace DatabaseBETA
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            //TODO kontrola a prihlaseni pomoci user
             if (String.IsNullOrEmpty(loginInput) || String.IsNullOrEmpty(passwordInput))
             {
                 MessageBox.Show("Login or Password was empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -50,15 +59,15 @@ namespace DatabaseBETA
             else
             {
                 database = new Database();
+                //database = new Database(loginInput, passwordInput);
+                Menu menuForm = new Menu();
                 this.Hide();
-                Forms.menuForm.ShowDialog();
+                menuForm.ShowDialog();
             }
         }
 
         private void guestButton_Click(object sender, EventArgs e)
         {
-            //database = new Database();
-            //database.Connect();
         }
     }
 }

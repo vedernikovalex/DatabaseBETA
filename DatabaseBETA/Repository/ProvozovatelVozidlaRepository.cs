@@ -68,7 +68,7 @@ namespace DatabaseBETA
 
         public void Update(ProvozovatelVozidla provozovatel, int id)
         {
-            cmdString = "INSERT INTO Provozovatel_Vozidla (osoba_fyzicka_id, osoba_pravnicka_id, adresa_ulice, adresa_cislo_popisne, adresa_psc, adresa_obec, telefonni_cislo, email, adresa_mesto) VALUES (@osoba_fyzicka_id, @osoba_pravnicka_id, @adresa_ulice, @adresa_cislo_popisne, @adresa_psc, @adresa_obec, @telefonni_cislo, @email, @adresa_mesto) where id = @id;";
+            cmdString = "update Provozovatel_Vozidla set osoba_fyzicka_id=@osoba_fyzicka_id, osoba_pravnicka_id=@osoba_pravnicka_id, adresa_ulice=@adresa_ulice, adresa_cislo_popisne=@adresa_cislo_popisne, adresa_psc=@adresa_psc, adresa_obec=@adresa_obec, telefonni_cislo=@telefonni_cislo, email=@email, adresa_mesto=@adresa_mesto where id = @id;";
             command = new SqlCommand(cmdString, con);
             command.Parameters.AddWithValue("osoba_fyzicka_id", provozovatel.osoba_fyzicka_id != 0 ? (object)provozovatel.osoba_fyzicka_id : DBNull.Value);
             command.Parameters.AddWithValue("osoba_pravnicka_id", provozovatel.osoba_pravnicka_id != 0 ? (object)provozovatel.osoba_pravnicka_id : DBNull.Value);

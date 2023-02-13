@@ -15,8 +15,8 @@ namespace DatabaseBETA
         public char kategorie;
         public string popis;
         //Nalez
-        public int nalez_id;
-        public int kontrola_id;
+        //public int nalez_id;
+        //public int kontrola_id;
 
         public Zavada()
         {
@@ -29,8 +29,8 @@ namespace DatabaseBETA
             this.kategorie = char.Parse(reader.GetString(1));
             this.popis = reader.GetString(2);
             //nalez
-            this.nalez_id = reader.GetInt32(4);
-            this.kontrola_id = reader.GetInt32(3);
+            //this.nalez_id = reader.GetInt32(4);
+            //this.kontrola_id = reader.GetInt32(3);
         }
 
         public DataTable GetTable()
@@ -42,8 +42,8 @@ namespace DatabaseBETA
             row["kategorie"] = kategorie;
             row["popis"] = popis;
             //nalez
-            row["nalez_id"] = nalez_id;
-            row["kontrola_id"] = kontrola_id;
+            //row["nalez_id"] = nalez_id;
+            //row["kontrola_id"] = kontrola_id;
 
             dt.Rows.Add(row);
 

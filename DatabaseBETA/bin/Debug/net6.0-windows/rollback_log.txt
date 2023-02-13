@@ -5,3 +5,5 @@
 2/12/2023 2:13:44 PMdelete from Provozovatel_Vozidla where id=6 ;
 2/12/2023 2:13:44 PMdelete from Provozovatel_Vozidla where id=14 ;
 2/12/2023 2:13:44 PMdelete from Provozovatel_Vozidla where id=13 ;
+2/12/2023 8:58:47 PM insert into Technik(jmeno,prijmeni,nadrizeny_technik) values (@jmeno,@prijmeni,@nadrizeny_technik) where id=@id;
+2/12/2023 8:58:47 PM insert into Technik(jmeno,prijmeni,nadrizeny_technik) values (@jmeno,@prijmeni,@nadrizeny_technik) where id=@id;

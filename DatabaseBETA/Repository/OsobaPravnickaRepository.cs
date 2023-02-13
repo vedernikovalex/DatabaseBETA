@@ -52,7 +52,8 @@ namespace DatabaseBETA
 
         public int InsertRetrieveId(OsobaPravnicka osobaPravnicka)
         {
-            cmdString = "insert into Osoba_Pravnicka(nazev_firmy) values ('@nazev_firmy'); ";
+            cmdString = "insert into Osoba_Pravnicka(nazev_firmy) values (@nazev_firmy); ";
+            command = new SqlCommand(cmdString, con);
             command.Parameters.AddWithValue("nazev_firmy", osobaPravnicka.nazev_firmy);
             int id = repository.InsertRetrieveId(command);
             return id;
@@ -60,7 +61,8 @@ namespace DatabaseBETA
 
         public void Update(OsobaPravnicka osobaPravnicka, int id)
         {
-            cmdString = "insert into Osoba_Pravnicka(nazev_firmy) values ('@nazev_firmy') where id=@id; ";
+            cmdString = "update Osoba_Pravnicka set nazev_firmy=@nazev_firmy where id=@id; ";
+            command = new SqlCommand(cmdString, con);
             command.Parameters.AddWithValue("nazev_firmy", osobaPravnicka.nazev_firmy);
             command.Parameters.AddWithValue("id", id);
             repository.Update(command);

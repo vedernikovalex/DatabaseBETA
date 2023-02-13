@@ -1,0 +1,1 @@
+2/13/2023 1:36:08 AM INSERT INTO Provozovatel_Vozidla (osoba_fyzicka_id, osoba_pravnicka_id, adresa_ulice, adresa_cislo_popisne, adresa_psc, adresa_obec, telefonni_cislo, email, adresa_mesto) VALUES (@osoba_fyzicka_id, @osoba_pravnicka_id, @adresa_ulice, @adresa_cislo_popisne, @adresa_psc, @adresa_obec, @telefonni_cislo, @email, @adresa_mesto);

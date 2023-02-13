@@ -9,6 +9,5 @@ namespace DatabaseBETA
 {
     internal interface IDatabase
     {
-        void Connect();
     }
 }
