@@ -7541,24 +7541,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\veder\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\mac-alex\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\C#\\repos\\DatabaseBETA\\DatabaseBETAUnitTest\\DatabaseBETAUnitTest.csproj",
+      "projectUniqueName": "C:\\Users\\mac-alex\\source\\repos\\DatabaseBETA\\DatabaseBETAUnitTest\\DatabaseBETAUnitTest.csproj",
       "projectName": "DatabaseBETAUnitTest",
-      "projectPath": "D:\\Git\\C#\\repos\\DatabaseBETA\\DatabaseBETAUnitTest\\DatabaseBETAUnitTest.csproj",
-      "packagesPath": "C:\\Users\\veder\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\C#\\repos\\DatabaseBETA\\DatabaseBETAUnitTest\\obj\\",
+      "projectPath": "C:\\Users\\mac-alex\\source\\repos\\DatabaseBETA\\DatabaseBETAUnitTest\\DatabaseBETAUnitTest.csproj",
+      "packagesPath": "C:\\Users\\mac-alex\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mac-alex\\source\\repos\\DatabaseBETA\\DatabaseBETAUnitTest\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\veder\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\mac-alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7572,8 +7567,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows7.0",
           "projectReferences": {
-            "D:\\Git\\C#\\repos\\DatabaseBETA\\DatabaseBETA\\DatabaseBETA.csproj": {
-              "projectPath": "D:\\Git\\C#\\repos\\DatabaseBETA\\DatabaseBETA\\DatabaseBETA.csproj"
+            "C:\\Users\\mac-alex\\source\\repos\\DatabaseBETA\\DatabaseBETA\\DatabaseBETA.csproj": {
+              "projectPath": "C:\\Users\\mac-alex\\source\\repos\\DatabaseBETA\\DatabaseBETA\\DatabaseBETA.csproj"
             }
           }
         }

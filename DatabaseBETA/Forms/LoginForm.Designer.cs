@@ -41,20 +41,22 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(543, 87);
+            this.label1.Location = new System.Drawing.Point(366, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(433, 72);
+            this.label1.Size = new System.Drawing.Size(761, 125);
             this.label1.TabIndex = 0;
             this.label1.Text = "AUTOMECHANIK";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 87);
+            this.pictureBox1.Location = new System.Drawing.Point(499, 91);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(497, 443);
@@ -63,6 +65,7 @@
             // 
             // loginButton
             // 
+            this.loginButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.loginButton.BackColor = System.Drawing.SystemColors.Window;
             this.loginButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginButton.Location = new System.Drawing.Point(668, 761);
@@ -80,7 +83,7 @@
             this.usernameBox.Location = new System.Drawing.Point(556, 589);
             this.usernameBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.usernameBox.Name = "usernameBox";
-            this.usernameBox.Size = new System.Drawing.Size(381, 23);
+            this.usernameBox.Size = new System.Drawing.Size(381, 35);
             this.usernameBox.TabIndex = 3;
             this.usernameBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -90,7 +93,7 @@
             this.passwordBox.Location = new System.Drawing.Point(556, 685);
             this.passwordBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.passwordBox.Name = "passwordBox";
-            this.passwordBox.Size = new System.Drawing.Size(381, 23);
+            this.passwordBox.Size = new System.Drawing.Size(381, 35);
             this.passwordBox.TabIndex = 4;
             this.passwordBox.TextChanged += new System.EventHandler(this.passwordBox_TextChanged);
             // 
@@ -99,7 +102,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(556, 557);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 15);
+            this.label2.Size = new System.Drawing.Size(128, 30);
             this.label2.TabIndex = 5;
             this.label2.Text = "USERNAME";
             // 
@@ -108,7 +111,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(556, 651);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 15);
+            this.label3.Size = new System.Drawing.Size(130, 30);
             this.label3.TabIndex = 6;
             this.label3.Text = "PASSWORD";
             // 
@@ -117,13 +120,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1480, 957);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.passwordBox);
             this.Controls.Add(this.usernameBox);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

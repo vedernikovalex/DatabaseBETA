@@ -21,9 +21,13 @@ namespace DatabaseBETA
         private static readonly object locker = new object();
 
         private SqlConnection con;
+        private SqlConnection con2;
 
         private SqlConnectionStringBuilder conStrBuilder = new SqlConnectionStringBuilder();
         private string connectionString;
+
+        private string databaseName = ConfigurationManager.AppSettings["databaseName"];
+        private string databaseSource = ConfigurationManager.AppSettings["databaseSource"];
 
         /// <summary>
         /// Initializing connection string as windows login
@@ -46,6 +50,11 @@ namespace DatabaseBETA
             get { return con; }
         }
 
+        public SqlConnection Connection2
+        {
+            get { return con2; }
+        }
+
         public static Database Instance
         {
             get
@@ -66,11 +75,12 @@ namespace DatabaseBETA
         /// </summary>
         private void ConnectionStringBuilder()
         {
-            conStrBuilder.DataSource = @"localhost";
-            conStrBuilder.InitialCatalog = "technicka_kontrola";
+            conStrBuilder.DataSource = @databaseName;
+            conStrBuilder.InitialCatalog = databaseSource;
             conStrBuilder.IntegratedSecurity = true;
             connectionString = conStrBuilder.ConnectionString;
             con = new SqlConnection(connectionString);
+            con2 = new SqlConnection(connectionString);
         }
 
         /// <summary>
@@ -78,12 +88,13 @@ namespace DatabaseBETA
         /// </summary>
         private void ConnectionStringBuilder(string login, string password)
         {
-            conStrBuilder.DataSource = @"localhost";
-            conStrBuilder.InitialCatalog = "technicka_kontrola";
+            conStrBuilder.DataSource = @databaseName;
+            conStrBuilder.InitialCatalog = databaseSource;
             conStrBuilder.UserID= login;
             conStrBuilder.Password= password;
             connectionString = conStrBuilder.ConnectionString;
             con = new SqlConnection(connectionString);
+            con2 = new SqlConnection(connectionString);
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Transactions;
+using System.Configuration;
 
 namespace DatabaseBETA
 {
@@ -30,7 +31,7 @@ namespace DatabaseBETA
         /// <summary>
         /// Isolation level of database
         /// </summary>
-        public System.Data.IsolationLevel isolationLevel = System.Data.IsolationLevel.ReadUncommitted;
+        public System.Data.IsolationLevel isolationLevel = IsolationLevelParse(ConfigurationManager.AppSettings["isolationLevel"]);
         /// <summary>
         /// If transaction is being currently used
         /// </summary>
@@ -238,6 +239,34 @@ namespace DatabaseBETA
                 }
             }
             return 0;
+        }
+
+        /// <summary>
+        /// Setting isolation level manualy outside of class
+        /// Used for unit tests
+        /// </summary>
+        /// <param name="lvl"> New isolation level </param>
+        public void SetIsolationLevel(System.Data.IsolationLevel lvl)
+        {
+            isolationLevel = lvl;
+        }
+
+        /// <summary>
+        /// Parsing string to IsolationLevel
+        /// R
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns> Returns IsolationLevel unspecified if input incorrect </returns>
+        public static System.Data.IsolationLevel IsolationLevelParse(string input)
+        {
+            if (Enum.TryParse(input, out System.Data.IsolationLevel level))
+            {
+                return level;
+            }
+            else
+            {
+                return System.Data.IsolationLevel.Unspecified;
+            }
         }
     }
 }

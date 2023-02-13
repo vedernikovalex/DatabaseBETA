@@ -187,7 +187,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(92, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(433, 72);
+            this.label1.Size = new System.Drawing.Size(761, 125);
             this.label1.TabIndex = 0;
             this.label1.Text = "AUTOMECHANIK";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -198,7 +198,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(243, 109);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 54);
+            this.label4.Size = new System.Drawing.Size(241, 93);
             this.label4.TabIndex = 8;
             this.label4.Text = "Create";
             // 
@@ -207,7 +207,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(12, 933);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(153, 15);
+            this.label7.Size = new System.Drawing.Size(276, 30);
             this.label7.TabIndex = 16;
             this.label7.Text = "ICONS: https://icons8.com";
             // 
@@ -217,7 +217,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(499, 460);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 30);
+            this.label5.Size = new System.Drawing.Size(171, 51);
             this.label5.TabIndex = 18;
             this.label5.Text = "VEHICLE";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -242,7 +242,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(206, 472);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(224, 37);
+            this.label2.Size = new System.Drawing.Size(387, 62);
             this.label2.TabIndex = 20;
             this.label2.Text = "REPAIR RECORD";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -267,7 +267,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(35, 460);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 30);
+            this.label3.Size = new System.Drawing.Size(170, 51);
             this.label3.TabIndex = 22;
             this.label3.Text = "PERSON";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -292,7 +292,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(263, 703);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 30);
+            this.label6.Size = new System.Drawing.Size(156, 51);
             this.label6.TabIndex = 24;
             this.label6.Text = "DEFECT";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -406,7 +406,7 @@
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(205, 700);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(38, 15);
+            this.label18.Size = new System.Drawing.Size(66, 30);
             this.label18.TabIndex = 51;
             this.label18.Text = "BY ID";
             // 
@@ -414,7 +414,7 @@
             // 
             this.personId.Location = new System.Drawing.Point(174, 718);
             this.personId.Name = "personId";
-            this.personId.Size = new System.Drawing.Size(100, 23);
+            this.personId.Size = new System.Drawing.Size(100, 35);
             this.personId.TabIndex = 50;
             this.personId.Text = "id";
             this.personId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -453,7 +453,7 @@
             // 
             this.personNazevF.Location = new System.Drawing.Point(491, 324);
             this.personNazevF.Name = "personNazevF";
-            this.personNazevF.Size = new System.Drawing.Size(187, 23);
+            this.personNazevF.Size = new System.Drawing.Size(187, 35);
             this.personNazevF.TabIndex = 46;
             // 
             // nazevFLabel
@@ -462,7 +462,7 @@
             this.nazevFLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nazevFLabel.Location = new System.Drawing.Point(491, 300);
             this.nazevFLabel.Name = "nazevFLabel";
-            this.nazevFLabel.Size = new System.Drawing.Size(116, 21);
+            this.nazevFLabel.Size = new System.Drawing.Size(204, 38);
             this.nazevFLabel.TabIndex = 45;
             this.nazevFLabel.Text = "NAZEV FIRMY";
             // 
@@ -470,7 +470,7 @@
             // 
             this.personPrijmeni.Location = new System.Drawing.Point(491, 381);
             this.personPrijmeni.Name = "personPrijmeni";
-            this.personPrijmeni.Size = new System.Drawing.Size(187, 23);
+            this.personPrijmeni.Size = new System.Drawing.Size(187, 35);
             this.personPrijmeni.TabIndex = 44;
             // 
             // prijmeniLabel
@@ -479,7 +479,7 @@
             this.prijmeniLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.prijmeniLabel.Location = new System.Drawing.Point(491, 357);
             this.prijmeniLabel.Name = "prijmeniLabel";
-            this.prijmeniLabel.Size = new System.Drawing.Size(84, 21);
+            this.prijmeniLabel.Size = new System.Drawing.Size(146, 38);
             this.prijmeniLabel.TabIndex = 43;
             this.prijmeniLabel.Text = "PRIJMENI";
             // 
@@ -487,7 +487,7 @@
             // 
             this.personJmeno.Location = new System.Drawing.Point(492, 324);
             this.personJmeno.Name = "personJmeno";
-            this.personJmeno.Size = new System.Drawing.Size(187, 23);
+            this.personJmeno.Size = new System.Drawing.Size(187, 35);
             this.personJmeno.TabIndex = 42;
             // 
             // jmenoLabel
@@ -496,7 +496,7 @@
             this.jmenoLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.jmenoLabel.Location = new System.Drawing.Point(492, 300);
             this.jmenoLabel.Name = "jmenoLabel";
-            this.jmenoLabel.Size = new System.Drawing.Size(66, 21);
+            this.jmenoLabel.Size = new System.Drawing.Size(114, 38);
             this.jmenoLabel.TabIndex = 41;
             this.jmenoLabel.Text = "JMENO";
             // 
@@ -504,7 +504,7 @@
             // 
             this.personMesto.Location = new System.Drawing.Point(491, 569);
             this.personMesto.Name = "personMesto";
-            this.personMesto.Size = new System.Drawing.Size(187, 23);
+            this.personMesto.Size = new System.Drawing.Size(187, 35);
             this.personMesto.TabIndex = 40;
             // 
             // label17
@@ -513,7 +513,7 @@
             this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label17.Location = new System.Drawing.Point(491, 545);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(63, 21);
+            this.label17.Size = new System.Drawing.Size(111, 38);
             this.label17.TabIndex = 39;
             this.label17.Text = "MESTO";
             // 
@@ -521,7 +521,7 @@
             // 
             this.personEmail.Location = new System.Drawing.Point(491, 446);
             this.personEmail.Name = "personEmail";
-            this.personEmail.Size = new System.Drawing.Size(187, 23);
+            this.personEmail.Size = new System.Drawing.Size(187, 35);
             this.personEmail.TabIndex = 38;
             // 
             // label16
@@ -530,7 +530,7 @@
             this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label16.Location = new System.Drawing.Point(491, 422);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(58, 21);
+            this.label16.Size = new System.Drawing.Size(102, 38);
             this.label16.TabIndex = 37;
             this.label16.Text = "EMAIL";
             // 
@@ -538,7 +538,7 @@
             // 
             this.personTelefon.Location = new System.Drawing.Point(491, 509);
             this.personTelefon.Name = "personTelefon";
-            this.personTelefon.Size = new System.Drawing.Size(187, 23);
+            this.personTelefon.Size = new System.Drawing.Size(187, 35);
             this.personTelefon.TabIndex = 36;
             // 
             // label15
@@ -547,7 +547,7 @@
             this.label15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label15.Location = new System.Drawing.Point(491, 485);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(144, 21);
+            this.label15.Size = new System.Drawing.Size(250, 38);
             this.label15.TabIndex = 35;
             this.label15.Text = "TELEFONNI CISLO";
             // 
@@ -555,7 +555,7 @@
             // 
             this.personObec.Location = new System.Drawing.Point(491, 631);
             this.personObec.Name = "personObec";
-            this.personObec.Size = new System.Drawing.Size(187, 23);
+            this.personObec.Size = new System.Drawing.Size(187, 35);
             this.personObec.TabIndex = 34;
             // 
             // label14
@@ -564,7 +564,7 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label14.Location = new System.Drawing.Point(491, 607);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 21);
+            this.label14.Size = new System.Drawing.Size(88, 38);
             this.label14.TabIndex = 33;
             this.label14.Text = "OBEC";
             // 
@@ -572,7 +572,7 @@
             // 
             this.personPsc.Location = new System.Drawing.Point(491, 812);
             this.personPsc.Name = "personPsc";
-            this.personPsc.Size = new System.Drawing.Size(187, 23);
+            this.personPsc.Size = new System.Drawing.Size(187, 35);
             this.personPsc.TabIndex = 32;
             // 
             // label13
@@ -581,7 +581,7 @@
             this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(491, 788);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(39, 21);
+            this.label13.Size = new System.Drawing.Size(67, 38);
             this.label13.TabIndex = 31;
             this.label13.Text = "PSC";
             // 
@@ -589,7 +589,7 @@
             // 
             this.personPopisne.Location = new System.Drawing.Point(491, 754);
             this.personPopisne.Name = "personPopisne";
-            this.personPopisne.Size = new System.Drawing.Size(187, 23);
+            this.personPopisne.Size = new System.Drawing.Size(187, 35);
             this.personPopisne.TabIndex = 30;
             // 
             // label12
@@ -598,7 +598,7 @@
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label12.Location = new System.Drawing.Point(491, 730);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(126, 21);
+            this.label12.Size = new System.Drawing.Size(218, 38);
             this.label12.TabIndex = 29;
             this.label12.Text = "CISLO POPISNE";
             // 
@@ -606,7 +606,7 @@
             // 
             this.personUlice.Location = new System.Drawing.Point(491, 696);
             this.personUlice.Name = "personUlice";
-            this.personUlice.Size = new System.Drawing.Size(187, 23);
+            this.personUlice.Size = new System.Drawing.Size(187, 35);
             this.personUlice.TabIndex = 28;
             // 
             // label11
@@ -615,7 +615,7 @@
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label11.Location = new System.Drawing.Point(491, 672);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 21);
+            this.label11.Size = new System.Drawing.Size(92, 38);
             this.label11.TabIndex = 27;
             this.label11.Text = "ULICE";
             // 
@@ -625,7 +625,7 @@
             this.personBool.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.personBool.Location = new System.Drawing.Point(531, 256);
             this.personBool.Name = "personBool";
-            this.personBool.Size = new System.Drawing.Size(119, 25);
+            this.personBool.Size = new System.Drawing.Size(201, 42);
             this.personBool.TabIndex = 12;
             this.personBool.Text = "PRAVNICKA";
             this.personBool.UseVisualStyleBackColor = true;
@@ -637,7 +637,7 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(540, 196);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(100, 32);
+            this.label10.Size = new System.Drawing.Size(175, 57);
             this.label10.TabIndex = 11;
             this.label10.Text = "CREATE";
             // 
@@ -647,7 +647,7 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(389, 29);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(433, 72);
+            this.label8.Size = new System.Drawing.Size(761, 125);
             this.label8.TabIndex = 9;
             this.label8.Text = "AUTOMECHANIK";
             // 
@@ -657,7 +657,7 @@
             this.label9.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label9.Location = new System.Drawing.Point(524, 101);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(142, 54);
+            this.label9.Size = new System.Drawing.Size(248, 93);
             this.label9.TabIndex = 10;
             this.label9.Text = "Person";
             // 
@@ -703,7 +703,7 @@
             // 
             this.repairDatum.Location = new System.Drawing.Point(492, 726);
             this.repairDatum.Name = "repairDatum";
-            this.repairDatum.Size = new System.Drawing.Size(186, 23);
+            this.repairDatum.Size = new System.Drawing.Size(186, 35);
             this.repairDatum.TabIndex = 55;
             this.repairDatum.Value = new System.DateTime(2023, 2, 12, 15, 51, 8, 0);
             // 
@@ -746,7 +746,7 @@
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(205, 700);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(38, 15);
+            this.label19.Size = new System.Drawing.Size(66, 30);
             this.label19.TabIndex = 51;
             this.label19.Text = "BY ID";
             // 
@@ -754,7 +754,7 @@
             // 
             this.repairId.Location = new System.Drawing.Point(174, 718);
             this.repairId.Name = "repairId";
-            this.repairId.Size = new System.Drawing.Size(100, 23);
+            this.repairId.Size = new System.Drawing.Size(100, 35);
             this.repairId.TabIndex = 50;
             this.repairId.Text = "id";
             this.repairId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -793,7 +793,7 @@
             // 
             this.repairKategorieId.Location = new System.Drawing.Point(491, 290);
             this.repairKategorieId.Name = "repairKategorieId";
-            this.repairKategorieId.Size = new System.Drawing.Size(187, 23);
+            this.repairKategorieId.Size = new System.Drawing.Size(187, 35);
             this.repairKategorieId.TabIndex = 46;
             // 
             // label20
@@ -802,7 +802,7 @@
             this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label20.Location = new System.Drawing.Point(491, 266);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(201, 21);
+            this.label20.Size = new System.Drawing.Size(354, 38);
             this.label20.TabIndex = 45;
             this.label20.Text = "KATEGORIE VOZIDLA (ID)";
             // 
@@ -810,7 +810,7 @@
             // 
             this.repairZnacka.Location = new System.Drawing.Point(491, 347);
             this.repairZnacka.Name = "repairZnacka";
-            this.repairZnacka.Size = new System.Drawing.Size(187, 23);
+            this.repairZnacka.Size = new System.Drawing.Size(187, 35);
             this.repairZnacka.TabIndex = 44;
             // 
             // label21
@@ -819,7 +819,7 @@
             this.label21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label21.Location = new System.Drawing.Point(491, 323);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(148, 21);
+            this.label21.Size = new System.Drawing.Size(262, 38);
             this.label21.TabIndex = 43;
             this.label21.Text = "TOVARNI ZNACKA";
             // 
@@ -827,7 +827,7 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(492, 290);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(187, 23);
+            this.textBox4.Size = new System.Drawing.Size(187, 35);
             this.textBox4.TabIndex = 42;
             // 
             // label22
@@ -836,7 +836,7 @@
             this.label22.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label22.Location = new System.Drawing.Point(492, 266);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(66, 21);
+            this.label22.Size = new System.Drawing.Size(114, 38);
             this.label22.TabIndex = 41;
             this.label22.Text = "JMENO";
             // 
@@ -844,7 +844,7 @@
             // 
             this.repairCisloTp.Location = new System.Drawing.Point(491, 535);
             this.repairCisloTp.Name = "repairCisloTp";
-            this.repairCisloTp.Size = new System.Drawing.Size(187, 23);
+            this.repairCisloTp.Size = new System.Drawing.Size(187, 35);
             this.repairCisloTp.TabIndex = 40;
             // 
             // label23
@@ -853,7 +853,7 @@
             this.label23.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label23.Location = new System.Drawing.Point(491, 511);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(77, 21);
+            this.label23.Size = new System.Drawing.Size(134, 38);
             this.label23.TabIndex = 39;
             this.label23.Text = "CISLO TP";
             // 
@@ -861,7 +861,7 @@
             // 
             this.repairOznaceni.Location = new System.Drawing.Point(491, 412);
             this.repairOznaceni.Name = "repairOznaceni";
-            this.repairOznaceni.Size = new System.Drawing.Size(187, 23);
+            this.repairOznaceni.Size = new System.Drawing.Size(187, 35);
             this.repairOznaceni.TabIndex = 38;
             // 
             // label24
@@ -870,7 +870,7 @@
             this.label24.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label24.Location = new System.Drawing.Point(491, 388);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(178, 21);
+            this.label24.Size = new System.Drawing.Size(308, 38);
             this.label24.TabIndex = 37;
             this.label24.Text = "OBCHODNI OZNACEN";
             // 
@@ -878,7 +878,7 @@
             // 
             this.repairVin.Location = new System.Drawing.Point(491, 475);
             this.repairVin.Name = "repairVin";
-            this.repairVin.Size = new System.Drawing.Size(187, 23);
+            this.repairVin.Size = new System.Drawing.Size(187, 35);
             this.repairVin.TabIndex = 36;
             // 
             // label25
@@ -887,7 +887,7 @@
             this.label25.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label25.Location = new System.Drawing.Point(491, 451);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(39, 21);
+            this.label25.Size = new System.Drawing.Size(67, 38);
             this.label25.TabIndex = 35;
             this.label25.Text = "VIN";
             // 
@@ -895,7 +895,7 @@
             // 
             this.repairNajeto.Location = new System.Drawing.Point(491, 597);
             this.repairNajeto.Name = "repairNajeto";
-            this.repairNajeto.Size = new System.Drawing.Size(187, 23);
+            this.repairNajeto.Size = new System.Drawing.Size(187, 35);
             this.repairNajeto.TabIndex = 34;
             // 
             // label26
@@ -904,7 +904,7 @@
             this.label26.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label26.Location = new System.Drawing.Point(491, 573);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(100, 21);
+            this.label26.Size = new System.Drawing.Size(176, 38);
             this.label26.TabIndex = 33;
             this.label26.Text = "NAJETO KM";
             // 
@@ -912,7 +912,7 @@
             // 
             this.repairBarva.Location = new System.Drawing.Point(491, 786);
             this.repairBarva.Name = "repairBarva";
-            this.repairBarva.Size = new System.Drawing.Size(187, 23);
+            this.repairBarva.Size = new System.Drawing.Size(187, 35);
             this.repairBarva.TabIndex = 32;
             // 
             // label27
@@ -921,7 +921,7 @@
             this.label27.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label27.Location = new System.Drawing.Point(490, 762);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(62, 21);
+            this.label27.Size = new System.Drawing.Size(111, 38);
             this.label27.TabIndex = 31;
             this.label27.Text = "BARVA";
             // 
@@ -931,7 +931,7 @@
             this.label28.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label28.Location = new System.Drawing.Point(491, 696);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(165, 21);
+            this.label28.Size = new System.Drawing.Size(291, 38);
             this.label28.TabIndex = 29;
             this.label28.Text = "DATUM REGISTRACE";
             // 
@@ -939,7 +939,7 @@
             // 
             this.repairSpz.Location = new System.Drawing.Point(491, 662);
             this.repairSpz.Name = "repairSpz";
-            this.repairSpz.Size = new System.Drawing.Size(187, 23);
+            this.repairSpz.Size = new System.Drawing.Size(187, 35);
             this.repairSpz.TabIndex = 28;
             // 
             // label29
@@ -948,7 +948,7 @@
             this.label29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label29.Location = new System.Drawing.Point(491, 638);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(39, 21);
+            this.label29.Size = new System.Drawing.Size(67, 38);
             this.label29.TabIndex = 27;
             this.label29.Text = "SPZ";
             // 
@@ -958,7 +958,7 @@
             this.label30.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label30.Location = new System.Drawing.Point(540, 196);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(100, 32);
+            this.label30.Size = new System.Drawing.Size(175, 57);
             this.label30.TabIndex = 11;
             this.label30.Text = "CREATE";
             // 
@@ -968,7 +968,7 @@
             this.label31.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label31.Location = new System.Drawing.Point(389, 29);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(433, 72);
+            this.label31.Size = new System.Drawing.Size(761, 125);
             this.label31.TabIndex = 9;
             this.label31.Text = "AUTOMECHANIK";
             // 
@@ -978,7 +978,7 @@
             this.label32.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label32.Location = new System.Drawing.Point(524, 101);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(153, 54);
+            this.label32.Size = new System.Drawing.Size(268, 93);
             this.label32.TabIndex = 10;
             this.label32.Text = "Vozidlo";
             // 
@@ -1033,7 +1033,7 @@
             // 
             this.technikNadrizeny.Location = new System.Drawing.Point(739, 478);
             this.technikNadrizeny.Name = "technikNadrizeny";
-            this.technikNadrizeny.Size = new System.Drawing.Size(187, 23);
+            this.technikNadrizeny.Size = new System.Drawing.Size(187, 35);
             this.technikNadrizeny.TabIndex = 77;
             // 
             // label47
@@ -1042,7 +1042,7 @@
             this.label47.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label47.Location = new System.Drawing.Point(739, 454);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(124, 21);
+            this.label47.Size = new System.Drawing.Size(216, 38);
             this.label47.TabIndex = 76;
             this.label47.Text = "NADRIZENY ID";
             // 
@@ -1051,7 +1051,7 @@
             this.label41.AutoSize = true;
             this.label41.Location = new System.Drawing.Point(812, 673);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(38, 15);
+            this.label41.Size = new System.Drawing.Size(66, 30);
             this.label41.TabIndex = 75;
             this.label41.Text = "BY ID";
             // 
@@ -1059,7 +1059,7 @@
             // 
             this.technikId.Location = new System.Drawing.Point(780, 691);
             this.technikId.Name = "technikId";
-            this.technikId.Size = new System.Drawing.Size(100, 23);
+            this.technikId.Size = new System.Drawing.Size(100, 35);
             this.technikId.TabIndex = 74;
             this.technikId.Text = "id";
             this.technikId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1098,7 +1098,7 @@
             // 
             this.technikJmeno.Location = new System.Drawing.Point(739, 346);
             this.technikJmeno.Name = "technikJmeno";
-            this.technikJmeno.Size = new System.Drawing.Size(187, 23);
+            this.technikJmeno.Size = new System.Drawing.Size(187, 35);
             this.technikJmeno.TabIndex = 70;
             // 
             // label38
@@ -1107,7 +1107,7 @@
             this.label38.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label38.Location = new System.Drawing.Point(739, 322);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(66, 21);
+            this.label38.Size = new System.Drawing.Size(114, 38);
             this.label38.TabIndex = 69;
             this.label38.Text = "JMENO";
             // 
@@ -1115,7 +1115,7 @@
             // 
             this.textBox6.Location = new System.Drawing.Point(740, 346);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(187, 23);
+            this.textBox6.Size = new System.Drawing.Size(187, 35);
             this.textBox6.TabIndex = 66;
             // 
             // label42
@@ -1124,7 +1124,7 @@
             this.label42.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label42.Location = new System.Drawing.Point(740, 322);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(66, 21);
+            this.label42.Size = new System.Drawing.Size(114, 38);
             this.label42.TabIndex = 65;
             this.label42.Text = "JMENO";
             // 
@@ -1132,7 +1132,7 @@
             // 
             this.technikPrijmeni.Location = new System.Drawing.Point(740, 409);
             this.technikPrijmeni.Name = "technikPrijmeni";
-            this.technikPrijmeni.Size = new System.Drawing.Size(187, 23);
+            this.technikPrijmeni.Size = new System.Drawing.Size(187, 35);
             this.technikPrijmeni.TabIndex = 62;
             // 
             // label49
@@ -1141,7 +1141,7 @@
             this.label49.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label49.Location = new System.Drawing.Point(740, 385);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(84, 21);
+            this.label49.Size = new System.Drawing.Size(146, 38);
             this.label49.TabIndex = 61;
             this.label49.Text = "PRIJMENI";
             // 
@@ -1151,7 +1151,7 @@
             this.label51.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label51.Location = new System.Drawing.Point(721, 215);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(210, 32);
+            this.label51.Size = new System.Drawing.Size(365, 57);
             this.label51.TabIndex = 58;
             this.label51.Text = "CREATE TECHNIK";
             // 
@@ -1169,7 +1169,7 @@
             this.kontrolaRozsahPlny.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.kontrolaRozsahPlny.Location = new System.Drawing.Point(286, 515);
             this.kontrolaRozsahPlny.Name = "kontrolaRozsahPlny";
-            this.kontrolaRozsahPlny.Size = new System.Drawing.Size(138, 25);
+            this.kontrolaRozsahPlny.Size = new System.Drawing.Size(233, 42);
             this.kontrolaRozsahPlny.TabIndex = 56;
             this.kontrolaRozsahPlny.Text = "PLNY ROZSAH";
             this.kontrolaRozsahPlny.UseVisualStyleBackColor = true;
@@ -1178,7 +1178,7 @@
             // 
             this.kontrolaDatum.Location = new System.Drawing.Point(266, 595);
             this.kontrolaDatum.Name = "kontrolaDatum";
-            this.kontrolaDatum.Size = new System.Drawing.Size(186, 23);
+            this.kontrolaDatum.Size = new System.Drawing.Size(186, 35);
             this.kontrolaDatum.TabIndex = 55;
             this.kontrolaDatum.Value = new System.DateTime(2023, 2, 12, 15, 51, 8, 0);
             // 
@@ -1221,7 +1221,7 @@
             this.label33.AutoSize = true;
             this.label33.Location = new System.Drawing.Point(103, 229);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(38, 15);
+            this.label33.Size = new System.Drawing.Size(66, 30);
             this.label33.TabIndex = 51;
             this.label33.Text = "BY ID";
             // 
@@ -1229,7 +1229,7 @@
             // 
             this.kontrolaId.Location = new System.Drawing.Point(74, 247);
             this.kontrolaId.Name = "kontrolaId";
-            this.kontrolaId.Size = new System.Drawing.Size(100, 23);
+            this.kontrolaId.Size = new System.Drawing.Size(100, 35);
             this.kontrolaId.TabIndex = 50;
             this.kontrolaId.Text = "id";
             this.kontrolaId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1268,7 +1268,7 @@
             // 
             this.kontrolaVozidloId.Location = new System.Drawing.Point(265, 288);
             this.kontrolaVozidloId.Name = "kontrolaVozidloId";
-            this.kontrolaVozidloId.Size = new System.Drawing.Size(187, 23);
+            this.kontrolaVozidloId.Size = new System.Drawing.Size(187, 35);
             this.kontrolaVozidloId.TabIndex = 46;
             // 
             // label34
@@ -1277,7 +1277,7 @@
             this.label34.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label34.Location = new System.Drawing.Point(265, 264);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(101, 21);
+            this.label34.Size = new System.Drawing.Size(175, 38);
             this.label34.TabIndex = 45;
             this.label34.Text = "VOZIDLO ID";
             // 
@@ -1285,7 +1285,7 @@
             // 
             this.kontrolaDruh.Location = new System.Drawing.Point(265, 477);
             this.kontrolaDruh.Name = "kontrolaDruh";
-            this.kontrolaDruh.Size = new System.Drawing.Size(187, 23);
+            this.kontrolaDruh.Size = new System.Drawing.Size(187, 35);
             this.kontrolaDruh.TabIndex = 44;
             // 
             // label35
@@ -1294,7 +1294,7 @@
             this.label35.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label35.Location = new System.Drawing.Point(265, 453);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(143, 21);
+            this.label35.Size = new System.Drawing.Size(249, 38);
             this.label35.TabIndex = 43;
             this.label35.Text = "DRUH KONTROLY";
             // 
@@ -1302,7 +1302,7 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(266, 288);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(187, 23);
+            this.textBox5.Size = new System.Drawing.Size(187, 35);
             this.textBox5.TabIndex = 42;
             // 
             // label36
@@ -1311,7 +1311,7 @@
             this.label36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label36.Location = new System.Drawing.Point(266, 264);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(66, 21);
+            this.label36.Size = new System.Drawing.Size(114, 38);
             this.label36.TabIndex = 41;
             this.label36.Text = "JMENO";
             // 
@@ -1321,7 +1321,7 @@
             this.label37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label37.Location = new System.Drawing.Point(298, 646);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(101, 21);
+            this.label37.Size = new System.Drawing.Size(175, 38);
             this.label37.TabIndex = 39;
             this.label37.Text = "POZNAMKY";
             // 
@@ -1331,7 +1331,7 @@
             this.label39.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label39.Location = new System.Drawing.Point(266, 566);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(155, 21);
+            this.label39.Size = new System.Drawing.Size(271, 38);
             this.label39.TabIndex = 35;
             this.label39.Text = "DATUM KONTROLY";
             // 
@@ -1339,7 +1339,7 @@
             // 
             this.kontrolaTechnikId.Location = new System.Drawing.Point(266, 351);
             this.kontrolaTechnikId.Name = "kontrolaTechnikId";
-            this.kontrolaTechnikId.Size = new System.Drawing.Size(187, 23);
+            this.kontrolaTechnikId.Size = new System.Drawing.Size(187, 35);
             this.kontrolaTechnikId.TabIndex = 34;
             // 
             // label40
@@ -1348,7 +1348,7 @@
             this.label40.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label40.Location = new System.Drawing.Point(266, 327);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(99, 21);
+            this.label40.Size = new System.Drawing.Size(173, 38);
             this.label40.TabIndex = 33;
             this.label40.Text = "TECHNIK ID";
             // 
@@ -1356,7 +1356,7 @@
             // 
             this.kontrolaProvozovatelId.Location = new System.Drawing.Point(266, 416);
             this.kontrolaProvozovatelId.Name = "kontrolaProvozovatelId";
-            this.kontrolaProvozovatelId.Size = new System.Drawing.Size(187, 23);
+            this.kontrolaProvozovatelId.Size = new System.Drawing.Size(187, 35);
             this.kontrolaProvozovatelId.TabIndex = 28;
             // 
             // label43
@@ -1365,7 +1365,7 @@
             this.label43.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label43.Location = new System.Drawing.Point(266, 392);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(154, 21);
+            this.label43.Size = new System.Drawing.Size(269, 38);
             this.label43.TabIndex = 27;
             this.label43.Text = "PROVOZOVATEL ID";
             // 
@@ -1375,7 +1375,7 @@
             this.label44.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label44.Location = new System.Drawing.Point(247, 215);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(211, 32);
+            this.label44.Size = new System.Drawing.Size(367, 57);
             this.label44.TabIndex = 11;
             this.label44.Text = "CREATE VOZIDLO";
             // 
@@ -1385,7 +1385,7 @@
             this.label45.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label45.Location = new System.Drawing.Point(389, 29);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(433, 72);
+            this.label45.Size = new System.Drawing.Size(761, 125);
             this.label45.TabIndex = 9;
             this.label45.Text = "AUTOMECHANIK";
             // 
@@ -1395,12 +1395,13 @@
             this.label46.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label46.Location = new System.Drawing.Point(521, 101);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(135, 54);
+            this.label46.Size = new System.Drawing.Size(235, 93);
             this.label46.TabIndex = 10;
             this.label46.Text = "Repair";
             // 
             // zavadaPanel
             // 
+            this.zavadaPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.zavadaPanel.Controls.Add(this.label54);
             this.zavadaPanel.Controls.Add(this.nalezId);
             this.zavadaPanel.Controls.Add(this.nalezDelete);
@@ -1433,25 +1434,28 @@
             // 
             // label54
             // 
+            this.label54.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(731, 524);
+            this.label54.Location = new System.Drawing.Point(752, 528);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(38, 15);
+            this.label54.Size = new System.Drawing.Size(66, 30);
             this.label54.TabIndex = 63;
             this.label54.Text = "BY ID";
             // 
             // nalezId
             // 
-            this.nalezId.Location = new System.Drawing.Point(700, 542);
+            this.nalezId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.nalezId.Location = new System.Drawing.Point(718, 561);
             this.nalezId.Name = "nalezId";
-            this.nalezId.Size = new System.Drawing.Size(100, 23);
+            this.nalezId.Size = new System.Drawing.Size(100, 35);
             this.nalezId.TabIndex = 62;
             this.nalezId.Text = "id";
             this.nalezId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // nalezDelete
             // 
-            this.nalezDelete.Location = new System.Drawing.Point(700, 627);
+            this.nalezDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.nalezDelete.Location = new System.Drawing.Point(718, 646);
             this.nalezDelete.Name = "nalezDelete";
             this.nalezDelete.Size = new System.Drawing.Size(100, 32);
             this.nalezDelete.TabIndex = 61;
@@ -1461,7 +1465,8 @@
             // 
             // nalezUpdate
             // 
-            this.nalezUpdate.Location = new System.Drawing.Point(700, 584);
+            this.nalezUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.nalezUpdate.Location = new System.Drawing.Point(718, 603);
             this.nalezUpdate.Name = "nalezUpdate";
             this.nalezUpdate.Size = new System.Drawing.Size(100, 30);
             this.nalezUpdate.TabIndex = 60;
@@ -1471,7 +1476,8 @@
             // 
             // nalezCreate
             // 
-            this.nalezCreate.Location = new System.Drawing.Point(700, 456);
+            this.nalezCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.nalezCreate.Location = new System.Drawing.Point(721, 460);
             this.nalezCreate.Name = "nalezCreate";
             this.nalezCreate.Size = new System.Drawing.Size(100, 59);
             this.nalezCreate.TabIndex = 59;
@@ -1481,17 +1487,19 @@
             // 
             // label53
             // 
+            this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label53.Location = new System.Drawing.Point(663, 235);
+            this.label53.Location = new System.Drawing.Point(684, 194);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(174, 32);
+            this.label53.Size = new System.Drawing.Size(300, 57);
             this.label53.TabIndex = 58;
             this.label53.Text = "LINK ZAVADA";
             // 
             // zavadaPopis
             // 
-            this.zavadaPopis.Location = new System.Drawing.Point(332, 399);
+            this.zavadaPopis.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.zavadaPopis.Location = new System.Drawing.Point(195, 357);
             this.zavadaPopis.Name = "zavadaPopis";
             this.zavadaPopis.Size = new System.Drawing.Size(185, 211);
             this.zavadaPopis.TabIndex = 57;
@@ -1499,14 +1507,15 @@
             // 
             // zavadaKategorie
             // 
+            this.zavadaKategorie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.zavadaKategorie.FormattingEnabled = true;
             this.zavadaKategorie.Items.AddRange(new object[] {
             "A",
             "B",
             "C"});
-            this.zavadaKategorie.Location = new System.Drawing.Point(332, 337);
+            this.zavadaKategorie.Location = new System.Drawing.Point(195, 295);
             this.zavadaKategorie.Name = "zavadaKategorie";
-            this.zavadaKategorie.Size = new System.Drawing.Size(185, 23);
+            this.zavadaKategorie.Size = new System.Drawing.Size(185, 38);
             this.zavadaKategorie.TabIndex = 56;
             // 
             // button1
@@ -1525,6 +1534,7 @@
             // 
             // zavadaRollback
             // 
+            this.zavadaRollback.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.zavadaRollback.Location = new System.Drawing.Point(1051, 692);
             this.zavadaRollback.Name = "zavadaRollback";
             this.zavadaRollback.Size = new System.Drawing.Size(91, 59);
@@ -1535,6 +1545,7 @@
             // 
             // zavadaCommit
             // 
+            this.zavadaCommit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.zavadaCommit.Location = new System.Drawing.Point(1051, 771);
             this.zavadaCommit.Name = "zavadaCommit";
             this.zavadaCommit.Size = new System.Drawing.Size(91, 59);
@@ -1545,25 +1556,28 @@
             // 
             // label48
             // 
+            this.label48.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(406, 706);
+            this.label48.Location = new System.Drawing.Point(265, 653);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(38, 15);
+            this.label48.Size = new System.Drawing.Size(66, 30);
             this.label48.TabIndex = 51;
             this.label48.Text = "BY ID";
             // 
             // zavadaId
             // 
-            this.zavadaId.Location = new System.Drawing.Point(375, 724);
+            this.zavadaId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.zavadaId.Location = new System.Drawing.Point(238, 682);
             this.zavadaId.Name = "zavadaId";
-            this.zavadaId.Size = new System.Drawing.Size(100, 23);
+            this.zavadaId.Size = new System.Drawing.Size(100, 35);
             this.zavadaId.TabIndex = 50;
             this.zavadaId.Text = "id";
             this.zavadaId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // zavadaDelete
             // 
-            this.zavadaDelete.Location = new System.Drawing.Point(375, 809);
+            this.zavadaDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.zavadaDelete.Location = new System.Drawing.Point(238, 767);
             this.zavadaDelete.Name = "zavadaDelete";
             this.zavadaDelete.Size = new System.Drawing.Size(100, 32);
             this.zavadaDelete.TabIndex = 49;
@@ -1573,7 +1587,8 @@
             // 
             // zavadaUpdate
             // 
-            this.zavadaUpdate.Location = new System.Drawing.Point(375, 766);
+            this.zavadaUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.zavadaUpdate.Location = new System.Drawing.Point(238, 724);
             this.zavadaUpdate.Name = "zavadaUpdate";
             this.zavadaUpdate.Size = new System.Drawing.Size(100, 30);
             this.zavadaUpdate.TabIndex = 48;
@@ -1583,7 +1598,8 @@
             // 
             // zavadaCreate
             // 
-            this.zavadaCreate.Location = new System.Drawing.Point(375, 638);
+            this.zavadaCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.zavadaCreate.Location = new System.Drawing.Point(238, 596);
             this.zavadaCreate.Name = "zavadaCreate";
             this.zavadaCreate.Size = new System.Drawing.Size(100, 59);
             this.zavadaCreate.TabIndex = 47;
@@ -1593,85 +1609,94 @@
             // 
             // label50
             // 
+            this.label50.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label50.Location = new System.Drawing.Point(330, 307);
+            this.label50.Location = new System.Drawing.Point(193, 265);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(99, 21);
+            this.label50.Size = new System.Drawing.Size(175, 38);
             this.label50.TabIndex = 45;
             this.label50.Text = "KATEGORIE ";
             // 
             // label52
             // 
+            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label52.Location = new System.Drawing.Point(332, 370);
+            this.label52.Location = new System.Drawing.Point(195, 328);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(56, 21);
+            this.label52.Size = new System.Drawing.Size(97, 38);
             this.label52.TabIndex = 43;
             this.label52.Text = "POPIS";
             // 
             // nalezKontrolaId
             // 
-            this.nalezKontrolaId.Location = new System.Drawing.Point(663, 331);
+            this.nalezKontrolaId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.nalezKontrolaId.Location = new System.Drawing.Point(684, 290);
             this.nalezKontrolaId.Name = "nalezKontrolaId";
-            this.nalezKontrolaId.Size = new System.Drawing.Size(187, 23);
+            this.nalezKontrolaId.Size = new System.Drawing.Size(187, 35);
             this.nalezKontrolaId.TabIndex = 38;
             // 
             // label55
             // 
+            this.label55.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label55.Location = new System.Drawing.Point(663, 307);
+            this.label55.Location = new System.Drawing.Point(681, 253);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(116, 21);
+            this.label55.Size = new System.Drawing.Size(205, 38);
             this.label55.TabIndex = 37;
             this.label55.Text = "KONTROLA ID";
             // 
             // nalezZavadaId
             // 
-            this.nalezZavadaId.Location = new System.Drawing.Point(663, 394);
+            this.nalezZavadaId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.nalezZavadaId.Location = new System.Drawing.Point(684, 398);
             this.nalezZavadaId.Name = "nalezZavadaId";
-            this.nalezZavadaId.Size = new System.Drawing.Size(187, 23);
+            this.nalezZavadaId.Size = new System.Drawing.Size(187, 35);
             this.nalezZavadaId.TabIndex = 36;
             // 
             // label56
             // 
+            this.label56.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label56.AutoSize = true;
             this.label56.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label56.Location = new System.Drawing.Point(663, 370);
+            this.label56.Location = new System.Drawing.Point(684, 360);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(95, 21);
+            this.label56.Size = new System.Drawing.Size(169, 38);
             this.label56.TabIndex = 35;
             this.label56.Text = "ZAVADA ID";
             // 
             // label61
             // 
+            this.label61.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label61.Location = new System.Drawing.Point(328, 235);
+            this.label61.Location = new System.Drawing.Point(128, 176);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(205, 32);
+            this.label61.Size = new System.Drawing.Size(356, 57);
             this.label61.TabIndex = 11;
             this.label61.Text = "CREATE ZAVADA";
             // 
             // label62
             // 
+            this.label62.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label62.AutoSize = true;
             this.label62.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label62.Location = new System.Drawing.Point(389, 29);
+            this.label62.Location = new System.Drawing.Point(237, -16);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(433, 72);
+            this.label62.Size = new System.Drawing.Size(761, 125);
             this.label62.TabIndex = 9;
             this.label62.Text = "AUTOMECHANIK";
             // 
             // label63
             // 
+            this.label63.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label63.AutoSize = true;
             this.label63.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label63.Location = new System.Drawing.Point(524, 101);
+            this.label63.Location = new System.Drawing.Point(453, 83);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(149, 54);
+            this.label63.Size = new System.Drawing.Size(263, 93);
             this.label63.TabIndex = 10;
             this.label63.Text = "Zavada";
             // 
