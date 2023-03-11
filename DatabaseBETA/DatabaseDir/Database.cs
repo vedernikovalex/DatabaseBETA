@@ -21,9 +21,6 @@ namespace DatabaseBETA
         private static readonly object locker = new object();
 
         private SqlConnection con;
-        private SqlConnection con2;
-
-        private SqlConnectionStringBuilder conStrBuilder = new SqlConnectionStringBuilder();
         private string connectionString;
 
         private string databaseName = ConfigurationManager.AppSettings["databaseName"];
@@ -34,7 +31,7 @@ namespace DatabaseBETA
         /// </summary>
         public Database()
         {
-            ConnectionStringBuilder();
+
         }
 
         /// <summary>
@@ -42,17 +39,16 @@ namespace DatabaseBETA
         /// </summary>
         public Database(string login, string password)
         {
-            ConnectionStringBuilder(login, password);
+            con = ConnectionStringBuilder(login, password);
+            con.Open();
+            Debug.WriteLine(con.ConnectionString);
         }
 
         public SqlConnection Connection
         {
-            get { return con; }
-        }
-
-        public SqlConnection Connection2
-        {
-            get { return con2; }
+            get {
+                Debug.WriteLine(con.ConnectionString); 
+                return con; }
         }
 
         public static Database Instance
@@ -71,30 +67,13 @@ namespace DatabaseBETA
         }
 
         /// <summary>
-        /// Initializing connection string as windows login
-        /// </summary>
-        private void ConnectionStringBuilder()
-        {
-            conStrBuilder.DataSource = @databaseName;
-            conStrBuilder.InitialCatalog = databaseSource;
-            conStrBuilder.IntegratedSecurity = true;
-            connectionString = conStrBuilder.ConnectionString;
-            con = new SqlConnection(connectionString);
-            con2 = new SqlConnection(connectionString);
-        }
-
-        /// <summary>
         /// Initializing connection string as user login
         /// </summary>
-        private void ConnectionStringBuilder(string login, string password)
+        private SqlConnection ConnectionStringBuilder(string login, string password)
         {
-            conStrBuilder.DataSource = @databaseName;
-            conStrBuilder.InitialCatalog = databaseSource;
-            conStrBuilder.UserID= login;
-            conStrBuilder.Password= password;
-            connectionString = conStrBuilder.ConnectionString;
-            con = new SqlConnection(connectionString);
-            con2 = new SqlConnection(connectionString);
+            string connectionString = "Data Source=193.85.203.188;Initial Catalog=vedernikov;User ID=vedernikov;Password=_20alex04_;";
+            SqlConnection connection = new SqlConnection(connectionString);
+            return connection;
         }
     }
 }

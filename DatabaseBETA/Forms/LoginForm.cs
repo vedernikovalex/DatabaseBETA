@@ -58,8 +58,8 @@ namespace DatabaseBETA
             }
             else
             {
-                database = new Database();
-                //database = new Database(loginInput, passwordInput);
+                //database = new Database();
+                database = new Database(loginInput, passwordInput);
                 Menu menuForm = new Menu();
                 this.Hide();
                 menuForm.ShowDialog();

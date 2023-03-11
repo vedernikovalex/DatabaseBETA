@@ -94,6 +94,7 @@ namespace DatabaseBETA
         /// </summary>
         private void testConnection_Click(object sender, EventArgs e)
         {
+            Debug.WriteLine(Database.Instance);
             SqlCommand cmd = new SqlCommand("select @@VERSION;", Database.Instance.Connection);
             Database.Instance.Connection.Open();
             SqlDataReader reader = cmd.ExecuteReader();

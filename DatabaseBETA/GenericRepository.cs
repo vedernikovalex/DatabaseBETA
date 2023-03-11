@@ -18,7 +18,6 @@ namespace DatabaseBETA
     public class GenericRepository<T> where T : class, new()
     {
         private SqlConnection con = Database.Instance.Connection;
-        private SqlConnection con2 = Database.Instance.Connection2;
         private SqlCommand cmd;
 
         private bool disposed = false;
@@ -47,7 +46,7 @@ namespace DatabaseBETA
         {
             try
             {
-                con2.Open();
+                con.Open();
                 using (cmd)
                 {
                     using (var reader = cmd.ExecuteReader())
@@ -89,7 +88,7 @@ namespace DatabaseBETA
         {
             try
             {
-                con2.Open();
+                con.Open();
                 using (cmd)
                 {
                     using (var reader = cmd.ExecuteReader())
